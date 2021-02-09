@@ -1,0 +1,32 @@
+search orca
+search .local
+search appl
+rename img.desktop
+search app
+search workdir/voidrice
+search workdir
+rename zathura
+search 
+cd .config/zsh/
+search shell
+search dust
+rename rc_.conf
+show_hidden true
+set show_hidden true
+
+cd .config/ranger/
+cd workdir/voidrice/.config/
+find 
+shell mv *.png ../Pictures
+shell mv *.jpg ../Pictures
+shell mv *.pdf ../Documents
+rename credentials.nordvpn
+search .config
+open_with 
+delete
+search cal
+shell mkdir config
+shell mkdir data
+cd workdir/voidrice/
+shell git pull
+shell

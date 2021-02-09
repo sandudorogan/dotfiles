@@ -1,0 +1,54 @@
+#!/usr/bin/env zsh
+
+MAX_BRIGHTNESS=$(cat /sys/class/backlight/intel_backlight/max_brightness)
+CURRENT_BRIGHTNESS=$(cat /sys/class/backlight/intel_backlight/brightness)
+
+min() {
+    echo $(($1 > $2 ? $2 : $1))
+}
+max() {
+    echo $(($1 > $2 ? $1 : $2))
+}
+
+parse_float() {
+    echo $(printf "%2.f" $(echo "$1" | sed 's/,/\./' | bc -l | sed 's/\./,/'))
+}
+
+brightness_to_percent() {
+    echo $(parse_float "$2 * 100 / $1")
+}
+percent_to_brightness() {
+    echo $(parse_float "(($1) * ($2) / 100)")
+}
+
+
+CURRENT_PERCENT=$(brightness_to_percent $MAX_BRIGHTNESS $CURRENT_BRIGHTNESS)
+
+PLUS_BRIGHTNESS=$(percent_to_brightness $MAX_BRIGHTNESS "$CURRENT_PERCENT + 10")
+PLUS_BRIGHTNESS=$(min $PLUS_BRIGHTNESS $MAX_BRIGHTNESS)
+PLUS_PERCENT=$(echo "$CURRENT_PERCENT + 10" | bc -l)
+PLUS_PERCENT=$(min $PLUS_PERCENT 100)
+
+MINUS_BRIGHTNESS=$(percent_to_brightness $MAX_BRIGHTNESS "$CURRENT_PERCENT - 10")
+MINUS_BRIGHTNESS=$(max $MINUS_BRIGHTNESS 0)
+MINUS_PERCENT=$(echo "$CURRENT_PERCENT - 10" | bc -l)
+MINUS_PERCENT=$(max $MINUS_PERCENT 0)
+
+
+case "$BLOCK_BUTTON" in
+    1) 
+        sudo sh -c "echo $PLUS_BRIGHTNESS > /sys/class/backlight/intel_backlight/brightness"
+        CURRENT_PERCENT=$PLUS_PERCENT
+        pkill -SIGRTMIN+11 i3blocks
+        ;;
+    2) 
+        "$TERMINAL" -x "$EDITOR" "$0"
+        ;;
+    3) 
+        sudo sh -c "echo $MINUS_BRIGHTNESS > /sys/class/backlight/intel_backlight/brightness"
+        CURRENT_PERCENT=$MINUS_PERCENT
+        pkill -SIGRTMIN+11 i3blocks
+        ;;
+esac
+
+echo "$CURRENT_PERCENT%"

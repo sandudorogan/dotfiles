@@ -1,0 +1,9 @@
+alsamixer
+nmcli dev wifi connect "The ultimate undying" password "youwontlikeit"
+nmcli dev wifi connect "Undying Upgraded" password "ohshititsdeadtoo"
+bluetoothctl
+# Devices data:
+xinput
+libinput # Can record then repeat actions.
+# transmission remote cli: 
+tremc

@@ -1,0 +1,17 @@
+#!/bin/env zsh
+
+filename="$HOME/Videos/recording_$(date +%d-%m-%y_%H-%M).mp4"
+
+if [ -z "$(pgrep ffmpeg)" ]; then 
+    ffmpeg \
+        -y \
+        -f x11grab \
+        -video_size cif \
+        -framerate 30 \
+        -s 1920x1080 \
+        -i $DISPLAY+1920,0 \
+        -c:v libx264 \
+        "$filename" && xclip -selection clipboard -t video/mp4 "$filename"
+else
+    pkill ffmpeg
+fi

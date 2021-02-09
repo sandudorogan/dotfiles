@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=FCC
+Comment=FCC
+Exec=/home/sandu/FCC/FCC %u
+Icon=FreeConferenceCall
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;

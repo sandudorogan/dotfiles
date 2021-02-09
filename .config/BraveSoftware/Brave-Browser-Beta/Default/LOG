@@ -1,0 +1,5 @@
+2021/02/04-17:33:23.169 c8eac Recovering log #86
+2021/02/04-17:33:23.170 c8eac Level-0 table #88: started
+2021/02/04-17:33:23.174 c8eac Level-0 table #88: 1559 bytes OK
+2021/02/04-17:33:23.186 c8eac Delete type=0 #86
+2021/02/04-17:33:23.186 c8eac Delete type=3 #84

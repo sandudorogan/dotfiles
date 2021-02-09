@@ -1,0 +1,1240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/sandu/.screenlayout/default.sh" added="2020-11-23T13:29:20Z" modified="2021-01-15T08:07:08Z" visited="2020-12-11T12:31:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2021-01-15T08:07:08Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/troubling_svg.svg" added="2020-12-14T08:21:32Z" modified="2021-01-08T11:12:16Z" visited="2020-12-14T08:21:33Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="code" exec="&apos;code %u&apos;" modified="2020-12-14T08:21:32Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T11:12:16Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/simplescreenrecorder-2020-12-17_17.16.08.mp4" added="2020-12-17T15:18:14Z" modified="2021-01-08T07:39:48Z" visited="2020-12-18T14:32:53Z">
+    <title>simplescreenrecorder-2020-12-17_17.16.08.mp4</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2020-12-17T15:18:14Z" count="1"/>
+          <bookmark:application name="Videos" exec="&apos;totem %u&apos;" modified="2020-12-17T15:18:14Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T07:39:48Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/new%20scene%201.mp4" added="2021-01-08T07:42:14Z" modified="2021-01-08T07:42:14Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T07:42:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/new%20scene%201.mp4" added="2021-01-08T07:42:38Z" modified="2021-01-08T08:27:55Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T08:27:55Z" count="6"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%201.mp4" added="2021-01-08T09:42:38Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%202.mp4" added="2021-01-08T09:43:21Z" modified="2021-01-08T09:50:53Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:50:53Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%203.mp4" added="2021-01-08T09:43:32Z" modified="2021-01-08T09:50:53Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:50:53Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%204.mp4" added="2021-01-08T09:43:39Z" modified="2021-01-08T09:50:53Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:50:53Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%205.mp4" added="2021-01-08T09:43:42Z" modified="2021-01-08T09:50:53Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:50:53Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%201.mp4" added="2021-01-08T09:44:06Z" modified="2021-01-11T13:25:45Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T13:25:45Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%202(1).mp4" added="2021-01-08T09:47:55Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%203(1).mp4" added="2021-01-08T09:48:11Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%206.mp4" added="2021-01-08T09:48:17Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%209.mp4" added="2021-01-08T09:48:17Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%2010.mp4" added="2021-01-08T09:48:19Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%205(1).mp4" added="2021-01-08T09:48:20Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%204(1).mp4" added="2021-01-08T09:48:20Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%207.mp4" added="2021-01-08T09:48:20Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/scene%208.mp4" added="2021-01-08T09:48:21Z" modified="2021-01-08T09:49:09Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T09:49:09Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screen%20Shot%202020-12-04%20at%2013.34.09.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screenshot%202020-12-08%20at%2011.46.25.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screen%20Shot%202020-12-04%20at%2013.33.49.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screenshot%202020-06-03%20at%2014.51.07.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screenshot%20from%202020-11-18%2018-10-22.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screenshot%20from%202020-05-29%2011-05-11.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/120850605_408416670198462_6450257538756312587_n.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screen%20Shot%202020-11-16%20at%2012.34.43.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(8).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/104459674_552957972053416_5348606425367359331_n.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screenshot%20from%202020-05-29%2011-05-34.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(7).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(9).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(6).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screen%20Shot%202020-06-23%20at%2017.10.00-fullpage.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/default%20(1).jpg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/default.jpg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(5).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(2).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(3).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(4).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/brainload.swf" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.adobe.flash.movie"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/draw.chat_BFD0B1825577332894E.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/draw.chat_BFD0B1825577332894E%20(1).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/flash_player_sa_linux.x86_64.tar.gz" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/lewis-brit_square_vZXuDeL.jpg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screenshot_20200401-103325_One%20UI%20Home.jpg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/bomomo-4826.jpg" added="2021-01-08T11:11:58Z" modified="2021-01-08T11:11:58Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T11:11:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/bomomo-7402.jpg" added="2021-01-08T11:11:58Z" modified="2021-01-08T11:11:58Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-08T11:11:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/My%20photo%20-%203-23-2020_4-24-02---.jpg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image%20(1).png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Image%20from%20iOS.jpg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/story-cu-de-toate-pentru-amp-testing-but-not-only.zip" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/trkei-griechenland-grenze%20(1).zip" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/landscape-stories-marean.zip" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/trkei-griechenland-grenze.zip" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/tanti.zip" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/all-scene-types-all-layouts.zip" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/15573842.jpeg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/image.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screenshot%20from%202020-02-07%2017-31-59.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/iconmonstr-random-thin.svg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/technology_logo%20(14th%20copy).jpeg" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/Screenshot%20from%202020-02-05%2016-53-04.png" added="2021-01-08T11:11:58Z" modified="2021-01-11T10:08:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T10:08:21Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Documents/credentials.jpg" added="2021-01-10T21:19:21Z" modified="2021-01-10T21:19:21Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-10T21:19:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Documents/config" added="2021-01-10T21:19:47Z" modified="2021-01-10T21:19:47Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-10T21:19:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_10-01-21_23-47.mp4" added="2021-01-10T21:48:05Z" modified="2021-01-10T21:48:05Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-10T21:48:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_11-01-21_00-14.mp4" added="2021-01-10T22:15:07Z" modified="2021-02-01T08:15:52Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-10T22:15:07Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T08:15:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_11-01-21_00-18.mp4" added="2021-01-10T22:19:31Z" modified="2021-01-11T13:20:03Z" visited="2021-01-10T22:19:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2021-01-10T22:19:31Z" count="1"/>
+          <bookmark:application name="signal-desktop" exec="&apos;signal-desktop %u&apos;" modified="2021-01-10T22:20:34Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-11T13:20:03Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_11-01-21_00-20.mp4" added="2021-01-10T22:21:31Z" modified="2021-01-10T22:21:31Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="signal-desktop" exec="&apos;signal-desktop %u&apos;" modified="2021-01-10T22:21:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/parcurgere%20graph.png" added="2021-01-12T09:27:53Z" modified="2021-01-12T09:27:53Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-12T09:27:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/torrent-files/Attack.on.Titan.S03.1080p.WEB-DL.AAC.2.0.H.264-Erai-raws.torrent" added="2021-01-12T19:39:14Z" modified="2021-01-12T19:39:14Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-12T19:39:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/.config/screenlayout/default.sh" added="2021-01-15T07:55:47Z" modified="2021-01-15T08:07:25Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="arandr" exec="&apos;arandr %u&apos;" modified="2021-01-15T08:07:25Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/green-arrow.svg" added="2021-01-18T10:53:39Z" modified="2021-01-18T10:53:39Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-18T10:53:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/circle.svg" added="2021-01-18T10:54:38Z" modified="2021-01-18T10:54:38Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-18T10:54:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/circle.svg" added="2021-01-18T13:08:04Z" modified="2021-01-18T13:08:04Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-18T13:08:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Cowboy.Bebop.S01.1080p.BluRay.x264-Hi10P-DreamKiller.torrent" added="2021-01-18T15:06:38Z" modified="2021-01-18T15:06:38Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-18T15:06:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/svg-test.zip" added="2021-01-18T15:19:21Z" modified="2021-01-18T15:19:21Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-18T15:19:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/youtube-dl" added="2021-01-18T15:42:49Z" modified="2021-01-18T15:42:49Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-18T15:42:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/svg-test/svg-omg-demo/markup.svg" added="2021-01-19T09:29:47Z" modified="2021-01-19T09:29:47Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-19T09:29:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/svg-test/downloaded-from-internet/Logo_NIKE.svg" added="2021-01-19T09:30:02Z" modified="2021-01-19T11:26:25Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-19T11:26:25Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Pictures/svg-test/downloaded-from-internet/Adidas_Logo.svg" added="2021-01-19T09:31:18Z" modified="2021-01-19T10:04:21Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-19T10:04:21Z" count="8"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mails/20210120-105611-140230172196256.mail" added="2021-01-20T11:08:23Z" modified="2021-01-20T11:08:23Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2021-01-20T11:08:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/workdir/SnappySnippet" added="2021-01-20T13:32:48Z" modified="2021-01-20T13:32:48Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-20T13:32:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Selected%20Stories%202021-01-20.eml" added="2021-01-21T10:40:10Z" modified="2021-01-21T11:39:17Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="message/rfc822"/>
+        <bookmark:applications>
+          <bookmark:application name="Thunderbird" exec="&apos;thunderbird %u&apos;" modified="2021-01-21T11:39:17Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Screenshot_2021-01-21%20Charlie%20Chaplin%20-%20Caught%20in%20a%20Cabaret%20(1914)%20-%20color%20-%20YouTube.png" added="2021-01-21T16:21:04Z" modified="2021-01-21T16:21:04Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-21T16:21:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/out.json" added="2021-01-22T11:10:57Z" modified="2021-01-22T11:10:57Z" visited="2021-01-22T11:10:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/json"/>
+        <bookmark:applications>
+          <bookmark:application name="slack" exec="&apos;slack %u&apos;" modified="2021-01-22T11:10:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Mr.Robot.S01E01.eps1.0.hellofriend.mov.720p.WEB-DL.DD5.1.H.264-NTb.torrent" added="2021-01-23T21:48:27Z" modified="2021-01-23T21:48:27Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-23T21:48:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Only.Lovers.Left.Alive.2013.1080p.BluRay.DTS.x264.RoSubbed-Ivandro.torrent" added="2021-01-24T19:25:14Z" modified="2021-01-24T19:25:14Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-24T19:25:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Porco.Rosso.1992.720p.BluRay.X264.Rosubbed-AMIABLE.torrent" added="2021-01-24T19:26:25Z" modified="2021-01-24T19:26:25Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-24T19:26:25Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Nausicaa.of.the.Valley.of.the.Wind.1984.1080p.BluRay.x264-CtrlHD.torrent" added="2021-01-24T19:28:58Z" modified="2021-01-24T19:28:58Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-24T19:28:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Laputa.Castle.in.the.Sky.1986.1080p.Bluray.x264.RoSubbed-MELiTE.torrent" added="2021-01-24T19:29:45Z" modified="2021-01-24T19:29:45Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-24T19:29:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Whisper.of.the.Heart.BluRay.1995.1080p.DTS.x264-PerfectionHD.torrent" added="2021-01-24T19:30:50Z" modified="2021-01-24T19:30:50Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-24T19:30:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Ghost.In.The.Shell.1995.1080p.BluRay.FLAC2.0.x264-EBCP.torrent" added="2021-01-24T19:33:43Z" modified="2021-01-24T19:33:43Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-24T19:33:43Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/File.jpg" added="2021-01-25T11:13:57Z" modified="2021-01-25T11:13:57Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-25T11:13:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_sandu0/virtualbox-6.1_6.1.18-142142~Ubuntu~eoan_amd64.deb" added="2021-01-26T09:55:05Z" modified="2021-01-26T09:56:21Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-26T09:55:05Z" count="1"/>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-01-26T09:56:21Z" count="5"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_sandu0/Microsoft.Windows.10.Version.20H2.19042.746.AIO.x86-x64.January.2021.torrent" added="2021-01-26T10:02:29Z" modified="2021-01-26T10:02:29Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-26T10:02:29Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/snap/sosumi/common/macos.qcow2" added="2021-01-28T11:40:51Z" modified="2021-01-28T11:42:41Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-qemu-disk"/>
+        <bookmark:applications>
+          <bookmark:application name="virt-manager" exec="&apos;virt-manager %u&apos;" modified="2021-01-28T11:42:41Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/workdir/macOS-Simple-KVM/macos.qcow2" added="2021-01-28T12:28:04Z" modified="2021-01-28T12:28:04Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-qemu-disk"/>
+        <bookmark:applications>
+          <bookmark:application name="virt-manager" exec="&apos;virt-manager %u&apos;" modified="2021-01-28T12:28:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%208.mp4" added="2021-01-28T15:28:07Z" modified="2021-02-01T09:11:39Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T09:11:39Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%207.mp4" added="2021-01-28T15:28:07Z" modified="2021-01-28T15:28:07Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-28T15:28:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%204(1).mp4" added="2021-01-28T15:28:07Z" modified="2021-01-28T15:28:07Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-28T15:28:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/ABExcellence.webm" added="2021-01-28T16:59:45Z" modified="2021-01-28T16:59:45Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/webm"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-28T16:59:45Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_sandu0/zoom_amd64.deb" added="2021-01-29T05:57:27Z" modified="2021-01-29T05:57:27Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.debian.binary-package"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-29T05:57:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Paprika.2006.BluRay.1080p.DTS-HD.MA.5.1.MPEG-2.REMUX-FraMeSToR.torrent" added="2021-01-31T13:12:01Z" modified="2021-01-31T13:12:01Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bittorrent"/>
+        <bookmark:applications>
+          <bookmark:application name="brave" exec="&apos;brave %u&apos;" modified="2021-01-31T13:12:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%2010.mp4" added="2021-02-01T09:11:46Z" modified="2021-02-01T09:11:46Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T09:11:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%201.mp4_" added="2021-02-01T09:12:44Z" modified="2021-02-01T09:12:46Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T09:12:46Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%205.mp4" added="2021-02-01T09:12:50Z" modified="2021-02-01T09:12:50Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T09:12:50Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%206.mp4" added="2021-02-01T09:14:46Z" modified="2021-02-01T09:18:47Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T09:18:47Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%203.mp4" added="2021-02-01T09:16:04Z" modified="2021-02-01T09:16:04Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T09:16:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%209.mp4" added="2021-02-01T09:16:08Z" modified="2021-02-01T09:16:08Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T09:16:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/scene%204.mp4" added="2021-02-01T10:22:08Z" modified="2021-02-01T10:22:08Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-01T10:22:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_01-02-21_12-49.mp4" added="2021-02-01T10:52:42Z" modified="2021-02-01T10:55:55Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-01T10:55:55Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_01-02-21_12-50.mp4" added="2021-02-01T10:52:52Z" modified="2021-02-01T10:53:43Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-01T10:53:43Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_01-02-21_12-57.mp4" added="2021-02-01T10:57:18Z" modified="2021-02-01T10:57:46Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-01T10:57:46Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_01-02-21_12-56.mp4" added="2021-02-01T10:57:26Z" modified="2021-02-01T10:57:39Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-01T10:57:39Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_01-02-21_13-17.mp4" added="2021-02-01T11:18:32Z" modified="2021-02-01T11:18:32Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-01T11:18:32Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_01-02-21_14-10.mp4" added="2021-02-01T12:11:21Z" modified="2021-02-01T12:11:21Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-01T12:11:21Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Videos/recording_04-02-21_16-01.mp4" added="2021-02-04T14:02:48Z" modified="2021-02-04T14:02:48Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/mp4"/>
+        <bookmark:applications>
+          <bookmark:application name="org.gnome.Nautilus" exec="&apos;org.gnome.Nautilus %u&apos;" modified="2021-02-04T14:02:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/World_Health_Organization_Logo.svg" added="2021-02-04T14:27:04Z" modified="2021-02-04T14:27:04Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/svg+xml"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-02-04T14:27:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Downloads/Geekbench-5.3.1-Linux.tar.gz" added="2021-02-04T15:33:39Z" modified="2021-02-04T15:33:39Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2021-02-04T15:33:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/sandu/Programs" added="2021-02-04T15:34:00Z" modified="2021-02-04T15:34:00Z" visited="1969-12-31T23:59:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Archive Manager" exec="&apos;file-roller %u&apos;" modified="2021-02-04T15:34:00Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

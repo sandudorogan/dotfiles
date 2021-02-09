@@ -1,0 +1,90 @@
+[KFileDialog Settings]
+Recent Files[$e]=De sarbatori-kcW-fHMRdQo.webm,file:$HOME/Mariana/Paula Seling - Florile Dalbe-MJXncD4zPgk.mkv,file:$HOME/Mariana/Paula Seling - Colindam\\, colindam-cM3-FwvH7i4.mkv,file:$HOME/Mariana/Noblesse - Steaua sus rasare-ejHPiaseHkg.mkv,file:$HOME/Mariana/De sarbatori-kcW-fHMRdQo.webm
+Recent URLs[$e]=file:$HOME/Mariana/
+detailViewIconSize=0
+
+[MainWindow]
+Height 1080=1040
+State=AAAA/wAAAAD9AAAAAgAAAAEAAAGnAAAB4PwCAAAAAfwAAAIQAAAB4AAAAMYBAAAb+gAAAAECAAAAAvsAAAAKAG0AaQB4AGUAcgEAAAHwAAACCwAAAKoBAAAC+wAAABgAZQBmAGYAZQBjAHQAXwBzAHQAYQBjAGsBAAAAAP////8AAAB2AQAAAgAAAAIAAAd8AAABzfwBAAAACfsAAAAUAHMAYwByAGUAZQBuAGcAcgBhAGIAAAAAAP////8AAACEAQAAA/sAAAAaAGEAdQBkAGkAbwBzAHAAZQBjAHQAcgB1AG0AAAAAAP////8AAABhAQAAA/wAAAAAAAABUgAAAIsA////+gAAAAABAAAABfsAAAAWAHAAcgBvAGoAZQBjAHQAXwBiAGkAbgEAAAAA/////wAAAFsBAAAD+wAAAB4AdAByAGEAbgBzAGkAdABpAG8AbgBfAGwAaQBzAHQBAAAAAP////8AAAAEAQAAA/sAAAAWAGUAZgBmAGUAYwB0AF8AbABpAHMAdAEAAAAA/////wAAAAQBAAAD+wAAAB4AYwBsAGkAcABfAHAAcgBvAHAAZQByAHQAaQBlAHMBAAAAAP////8AAABXAQAAA/sAAAAYAHUAbgBkAG8AXwBoAGkAcwB0AG8AcgB5AQAAAAD/////AAAAWwEAAAP8AAABUwAAAxQAAAFEAP////oAAAAAAgAAAAP7AAAAGABjAGwAaQBwAF8AbQBvAG4AaQB0AG8AcgEAAABEAAABzQAAAMsBAAAC+wAAABIAUwB1AGIAdABpAHQAbABlAHMAAAAAAP////8AAAEZAQAAA/sAAAAOAGwAaQBiAHIAYQByAHkBAAAAAP////8AAACSAQAAAvwAAARoAAADFAAAAUQA////+gAAAAACAAAAAvsAAAAeAHAAcgBvAGoAZQBjAHQAXwBtAG8AbgBpAHQAbwByAQAAAL8AAAEsAAAAywEAAAL7AAAAGABuAG8AdABlAHMAXwB3AGkAZABnAGUAdAEAAAAA/////wAAAIIBAAAC+wAAABYAdgBlAGMAdABvAHIAcwBjAG8AcABlAAAAAAD/////AAABAAEAAAP7AAAAEAB3AGEAdgBlAGYAbwByAG0AAAAAAP////8AAACOAQAAA/sAAAAUAHIAZwBiAF8AcABhAHIAYQBkAGUAAAAAAP////8AAACKAQAAA/sAAAASAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAD/////AAABKgEAAAMAAAXUAAAB4AAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABgAZQB4AHQAcgBhAFQAbwBvAGwAQgBhAHIBAAAB7P////8AAAAAAAAAAA==
+ToolBarsMovable=Disabled
+Width 1920=1916
+
+[Recent Dirs]
+KdenliveClipFolder[$e]=$HOME/Mariana/,$HOME/Videos,$HOME/Documents
+KdenliveProjectsFolder[$e]=$HOME/Mariana,$HOME/Documents
+
+[Recent Files]
+File1[$e]=$HOME/Mariana/colindele_craciun.kdenlive
+Name1[$e]=colindele_craciun.kdenlive
+
+[Scope_Histogram]
+autoRefresh=true
+bEnabled=true
+gEnabled=true
+logScale=false
+rEnabled=true
+realtime=false
+rec601=false
+sEnabled=false
+yEnabled=true
+
+[Scope_RGB Parade]
+autoRefresh=true
+axis=false
+gradref=false
+paintmode=0
+realtime=false
+
+[Scope_Vectorscope]
+75PBox=false
+autoRefresh=true
+axis=false
+backgroundmode=0
+colorspace_ypbpr=false
+gain=1
+iqlines=false
+paintmode=0
+realtime=false
+
+[Scope_Waveform]
+autoRefresh=true
+paintmode=0
+realtime=false
+rec601=false
+
+[bin]
+treeviewheaders=AAAA/wAAAAAAAAABAAAAAAAAAAABAAAAAAAAAAAAAAAI/gAAAAcAAAAHAAAAJAAAAAYAAAAbAAAABQAAAD4AAAAEAAAAJAAAAAMAAAAqAAAAAgAAAEwAAAABAAAAKQAAAIMAAAAIAQEAAQAAAAAAAAAAAAAAAE7/////AAAAgQAAAAAAAAAIAAAAgwAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAD6AAAAAAv
+
+[capture]
+decklink_extension=mov
+decklink_parameters=vcodec=dnxhd vb=145000k acodec=pcm_s16le threads=%threads
+grab_extension=mov
+grab_parameters=-crf 25 -vcodec libx264 -preset veryfast -threads 0
+v4l_extension=mpg
+v4l_parameters=qscale=4 ab=192k vcodec=mpeg2video acodec=mp2 threads=%threads
+
+[env]
+defaultprojectfolder[$e]=$HOME/Videos
+ffmpegpath[$e]=/usr/bin/ffmpeg
+ffplaypath[$e]=/usr/bin/ffplay
+ffprobepath[$e]=/usr/bin/ffprobe
+mltpath[$e]=/usr/share/mlt/profiles
+rendererpath[$e]=/usr/bin/melt
+
+[project]
+vaapiEnabled=true
+
+[timeline]
+trackheight=67
+
+[unmanaged]
+default_profile=atsc_1080p_25
+defaultrescalewidth=388
+force_breeze=true
+monitor_audio=false
+producerslist=framebuffer,avformat,avformat-novalidate,slowmotion,decklink,blipflash,count,qimage,qtext,kdenlivetitle,abnormal,color,colour,consumer,hold,loader,melt,melt_file,noise,timewarp,tone,frei0r.ising0r,frei0r.lissajous0r,frei0r.nois0r,frei0r.onecol0r,frei0r.partik0l,frei0r.plasma,frei0r.test_pat_B,frei0r.test_pat_C,frei0r.test_pat_G,frei0r.test_pat_I,frei0r.test_pat_L,frei0r.test_pat_R,xml,xml-string,xml-nogl,pgm,vorbis
+use_dark_breeze=true
+widgetstyle=Default
+
+[version]
+version=20.12.0

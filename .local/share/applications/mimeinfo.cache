@@ -1,0 +1,18 @@
+[MIME Cache]
+application/rdf+xml=firefoxDeveloperEdition.desktop;
+application/rss+xml=firefoxDeveloperEdition.desktop;
+application/x-kite=kite-copilot.desktop;
+application/x-xpinstall=firefoxDeveloperEdition.desktop;
+application/xhtml+xml=firefoxDeveloperEdition.desktop;
+application/xml=firefoxDeveloperEdition.desktop;
+image/gif=firefoxDeveloperEdition.desktop;
+image/jpeg=firefoxDeveloperEdition.desktop;
+image/png=firefoxDeveloperEdition.desktop;
+text/html=firefoxDeveloperEdition.desktop;
+text/xml=firefoxDeveloperEdition.desktop;
+video/webm=firefoxDeveloperEdition.desktop;
+x-scheme-handler/chrome=firefoxDeveloperEdition.desktop;
+x-scheme-handler/ftp=firefoxDeveloperEdition.desktop;
+x-scheme-handler/http=firefoxDeveloperEdition.desktop;
+x-scheme-handler/https=firefoxDeveloperEdition.desktop;
+x-scheme-handler/kite=kite-copilot.desktop;

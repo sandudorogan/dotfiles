@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Import system colors:
+. ~/.cache/wal/colors.sh
+
+TEMP=$(sensors | awk '/^Package/ {printf "%d°C", $4}')
+echo $TEMP
+echo
+
+case "$BLOCK_BUTTON" in
+    1) notify-send "Temperature module" "\- Shows CPU temperature
+- Right click to see more details
+- Middle click to open bpytop"
+        ;;
+    2) "$TERMINAL" -x "bpytop"
+        ;;
+    3) notify-send "Temperature:" "$TEMP"
+        ;;
+    6) "$TERMINAL" -x "$EDITOR" "$0"
+        ;;
+esac
+
+if (( $(echo "$TEMP < 50" | sed 's/°C//; s/+//' | bc -l) )); then 
+    echo "$color7"
+elif (( $(echo "$TEMP < 75" | sed 's/°C//; s/+//' | bc -l) )); then
+    echo "$color8"
+else
+    echo "$color9"
+fi

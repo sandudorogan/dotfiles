@@ -1,0 +1,30 @@
+#!/usr/bin/env zsh
+
+# Import system colors:
+. ~/.cache/wal/colors.sh
+
+case "$BLOCK_BUTTON" in
+    1) notify-send "RAM Module" "\- Shows RAM usage.
+- Middle click to open bpytop
+- Right click to show processes that use the most RAM "
+        ;;
+    2) "$TERMINAL" -e "bpytop"
+        ;;
+    3) notify-send "RAM hogs:" "$(ps -eo pmem,pcpu,comm,pid --sort -rss | head)"
+        ;;
+    6) "$TERMINAL" -e "$EDITOR $0"
+        ;;
+esac
+
+
+echo $(free -h | awk '/Mem/ {print $3 "/" $2}' | sed 's/,/\./')
+echo
+
+USAGE=$(free | awk '/Mem/ {print $3 " / " $2}' | bc -l)
+if (( $(echo "$USAGE < 0.6" | bc -l) )); then 
+    echo "$color7"
+elif (( $(echo "$USAGE < 0.85" | bc -l) )); then
+    echo "$color8"
+else
+    echo "$color9"
+fi

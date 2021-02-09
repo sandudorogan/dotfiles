@@ -1,0 +1,53 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+# [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	yt="youtube-dl --add-metadata -ic" \
+	yta="yt -x -f bestaudio/best" \
+	ffmpeg="ffmpeg -hide_banner" \
+	config="/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+    ag="sudo apt-get" \
+	g="git" \
+	sshp="ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23" \
+	trem="transmission-remote" \
+	YT="youtube-viewer" \
+	sdn="sudo shutdown -h now" \
+	z="zathura"
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	# xi="sudo xbps-install" \
+	# xr="sudo xbps-remove -R" \
+	# xq="xbps-query" \
+    r="ranger" \
+
+# Commands that need command line arguments
+alias \
+    c="calcurse -D .local/share/calcurse -C .config/calcurse"
+
+alias \
+	magit="vim -c MagitOnly" \
+	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+
+alias zshconfig="$EDITOR $ZDOTDIR/.zshrc"
+alias ohmyzsh="r $ZSH"

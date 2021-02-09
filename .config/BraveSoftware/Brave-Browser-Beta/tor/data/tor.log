@@ -1,0 +1,37 @@
+Jan 11 09:44:23.000 [notice] Tor 0.4.4.6 opening new log file.
+Jan 11 09:44:23.522 [notice] Tor 0.4.4.6 running on Linux with Libevent 2.1.11-stable, OpenSSL 1.0.2u, Zlib 1.2.11, Liblzma N/A, and Libzstd N/A.
+Jan 11 09:44:23.522 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jan 11 09:44:23.522 [notice] Configuration file "/nonexistent" not present, using reasonable defaults.
+Jan 11 09:44:23.525 [notice] Opening Socks listener on 127.0.0.1:0
+Jan 11 09:44:23.525 [notice] Socks listener listening on port 41409.
+Jan 11 09:44:23.525 [notice] Opened Socks listener on 127.0.0.1:41409
+Jan 11 09:44:23.525 [notice] Opening Control listener on 127.0.0.1:0
+Jan 11 09:44:23.525 [notice] Control listener listening on port 46171.
+Jan 11 09:44:23.525 [notice] Opened Control listener on 127.0.0.1:46171
+Jan 11 09:44:23.000 [notice] Bootstrapped 0% (starting): Starting
+Jan 11 09:44:23.000 [notice] Starting with guard context "default"
+Jan 11 09:44:23.000 [notice] New control connection opened from 127.0.0.1.
+Jan 11 09:44:24.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Jan 11 09:44:25.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Jan 11 09:44:27.000 [warn] Problem bootstrapping. Stuck at 10% (conn_done): Connected to a relay. (No route to host; NOROUTE; count 1; recommendation warn; host B291D30517D23299AD7CEE3E60DFE60D0E3A4664 at 136.243.214.137:443)
+Jan 11 09:44:27.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Jan 11 09:44:27.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Jan 11 09:44:27.000 [notice] Bootstrapped 20% (onehop_create): Establishing an encrypted directory connection
+Jan 11 09:44:27.000 [notice] Bootstrapped 25% (requesting_status): Asking for networkstatus consensus
+Jan 11 09:44:28.000 [notice] Bootstrapped 30% (loading_status): Loading networkstatus consensus
+Jan 11 09:44:28.000 [notice] Bootstrapped 45% (requesting_descriptors): Asking for relay descriptors
+Jan 11 09:44:28.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 24/7098, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of exit bw = 0% of path bw.)
+Jan 11 09:44:28.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 24/7098, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of exit bw = 0% of path bw.)
+Jan 11 09:44:28.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 24/7098, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of exit bw = 0% of path bw.)
+Jan 11 09:44:28.000 [notice] Bootstrapped 50% (loading_descriptors): Loading relay descriptors
+Jan 11 09:44:29.000 [notice] Bootstrapped 55% (loading_descriptors): Loading relay descriptors
+Jan 11 09:44:29.000 [notice] Bootstrapped 60% (loading_descriptors): Loading relay descriptors
+Jan 11 09:44:29.000 [notice] Bootstrapped 68% (loading_descriptors): Loading relay descriptors
+Jan 11 09:44:29.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Jan 11 09:44:30.000 [notice] Bootstrapped 80% (ap_conn): Connecting to a relay to build circuits
+Jan 11 09:44:30.000 [notice] Bootstrapped 85% (ap_conn_done): Connected to a relay to build circuits
+Jan 11 09:44:30.000 [notice] Bootstrapped 89% (ap_handshake): Finishing handshake with a relay to build circuits
+Jan 11 09:44:30.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Jan 11 09:44:30.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Jan 11 09:44:31.000 [notice] Bootstrapped 100% (done): Done
+Jan 11 09:48:36.000 [notice] Catching signal TERM, exiting cleanly.
