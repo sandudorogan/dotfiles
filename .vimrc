@@ -80,10 +80,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'mg979/vim-visual-multi', {'branch': 'master'}
     Plug 'preservim/nerdcommenter'
     Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
     Plug 'chrisbra/Colorizer'
     Plug 'tpope/vim-surround'
     Plug 'dylanaraps/wal.vim'
+    Plug 'tpope/vim-fugitive'
 
     Plug 'preservim/nerdtree'
     Plug 'ryanoasis/vim-devicons'
@@ -146,10 +149,11 @@ let g:lightline = {
       \ 'colorscheme': 'seoul256',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified', 'kitestatus' ] ]
+      \             [ 'readonly', 'filename', 'modified', 'kitestatus' , 'gitstatus'] ]
       \ },
       \ 'component_function': {
       \   'kitestatus': 'kite#statusline',
+      \   'gitstatus': 'FugitiveStatusline'
       \ },
       \ }
 
@@ -162,6 +166,10 @@ let g:lightline = {
 " Enable vim-iced's default key mapping
 " This is recommended for newbies
 let g:iced_enable_default_key_mappings = v:true
+let g:iced#clojuredocs#use_clj_docs_on_cljs = v:true
+
+" Git gutter update time
+set updatetime=100
 
 " Replace all is aliased to S.
 	nnoremap S :%s//g<Left><Left>
@@ -196,3 +204,6 @@ function! ToggleHiddenAll()
     endif
 endfunction
 nnoremap <leader>h :call ToggleHiddenAll()<CR>
+
+" FZF:
+map <C-p> :Files<CR>
