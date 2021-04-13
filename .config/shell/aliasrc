@@ -26,6 +26,8 @@ alias \
 	ka="killall" \
     ag="sudo apt-get" \
 	g="git" \
+	grepcljs="grep -rnT --include=\"*.cljs\"" \
+	greppy="grep -rnT --include=\"*.py\"" \
 	sshp="ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23" \
 	trem="transmission-remote" \
 	YT="youtube-viewer" \

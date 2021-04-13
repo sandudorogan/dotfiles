@@ -11,21 +11,37 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0/Base
+~MSle0~/git
 
 # Last Substitute Search Pattern:
-~MSle0~&\\n
+~MSle0&\\n
 
 # Last Substitute String:
 $\r
 
 # Command Line History (newest to oldest):
-:wq
-|2,0,1612855430,,"wq"
-:w
-|2,0,1612855422,,"w"
 :q
-|2,0,1612444729,,"q"
+|2,0,1618299596,,"q"
+:wq
+|2,0,1618298755,,"wq"
+:ew
+|2,0,1617970488,,"ew"
+:w !sudo tee %
+|2,0,1617454946,,"w !sudo tee %"
+:w
+|2,0,1617454767,,"w"
+:w!
+|2,0,1617454135,,"w!"
+:wq!
+|2,0,1617454130,,"wq!"
+:wM
+|2,0,1616768040,,"wM"
+:buf5
+|2,0,1613053901,,"buf5"
+:buffers
+|2,0,1613053891,,"buffers"
+:set cc=80
+|2,0,1613053408,,"set cc=80"
 :%s/\\n/\r/g
 |2,0,1612444724,,"%s/\\\\n/\\r/g"
 :%s/"//g
@@ -48,16 +64,12 @@ $\r
 |2,0,1611918207,,"%s/XDIUhgf w/g"
 :registers
 |2,0,1611909313,,"registers"
-:w !sudo tee %
-|2,0,1611910469,,"w !sudo tee %"
 :setfiletype bash
 |2,0,1611910371,,"setfiletype bash"
 :set fileformat=bash
 |2,0,1611910363,,"set fileformat=bash"
 :.q
 |2,0,1611908860,,".q"
-:w!
-|2,0,1611906931,,"w!"
 :q:q
 |2,0,1611906453,,"q:q"
 :.,.+3w
@@ -82,8 +94,6 @@ $\r
 |2,0,1611501858,,"h kite"
 :e .local/share/applications/firefoxDeveloperEdition.desktop
 |2,0,1611218916,,"e .local/share/applications/firefoxDeveloperEdition.desktop"
-:ew
-|2,0,1611130096,,"ew"
 :set ft=i3config
 |2,0,1610963897,,"set ft=i3config"
 :%s//g
@@ -106,8 +116,6 @@ $\r
 |2,0,1610307782,,"qw"
 :CtrlP .local/
 |2,0,1609872754,,"CtrlP .local/"
-:buffers
-|2,0,1609872736,,"buffers"
 :19i
 |2,0,1609864543,,"19i"
 :CtrlP .local
@@ -176,6 +184,30 @@ $\r
 |2,0,1609276957,,"'<,'>norm $ ."
 
 # Search String History (newest to oldest):
+?/git
+|2,1,1618298596,47,"git"
+?/logo-white
+|2,1,1617970980,47,"logo-white"
+?/logo-wite
+|2,1,1617970977,47,"logo-wite"
+?/svg
+|2,1,1617693944,47,"svg"
+?/SVG
+|2,1,1617693627,47,"SVG"
+?/dist
+|2,1,1617692995,47,"dist"
+?/\.json
+|2,1,1617692689,47,"\\.json"
+?/.json
+|2,1,1617692678,47,".json"
+?/resize
+|2,1,1617607930,47,"resize"
+?/grep
+|2,1,1616660107,47,"grep"
+?/screen
+|2,1,1614244595,47,"screen"
+?/mod+m
+|2,1,1614153993,47,"mod+m"
 ? \\n
 |2,1,1612444724,,"\\\\n"
 ? "
@@ -276,8 +308,6 @@ $\r
 |2,1,1609589834,47,"synd"
 ?/ls
 |2,1,1609677071,47,"ls"
-?/grep
-|2,1,1609677057,47,"grep"
 ?/sdn
 |2,1,1609676974,47,"sdn"
 ?/ccat
@@ -331,61 +361,59 @@ $\r
 
 # Registers:
 ""0	CHAR	0
-	1080
-|3,1,0,0,1,0,1612855421,"1080"
+	https://transform.nws.ai/https%3A%2F%2Fcdn.thenewsroom.io%2Fplatform%2Fstory_media%2F1288798056%2FSLOWEAR-logo-white_xqxBWT2.svg/compress/
+|3,1,0,0,1,0,1617970994,"https://transform.nws.ai/https%3A%2F%2Fcdn.thenewsroom.io%2Fplatform%2Fstory_media%2F1288798056%2FSLOWEAR-logo-white_xqxBWT2.svg/compress/"
 "1	LINE	0
-		sshp="ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23" \
-|3,0,1,1,1,0,1612094482,"	sshp=\"ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23\" \\"
+	    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+|3,0,1,1,1,0,1616768309,"    xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\""
 "2	LINE	0
-	    -device usb-host,vendorid=0x05ac,productid=0x12ab \
-|3,0,2,1,1,0,1611924740,"    -device usb-host,vendorid=0x05ac,productid=0x12ab \\"
+	    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+|3,0,2,1,1,0,1616768019,"    xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\""
 "3	LINE	0
-	
-	weiurlaskdjnf ;lasikjuf pqweufrlamnvf[o]iu r[ isureyft wpoeijfl;kzDS fzpk;dJfhg wer[98yf s] ]
-	if jkzldnflxkzjDhfpiuoe
-	 fjkjx hjvjkx;ldhf[w]
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urfe0aofjdZL:Kj z;,]]]]]]]
-	rfPZSO fjxz;e9ufrlZ:XKjf ,ufrLZkjcv,sdiruufgt m
-|3,0,3,1,14,0,1611918206,"","weiurlaskdjnf ;lasikjuf pqweufrlamnvf[o]iu r[ isureyft wpoeijfl;kzDS fzpk;dJfhg wer[98yf s] ]","if jkzldnflxkzjDhfpiuoe"," fjkjx hjvjkx;ldhf[w]"," urf["," urf["," urf["," urf["," urf["," urf["," urf["," urf["," urfe0aofjdZL:Kj z;,]]]]]]]","rfPZSO fjxz;e9ufrlZ:XKjf ,ufrLZkjcv,sdiruufgt m"
+	<svg version="1.1" viewBox="0 0 16 16" x="0px"
+	    xmlns="http://www.w3.org/2000/svg"
+	    xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+	    <title>border-solid</title>
+	    <desc>Created with Sketch.</desc>
+	    <g fill="rgba(255, 221, 240, 1)" fill-rule="evenodd"
+	        stroke="none" stroke-width="1">
+	        <g fill="rgba(255, 221, 240, 1)">
+	            <rect height="3" sketch:type="MSShapeGroup" width="16" x="0" y="6.5" />
+	        </g>
+	    </g>
+	</svg>
+|3,0,3,1,12,0,1616768004,"<svg version=\"1.1\" viewBox=\"0 0 16 16\" x=\"0px\"","    xmlns=\"http://www.w3.org/2000/svg\"","    xmlns:xlink=\"http://www.w3.org/1999/xlink\" y=\"0px\">","    <title>border-solid</title>","    <desc>Created with Sketch.</desc>","    <g fill=\"rgba(255, 221, 240, 1)\" fill-rule=\"evenodd\"","        stroke=\"none\" stroke-width=\"1\">","        <g fill=\"rgba(255, 221, 240, 1)\">",>95
+|<"            <rect height=\"3\" sketch:type=\"MSShapeGroup\" width=\"16\" x=\"0\" y=\"6.5\" />","        </g>","    </g>","</svg>"
 "4	LINE	0
-	
-	weiurlaskdjnf ;lasikjuf pqweufrlamnvf[o]iu r[ isureyft wpoeijfl;kzDS fzpk;dJfhg wer[98yf s] ]
-	if jkzldnflxkzjDhfpiuoe
-	 fjkjx hjvjkx;ldhf[w]
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urf[
-	 urfe0aofjdZL:Kj z;,]]]]]]]
-	rfPZSO fjxz;e9ufrlZ:XKjf ,ufrLZkjcv,sdiruufgt m
-|3,0,4,1,14,0,1611918206,"","weiurlaskdjnf ;lasikjuf pqweufrlamnvf[o]iu r[ isureyft wpoeijfl;kzDS fzpk;dJfhg wer[98yf s] ]","if jkzldnflxkzjDhfpiuoe"," fjkjx hjvjkx;ldhf[w]"," urf["," urf["," urf["," urf["," urf["," urf["," urf["," urf["," urfe0aofjdZL:Kj z;,]]]]]]]","rfPZSO fjxz;e9ufrlZ:XKjf ,ufrLZkjcv,sdiruufgt m"
+	<svg version="1.1" viewBox="0 0 16 16" x="0px"
+	    xmlns="http://www.w3.org/2000/svg"
+	    xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
+	    <title>border-solid</title>
+	    <desc>Created with Sketch.</desc>
+	    <g fill="rgba(255, 221, 240, 1)" fill-rule="evenodd"
+	        stroke="none" stroke-width="1">
+	        <g fill="rgba(255, 221, 240, 1)">
+	            <rect height="3" sketch:type="MSShapeGroup" width="16" x="0" y="6.5" />
+	        </g>
+	    </g>
+	</svg>
+|3,0,4,1,12,0,1616763951,"<svg version=\"1.1\" viewBox=\"0 0 16 16\" x=\"0px\"","    xmlns=\"http://www.w3.org/2000/svg\"","    xmlns:xlink=\"http://www.w3.org/1999/xlink\" y=\"0px\">","    <title>border-solid</title>","    <desc>Created with Sketch.</desc>","    <g fill=\"rgba(255, 221, 240, 1)\" fill-rule=\"evenodd\"","        stroke=\"none\" stroke-width=\"1\">","        <g fill=\"rgba(255, 221, 240, 1)\">",>95
+|<"            <rect height=\"3\" sketch:type=\"MSShapeGroup\" width=\"16\" x=\"0\" y=\"6.5\" />","        </g>","    </g>","</svg>"
 "5	LINE	0
-	    -net tap -net nic \
-|3,0,5,1,1,0,1611911722,"    -net tap -net nic \\"
+	        # -i $DISPLAY+1920,0 \
+|3,0,5,1,1,0,1615458831,"        # -i $DISPLAY+1920,0 \\"
 "6	LINE	0
-	    -netdev tap,id=net0 \
-|3,0,6,1,1,0,1611911147,"    -netdev tap,id=net0 \\"
+		grepcljs="grep -r --include=*.cljs" \
+|3,0,6,1,1,0,1613464101,"	grepcljs=\"grep -r --include=*.cljs\" \\"
 "7	LINE	0
-	    -net nic
-|3,0,7,1,1,0,1611910722,"    -net nic"
+	                      
+|3,0,7,1,1,0,1613053975,"                      "
 "8	LINE	0
-	    -device vmxnet3,netdev=net0,id=net0 \
-|3,0,8,1,1,0,1611910683,"    -device vmxnet3,netdev=net0,id=net0 \\"
+		sshp="ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23" \
+|3,0,8,1,1,0,1612094482,"	sshp=\"ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23\" \\"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1611910461,""
+	    -device usb-host,vendorid=0x05ac,productid=0x12ab \
+|3,0,9,1,1,0,1611924740,"    -device usb-host,vendorid=0x05ac,productid=0x12ab \\"
 "a	CHAR	0
 	$USAGE < 50
 |3,0,10,0,1,0,1609671429,"$USAGE < 50"
@@ -420,360 +448,343 @@ $\r
 	$
 |3,0,34,0,1,0,1609671572,"$"
 "-	CHAR	0
-	' '
-|3,0,36,0,1,0,1612855421,"' '"
+	rw,umask=0077
+|3,0,36,0,1,0,1617454884,"rw,umask=0077"
 
 # global variables:
 
 # File marks:
-'0  15  8  ~/.config/shell/aliasrc
-|4,48,15,8,1612855430,"~/.config/shell/aliasrc"
-'1  12  23  ~/.local/bin/trecording
-|4,49,12,23,1612177429,"~/.local/bin/trecording"
-'2  12  19  ~/.local/bin/trecording
-|4,50,12,19,1612177013,"~/.local/bin/trecording"
-'3  12  25  ~/.local/bin/trecording
-|4,51,12,25,1612176949,"~/.local/bin/trecording"
-'4  12  25  ~/.local/bin/trecording
-|4,52,12,25,1612176949,"~/.local/bin/trecording"
-'5  288  0  ~/.config/i3/config
-|4,53,288,0,1612176715,"~/.config/i3/config"
-'6  288  0  ~/.config/i3/config
-|4,54,288,0,1612176564,"~/.config/i3/config"
-'7  3  0  ~/workdir/personal_website/backend/cv/views.py
-|4,55,3,0,1612129363,"~/workdir/personal_website/backend/cv/views.py"
-'8  29  1  ~/.config/shell/aliasrc
-|4,56,29,1,1612094486,"~/.config/shell/aliasrc"
-'9  28  1  ~/.config/shell/aliasrc
-|4,57,28,1,1612094486,"~/.config/shell/aliasrc"
+'0  1  0  ~/.config/dconf/user
+|4,48,1,0,1618299596,"~/.config/dconf/user"
+'1  1  0  ~/.config/kdenliverc
+|4,49,1,0,1618299522,"~/.config/kdenliverc"
+'2  1  12  ~/.gitignore
+|4,50,1,12,1618298755,"~/.gitignore"
+'3  1  0  ~/.gitignore
+|4,51,1,0,1618298720,"~/.gitignore"
+'4  15  1  ~/.config/shell/aliasrc
+|4,52,15,1,1618298645,"~/.config/shell/aliasrc"
+'5  15  18  ~/.config/shell/aliasrc
+|4,53,15,18,1618298628,"~/.config/shell/aliasrc"
+'6  1  0  ~/Pictures/circle.svg
+|4,54,1,0,1617973589,"~/Pictures/circle.svg"
+'7  10  51  ~/tests/nws/second_ad.html
+|4,55,10,51,1617971819,"~/tests/nws/second_ad.html"
+'8  48  0  ~/tests/nws/second_ad.html
+|4,56,48,0,1617970494,"~/tests/nws/second_ad.html"
+'9  48  0  ~/tests/nws/second_ad.html
+|4,57,48,0,1617970494,"~/tests/nws/second_ad.html"
 
 # Jumplist (newest first):
--'  15  8  ~/.config/shell/aliasrc
-|4,39,15,8,1612855430,"~/.config/shell/aliasrc"
+-'  1  0  ~/.config/dconf/user
+|4,39,1,0,1618299596,"~/.config/dconf/user"
+-'  1  0  ~/.config/kdenliverc
+|4,39,1,0,1618299522,"~/.config/kdenliverc"
+-'  1  0  ~/.config/kdenliverc
+|4,39,1,0,1618299522,"~/.config/kdenliverc"
+-'  1  12  ~/.gitignore
+|4,39,1,12,1618298755,"~/.gitignore"
+-'  1  12  ~/.gitignore
+|4,39,1,12,1618298755,"~/.gitignore"
+-'  1  12  ~/.gitignore
+|4,39,1,12,1618298755,"~/.gitignore"
+-'  1  12  ~/.gitignore
+|4,39,1,12,1618298755,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1618298720,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1618298720,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1618298720,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1618298720,"~/.gitignore"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  1  ~/.config/shell/aliasrc
+|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  15  18  ~/.config/shell/aliasrc
+|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
+-'  49  17  ~/.config/shell/aliasrc
+|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
 -'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1612855388,"~/.config/shell/aliasrc"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
--'  12  23  ~/.local/bin/trecording
-|4,39,12,23,1612177429,"~/.local/bin/trecording"
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  29  1  ~/.config/shell/aliasrc
+|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
 
 # History of marks within files (newest to oldest):
 
+> ~/.config/dconf/user
+	*	1618299594	0
+	"	1	0
+
+> ~/.config/kdenliverc
+	*	1618299512	0
+	"	1	0
+
+> ~/.gitignore
+	*	1618298754	0
+	"	1	12
+	^	1	13
+	.	1	12
+	+	1	12
+
 > ~/.config/shell/aliasrc
-	*	1612855423	0
-	"	15	8
-	^	15	10
-	.	15	8
+	*	1618298634	0
+	"	15	1
+	^	29	20
+	.	29	19
 	+	4	0
-	+	54	0
-	+	51	0
-	+	54	0
-	+	52	0
-	+	54	0
+	+	56	0
 	+	53	0
-	+	52	25
+	+	56	0
 	+	54	0
-	+	53	0
-	+	52	0
-	+	53	20
+	+	56	0
+	+	55	0
+	+	54	25
+	+	56	0
+	+	55	0
+	+	54	0
+	+	55	20
 	+	12	34
-	+	54	0
+	+	56	0
 	+	22	0
-	+	54	0
-	+	37	0
+	+	56	0
 	+	39	0
-	+	40	22
+	+	41	0
+	+	42	22
+	+	56	0
+	+	42	16
 	+	54	0
-	+	40	16
-	+	52	0
-	+	47	8
-	+	40	0
+	+	49	8
+	+	42	0
 	+	27	0
-	+	41	0
-	+	33	0
-	+	44	0
-	+	45	0
-	+	44	31
+	+	43	0
+	+	35	0
+	+	46	0
+	+	47	0
+	+	46	31
 	+	12	15
-	+	41	0
-	+	37	0
-	+	29	0
+	+	43	0
+	+	39	0
+	+	31	0
 	+	15	8
+	+	39	0
+	+	29	37
+	+	30	17
+	+	29	19
 
-> ~/ControlP
-	*	1612444185	0
-	"	10	0
-	.	2	0
-	+	1	0
-	+	2	0
+> ~/Pictures/circle.svg
+	*	1617973549	0
+	"	1	0
 
-> ~/.local/bin/trecording
-	*	1612177428	0
-	"	12	23
-	^	12	24
-	.	12	23
-	+	1	13
-	+	5	0
-	+	6	0
-	+	5	12
-	+	6	94
-	+	10	0
-	+	6	35
-	+	10	32
-	+	9	0
-	+	10	19
-	+	8	0
-	+	15	34
-	+	5	34
-	+	6	0
-	+	16	0
-	+	5	0
-	+	16	0
-	+	17	1
-	+	7	11
-	+	15	0
-	+	12	0
-	+	15	0
-	+	12	21
-	+	12	0
-	+	10	20
-	+	5	8
-	+	15	0
-	+	15	16
-	+	5	9
-	+	5	0
-	+	5	56
-	+	15	22
-	+	17	0
-	+	15	19
-	+	15	87
-	+	15	0
-	+	17	0
-	+	13	22
-	+	15	8
-	+	5	0
-	+	15	0
-	+	15	16
-	+	5	0
-	+	6	22
-	+	15	0
-	+	13	23
-	+	14	16
-	+	6	4
-	+	14	8
-	+	5	0
-	+	5	15
-	+	3	14
-	+	5	0
-	+	4	0
-	+	14	73
-	+	12	23
+> ~/tests/nws/second_ad.html
+	*	1617971817	0
+	"	10	51
+	^	48	7
+	.	48	6
+	+	48	6
+
+> ~/tests/nws/first_ad.html
+	*	1617970488	0
+	"	42	6
+	^	42	7
+	.	42	6
+	+	42	6
+
+> ~/workdir/amphtml/validator/build.py
+	*	1617694193	0
+	"	604	2
+	^	604	14
+	.	604	13
+	+	604	13
+
+> ~/workdir/amphtml/validator/WORKSPACE
+	*	1617694099	0
+	"	1	0
+
+> ~/workdir/amphtml/validator/package.json
+	*	1617694069	0
+	"	19	0
+
+> ~/workdir/amphtml/validator/dist/validator-generated.js
+	*	1617694000	0
+	"	2484	0
+
+> ~/workdir/amphtml/validator/dist/validator-generated.json
+	*	1617693839	0
+	"	5646	4
 
 > ~/.config/i3/config
-	*	1612176705	0
-	"	288	0
-	^	285	0
-	.	285	0
-	+	76	0
-	+	70	0
-	+	256	0
-	+	286	0
-	+	196	37
-	+	256	0
-	+	411	0
-	+	240	16
+	*	1617607935	0
+	"	213	8
+	^	216	18
+	.	284	0
 	+	289	16
 	+	288	0
 	+	196	37
@@ -866,7 +877,347 @@ $\r
 	+	277	24
 	+	286	0
 	+	285	0
+	+	213	16
+	+	214	16
+	+	215	16
+	+	216	17
+	+	123	0
+	+	124	17
+	+	125	17
+	+	284	0
 	a	246	25
+
+> /etc/fstab
+	*	1617604993	0
+	"	13	64
+	^	13	65
+	.	14	0
+	+	13	0
+	+	14	0
+	+	13	0
+	+	14	0
+
+> ~/workdir/story-builder/bin/deploy
+	*	1617359061	0
+	"	55	4
+
+> ~/.config/shell/profile
+	*	1617355983	0
+	"	172	0
+	^	160	0
+	.	160	0
+	+	14	15
+	+	15	30
+	+	172	0
+	+	161	46
+	+	161	0
+	+	169	0
+	+	48	0
+	+	44	0
+	+	47	21
+	+	18	0
+	+	44	0
+	+	16	28
+	+	47	0
+	+	76	0
+	+	53	0
+	+	59	0
+	+	53	0
+	+	59	0
+	+	58	0
+	+	76	0
+	+	16	22
+	+	44	5
+	+	43	0
+	+	44	80
+	+	44	0
+	+	158	0
+	+	157	0
+	+	160	0
+
+> /tmp/clojure-917765222675588454.edn
+	*	1617352679	0
+	"	1	0
+
+> ~/Pictures/clean_svg_mba.svg
+	*	1616768358	0
+	"	8	28
+	.	8	28
+	+	12	38
+	+	12	33
+	+	12	0
+	+	1	0
+	+	1	57
+	+	1	40
+	+	1	5
+	+	2	0
+	+	3	0
+	+	6	57
+	+	7	40
+	+	8	28
+
+> ~/.config/x11/xprofile
+	*	1616660067	0
+	"	15	0
+	^	14	48
+	.	14	0
+	+	11	0
+	+	8	0
+	+	6	0
+	+	9	0
+	+	11	0
+	+	14	56
+	+	14	0
+
+> ~/workdir/backend/NERD_tree_1
+	*	1616660066	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/.local/bin/trecording
+	*	1615458835	0
+	"	19	8
+	^	13	21
+	.	19	0
+	+	1	13
+	+	6	0
+	+	7	0
+	+	6	12
+	+	7	94
+	+	11	0
+	+	7	35
+	+	11	32
+	+	10	0
+	+	11	19
+	+	9	0
+	+	16	34
+	+	6	34
+	+	7	0
+	+	17	0
+	+	6	0
+	+	17	0
+	+	18	1
+	+	8	11
+	+	16	0
+	+	13	0
+	+	16	0
+	+	13	21
+	+	13	0
+	+	11	20
+	+	6	8
+	+	16	0
+	+	16	16
+	+	6	9
+	+	6	0
+	+	6	56
+	+	16	22
+	+	18	0
+	+	16	19
+	+	16	87
+	+	16	0
+	+	18	0
+	+	14	22
+	+	16	8
+	+	6	0
+	+	16	0
+	+	16	16
+	+	6	0
+	+	7	22
+	+	16	0
+	+	14	23
+	+	15	16
+	+	7	4
+	+	15	8
+	+	6	0
+	+	6	15
+	+	4	14
+	+	6	0
+	+	5	0
+	+	15	73
+	+	13	23
+	+	4	48
+	+	3	32
+	+	4	33
+	+	14	0
+	+	13	0
+	+	19	0
+
+> ~/.config/screenlayout/default.sh
+	*	1614247218	0
+	"	2	123
+	^	2	124
+	.	2	123
+	+	2	123
+	+	2	0
+	+	2	123
+
+> ~/.vimrc
+	*	1613085726	0
+	"	95	10
+	^	149	69
+	.	149	68
+	+	106	0
+	+	104	0
+	+	106	0
+	+	104	0
+	+	106	0
+	+	109	32
+	+	108	17
+	+	111	0
+	+	17	21
+	+	19	0
+	+	20	0
+	+	16	42
+	+	17	0
+	+	20	0
+	+	18	25
+	+	49	0
+	+	51	0
+	+	50	19
+	+	54	0
+	+	60	0
+	+	55	0
+	+	56	0
+	+	103	0
+	+	104	0
+	+	106	0
+	+	103	0
+	+	104	0
+	+	106	0
+	+	165	0
+	+	181	0
+	+	1	0
+	+	2	0
+	+	21	0
+	+	5	0
+	+	9	0
+	+	8	0
+	+	7	0
+	+	6	0
+	+	10	0
+	+	12	0
+	+	13	0
+	+	15	0
+	+	16	0
+	+	133	0
+	+	156	0
+	+	189	0
+	+	166	0
+	+	168	0
+	+	169	0
+	+	171	0
+	+	181	0
+	+	172	0
+	+	180	0
+	+	176	0
+	+	178	0
+	+	176	42
+	+	93	0
+	+	11	0
+	+	14	0
+	+	58	21
+	+	59	15
+	+	93	0
+	+	74	0
+	+	93	0
+	+	103	0
+	+	104	0
+	+	74	0
+	+	92	0
+	+	103	0
+	+	104	0
+	+	177	36
+	+	82	0
+	+	87	0
+	+	88	0
+	+	87	0
+	+	78	0
+	+	82	0
+	+	77	0
+	+	79	12
+	+	78	0
+	+	154	0
+	+	147	5
+	+	149	68
+	+	154	31
+	+	154	41
+	+	154	9
+	+	149	58
+	+	154	0
+	+	149	46
+	+	153	0
+	+	149	44
+	+	151	0
+	+	153	0
+	+	152	6
+	+	149	6
+	+	153	36
+	+	149	68
+	+	152	40
+	+	153	0
+	+	149	68
+
+> ~/workdir/story-builder/src/story_builder/views/story.cljs
+	*	1613076912	0
+	"	1168	11
+
+> ~/workdir/story-builder/NERD_tree_1
+	*	1613076763	0
+	"	49	0
+	.	1	0
+	+	1	0
+
+> ~/workdir/story-builder/buildspec.yml
+	*	1613056617	0
+	"	1	0
+
+> ~/workdir/story-builder/src/story_builder/views/uploads.cljs
+	*	1613055846	0
+	"	490	58
+	.	352	0
+	+	2	0
+	+	352	0
+
+> ~/workdir/story-builder/src/story_builder/events/uploader.cljs
+	*	1613053889	0
+	"	31	0
+
+> ~/workdir/story-builder/ControlP
+	*	1613053876	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/workdir/story-builder/config.edn
+	*	1613053820	0
+	"	2	0
+	^	1	2
+	.	2	0
+	+	1	1
+	+	2	0
+
+> ~/workdir/backend/app/charge/api/uploader.py
+	*	1613053605	0
+	"	174	0
+
+> ~/.ideavimrc
+	*	1612866820	0
+	"	4	8
+	^	4	9
+	.	4	8
+	+	4	8
+
+> ~/rm
+	*	1612860055	0
+	"	1	0
+
+> ~/ControlP
+	*	1612444185	0
+	"	10	0
+	.	2	0
+	+	1	0
+	+	2	0
 
 > ~/workdir/personal_website/backend/cv/views.py
 	*	1612129363	0
@@ -1113,112 +1464,6 @@ $\r
 	*	1611529202	0
 	"	71	0
 
-> ~/.vimrc
-	*	1611515994	0
-	"	155	0
-	^	149	69
-	.	149	68
-	+	106	0
-	+	104	0
-	+	106	0
-	+	104	0
-	+	106	0
-	+	109	32
-	+	108	17
-	+	111	0
-	+	17	21
-	+	19	0
-	+	20	0
-	+	16	42
-	+	17	0
-	+	20	0
-	+	18	25
-	+	49	0
-	+	51	0
-	+	50	19
-	+	54	0
-	+	60	0
-	+	55	0
-	+	56	0
-	+	103	0
-	+	104	0
-	+	106	0
-	+	103	0
-	+	104	0
-	+	106	0
-	+	165	0
-	+	181	0
-	+	1	0
-	+	2	0
-	+	21	0
-	+	5	0
-	+	9	0
-	+	8	0
-	+	7	0
-	+	6	0
-	+	10	0
-	+	12	0
-	+	13	0
-	+	15	0
-	+	16	0
-	+	133	0
-	+	156	0
-	+	189	0
-	+	166	0
-	+	168	0
-	+	169	0
-	+	171	0
-	+	181	0
-	+	172	0
-	+	180	0
-	+	176	0
-	+	178	0
-	+	176	42
-	+	93	0
-	+	11	0
-	+	14	0
-	+	58	21
-	+	59	15
-	+	93	0
-	+	74	0
-	+	93	0
-	+	103	0
-	+	104	0
-	+	74	0
-	+	92	0
-	+	103	0
-	+	104	0
-	+	177	36
-	+	82	0
-	+	87	0
-	+	88	0
-	+	87	0
-	+	78	0
-	+	82	0
-	+	77	0
-	+	79	12
-	+	78	0
-	+	154	0
-	+	147	5
-	+	149	68
-	+	154	31
-	+	154	41
-	+	154	9
-	+	149	58
-	+	154	0
-	+	149	46
-	+	153	0
-	+	149	44
-	+	151	0
-	+	153	0
-	+	152	6
-	+	149	6
-	+	153	36
-	+	149	68
-	+	152	40
-	+	153	0
-	+	149	68
-
 > ~/out.json
 	*	1611500618	0
 	"	51	6
@@ -1364,19 +1609,6 @@ $\r
 	*	1611140349	0
 	"	4584	0
 
-> ~/.config/x11/xprofile
-	*	1611130098	0
-	"	15	0
-	^	14	48
-	.	14	0
-	+	11	0
-	+	8	0
-	+	6	0
-	+	9	0
-	+	11	0
-	+	14	56
-	+	14	0
-
 > ~/.config/x11/xinitrc
 	*	1611130074	0
 	"	9	0
@@ -1398,10 +1630,6 @@ $\r
 
 > ~/Pictures/svg-test/made-with-illustrator/made-with-ai.svg
 	*	1610983475	0
-	"	1	0
-
-> ~/Pictures/circle.svg
-	*	1610967360	0
 	"	1	0
 
 > ~/Pictures/green-arrow.svg
@@ -1467,42 +1695,6 @@ $\r
 	"	1098	90
 	.	1098	0
 	+	1098	0
-
-> ~/workdir/story-builder/NERD_tree_1
-	*	1610957741	0
-	"	40	0
-	.	1	0
-	+	1	0
-
-> ~/.config/shell/profile
-	*	1610638225	0
-	"	17	0
-	.	44	0
-	+	14	15
-	+	15	30
-	+	169	0
-	+	158	46
-	+	158	0
-	+	166	0
-	+	48	0
-	+	44	0
-	+	47	21
-	+	18	0
-	+	44	0
-	+	16	28
-	+	47	0
-	+	76	0
-	+	53	0
-	+	59	0
-	+	53	0
-	+	59	0
-	+	58	0
-	+	76	0
-	+	16	22
-	+	44	5
-	+	43	0
-	+	44	80
-	+	44	0
 
 > ~/.config/x11/xresources
 	*	1610638201	0
@@ -1586,459 +1778,3 @@ $\r
 > ~/.local/share/mimeapps.list
 	*	1610352236	0
 	"	1	0
-
-> ~/.screenlayout/default.sh
-	*	1610314338	0
-	"	1	0
-
-> ~/.important_data
-	*	1610314078	0
-	"	3	68
-	^	3	0
-	.	3	0
-	+	5	0
-	+	3	0
-
-> /tmp/calcurse-note.18KEnt
-	*	1610308022	0
-	"	1	0
-
-> ~/workdir/voidrice/.config/nvim/init.vim
-	*	1610307982	0
-	"	101	28
-
-> /tmp/calcurse-note.ISnfXz
-	*	1610307940	0
-	"	1	0
-
-> /tmp/calcurse-note.AQNI8B
-	*	1610307917	0
-	"	1	0
-
-> /tmp/calcurse-note.etxKE9
-	*	1610307834	0
-	"	2	0
-	^	2	0
-	.	2	0
-	+	2	0
-
-> /tmp/calcurse-note.MuzQ10
-	*	1610307785	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	2	0
-	+	1	0
-
-> /usr/share/vim/vim81/doc/options.txt
-	*	1610306957	0
-	"	7922	6
-
-> /tmp/calcurse-note.I8nWgJ
-	*	1610306196	0
-	"	1	11
-	^	1	12
-	.	1	12
-	+	1	12
-
-> ~/.config/zsh/.zshrc
-	*	1610305443	0
-	"	152	108
-	^	135	20
-	.	135	18
-	+	10	0
-	+	14	0
-	+	6	0
-	+	2	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	7	0
-	+	15	0
-	+	10	0
-	+	15	0
-	+	21	0
-	+	26	0
-	+	32	0
-	+	33	0
-	+	48	0
-	+	146	0
-	+	155	0
-	+	53	0
-	+	15	0
-	+	53	0
-	+	15	0
-	+	154	0
-	+	155	0
-	+	149	0
-	+	154	0
-	+	149	0
-	+	155	0
-	+	135	18
-
-> ~/.profile
-	*	1610304259	0
-	"	1	0
-	.	11	0
-	+	11	0
-
-> ~/.zprofile
-	*	1610304170	0
-	"	16	28
-	^	16	29
-	.	16	28
-	+	16	28
-
-> ~/.local/bin/ram_usage
-	*	1609873184	0
-	"	13	20
-	^	15	32
-	.	15	30
-	+	26	0
-	+	25	0
-	+	25	17
-	+	23	0
-	+	25	17
-	+	26	0
-	+	27	17
-	+	28	0
-	+	25	17
-	+	26	0
-	+	29	17
-	+	30	0
-	+	24	25
-	+	26	28
-	+	24	25
-	+	20	40
-	+	6	23
-	+	18	0
-	+	15	0
-	+	7	137
-	+	1	0
-	+	7	21
-	+	6	12
-	+	7	29
-	+	6	74
-	+	6	25
-	+	6	36
-	+	6	69
-	+	6	0
-	+	6	30
-	+	6	69
-	+	6	34
-	+	6	68
-	+	20	60
-	+	7	30
-	+	20	58
-	+	3	0
-	+	6	13
-	+	5	0
-	+	25	0
-	+	27	0
-	+	29	0
-	+	25	16
-	+	27	16
-	+	29	16
-	+	25	16
-	+	27	16
-	+	29	16
-	+	25	16
-	+	27	16
-	+	29	16
-	+	25	16
-	+	27	16
-	+	29	0
-	+	1	17
-	+	15	36
-	+	7	78
-	+	15	4
-	+	7	51
-	+	9	60
-	+	10	0
-	+	8	36
-	+	10	0
-	+	9	55
-	+	7	35
-	+	8	0
-	+	9	0
-	+	13	7
-	+	14	10
-	+	6	0
-	+	6	13
-	+	6	18
-	+	6	38
-	+	7	0
-	+	8	0
-	+	7	35
-	+	10	0
-	+	7	0
-	+	10	0
-	+	11	29
-	+	9	0
-	+	12	9
-	+	15	0
-	+	6	27
-	+	6	13
-	+	6	17
-	+	6	0
-	+	6	23
-	+	6	0
-	+	6	30
-	+	6	61
-	+	6	0
-	+	6	9
-	+	14	0
-	+	13	79
-	+	6	0
-	+	11	20
-	+	15	0
-	+	16	0
-	+	15	30
-
-> ~/.local/bin/temp_data
-	*	1609872941	0
-	"	16	9
-	^	16	10
-	.	16	9
-	+	1	0
-	+	6	44
-	+	21	0
-	+	22	15
-	+	24	17
-	+	24	25
-	+	24	43
-	+	22	0
-	+	23	0
-	+	22	7
-	+	24	43
-	+	23	0
-	+	22	0
-	+	23	0
-	+	22	46
-	+	24	51
-	+	22	40
-	+	24	42
-	+	22	23
-	+	6	0
-	+	7	0
-	+	6	44
-	+	6	0
-	+	3	0
-	+	5	0
-	+	23	17
-	+	25	16
-	+	27	16
-	+	23	16
-	+	25	16
-	+	27	16
-	+	9	0
-	+	10	0
-	+	10	40
-	+	18	0
-	+	11	0
-	+	10	6
-	+	11	6
-	+	18	0
-	+	19	7
-	+	18	4
-	+	11	65
-	+	13	29
-	+	18	0
-	+	19	0
-	+	17	0
-	+	19	0
-	+	20	9
-	+	19	4
-	+	15	29
-	+	16	9
-
-> ~/.local/bin/cpu_data
-	*	1609872656	0
-	"	6	33
-	^	6	34
-	.	6	34
-	+	7	0
-	+	6	0
-	+	6	30
-	+	7	12
-	+	8	0
-	+	7	11
-	+	15	28
-	+	6	45
-	+	6	0
-	+	6	25
-	+	6	0
-	+	6	22
-	+	26	16
-	+	28	16
-	+	30	16
-	+	26	20
-	+	6	0
-	+	26	17
-	+	28	16
-	+	30	16
-	+	26	16
-	+	28	16
-	+	30	16
-	+	17	6
-	+	17	7
-	+	20	0
-	+	17	0
-	+	20	0
-	+	17	41
-	+	6	0
-	+	1	0
-	+	6	0
-	+	1	0
-	+	6	0
-	+	5	0
-	+	23	0
-	+	2	0
-	+	25	3
-	+	27	5
-	+	25	0
-	+	26	0
-	+	25	3
-	+	27	0
-	+	28	0
-	+	27	5
-	+	25	18
-	+	17	7
-	+	25	4
-	+	27	6
-	+	26	0
-	+	25	7
-	+	27	6
-	+	25	3
-	+	27	5
-	+	25	3
-	+	25	0
-	+	26	0
-	+	25	0
-	+	26	0
-	+	25	0
-	+	25	35
-	+	28	0
-	+	27	44
-	+	17	0
-	+	20	0
-	+	17	28
-	+	20	0
-	+	17	48
-	+	1	10
-	+	17	0
-	+	20	0
-	+	17	0
-	+	1	0
-	+	20	0
-	+	17	0
-	+	20	0
-	+	17	0
-	+	20	0
-	+	17	1
-	+	20	0
-	+	18	0
-	+	17	0
-	+	15	0
-	+	16	0
-	+	17	4
-	+	23	14
-	+	21	83
-	+	17	0
-	+	21	83
-	+	17	4
-	+	15	4
-	+	13	30
-	+	14	9
-	+	9	34
-	+	9	70
-	+	12	0
-	+	9	50
-	+	6	30
-	+	7	8
-	+	6	34
-
-> ~/.config/bpytop/bpytop.conf
-	*	1609863815	0
-	"	92	14
-	^	92	15
-	.	92	15
-	+	92	15
-
-> ~/workdir/story-builder/target/classes/public/js/compiled/out/cljs_deps.js
-	*	1609853477	0
-	"	37	0
-
-> ~/workdir/story-builder/dev/user.clj
-	*	1609851438	0
-	"	30	17
-
-> ~/workdir/story-builder/project.clj
-	*	1609851068	0
-	"	3	2
-	^	2	1
-	.	2	0
-	+	2	0
-
-> ~/.local/bin/volume
-	*	1609840701	0
-	"	70	14
-
-> ~/.local/bin/bandwidth
-	*	1609839881	0
-	"	19	22
-	^	20	29
-	.	20	29
-	+	13	64
-	+	13	63
-	+	13	0
-	+	81	12
-	+	92	15
-	+	81	15
-	+	84	11
-	+	86	0
-	+	87	0
-	+	86	26
-	+	97	19
-	+	98	0
-	+	97	11
-	+	86	11
-	+	84	11
-	+	86	11
-	+	95	11
-	+	86	11
-	+	100	4
-	+	99	0
-	+	101	13
-	+	100	3
-	+	19	0
-	+	26	0
-	+	20	29
-	m	53	0
-
-> ~/.config/dunst/dunstrc
-	*	1609839520	0
-	"	4	4
-	^	6	4
-	.	4	0
-	+	4	17
-	+	28	22
-	+	4	18
-	+	4	0
-	+	5	24
-	+	58	30
-	+	42	0
-	+	6	0
-	+	5	0
-	+	4	0
-
-> ~/.local/share/applications/mimeapps.list
-	*	1609762882	0
-	"	1	0
-
-> ~/workdir/backend/bin/runserver
-	*	1609747904	0
-	"	3	41
-	^	3	42
-	.	3	42
-	+	3	42
