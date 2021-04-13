@@ -1,0 +1,31 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Sandu Dorogan
+	email = sandu.dorogan@gmail.com
+
+[core]
+    pager = delta
+
+#[interactive]
+#    diffFilter = delta --color-only
+
+[delta]
+    features = side-by-side line-numbers decorations
+    syntax-theme = Dracula
+    plus-style = syntax "#003800"
+    minus-style = syntax "#3f0001"
+    navigate = true
+    colorMoved = default
+
+[delta "decorations"]
+    commit-decoration-style = bold yellow box ul
+    file-style = bold "#2DAA03DF" ul
+    file-decoration-style = none
+    hunk-header-decoration-style = "#FFFFFF" box ul
+
+[delta "line-numbers"]
+    line-numbers-left-style = "#FFFFFF"
+    line-numbers-right-style = "#FFFFFF"
+    line-numbers-minus-style = 124
+    line-numbers-plus-style = 28
