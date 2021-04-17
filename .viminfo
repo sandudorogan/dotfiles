@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/git
+~MSle0~/alt
 
 # Last Substitute Search Pattern:
 ~MSle0&\\n
@@ -21,15 +21,57 @@ $\r
 
 # Command Line History (newest to oldest):
 :q
-|2,0,1618299596,,"q"
+|2,0,1618660735,,"q"
+:w
+|2,0,1618660734,,"w"
 :wq
-|2,0,1618298755,,"wq"
+|2,0,1618660395,,"wq"
+:Help
+|2,0,1618660355,,"Help"
+:Help key notation
+|2,0,1618660352,,"Help key notation"
+:Help normal
+|2,0,1618660290,,"Help normal"
+:Q
+|2,0,1618659945,,"Q"
+:qw
+|2,0,1618659663,,"qw"
+:Help 
+|2,0,1618659629,,"Help "
+:Help alt
+|2,0,1618659625,,"Help alt"
+:Rg 
+|2,0,1618496395,,"Rg "
+:Rg delete_files
+|2,0,1618496256,,"Rg delete_files"
+:q!
+|2,0,1618482331,,"q!"
+:Rg STREAM_PROFILES
+|2,0,1618326758,,"Rg STREAM_PROFILES"
+:Rg transform_media
+|2,0,1618326551,,"Rg transform_media"
+:Rg
+|2,0,1618323905,,"Rg"
+:Rg get_media_cloudinary_data
+|2,0,1618323142,,"Rg get_media_cloudinary_data"
+:'<,'>
+|2,0,1618323135,,"'<,'>"
+:Rg get_cloudinary_data
+|2,0,1618323103,,"Rg get_cloudinary_data"
+:Rg get_public_id_version
+|2,0,1618318364,,"Rg get_public_id_version"
+:Rg download_getty
+|2,0,1618315724,,"Rg download_getty"
+:Rd
+|2,0,1618309130,,"Rd"
+:Lines
+|2,0,1618302518,,"Lines"
+:Tags
+|2,0,1618302288,,"Tags"
 :ew
 |2,0,1617970488,,"ew"
 :w !sudo tee %
 |2,0,1617454946,,"w !sudo tee %"
-:w
-|2,0,1617454767,,"w"
 :w!
 |2,0,1617454135,,"w!"
 :wq!
@@ -48,8 +90,6 @@ $\r
 |2,0,1612444722,,"%s/\"//g"
 :%s/\\n/\n/g
 |2,0,1612443898,,"%s/\\\\n/\\n/g"
-:q!
-|2,0,1611924353,,"q!"
 :%s/\\'/'/g
 |2,0,1611922764,,"%s/\\\\'/'/g"
 :%s/\\\\/\\/g
@@ -74,8 +114,6 @@ $\r
 |2,0,1611906453,,"q:q"
 :.,.+3w
 |2,0,1611835780,,".,.+3w"
-:Q
-|2,0,1611758964,,"Q"
 :map
 |2,0,1611516170,,"map"
 :KiteDocsAtCursor
@@ -112,8 +150,6 @@ $\r
 |2,0,1610308022,,"set filetype?"
 :p filetype
 |2,0,1610307887,,"p filetype"
-:qw
-|2,0,1610307782,,"qw"
 :CtrlP .local/
 |2,0,1609872754,,"CtrlP .local/"
 :19i
@@ -184,6 +220,50 @@ $\r
 |2,0,1609276957,,"'<,'>norm $ ."
 
 # Search String History (newest to oldest):
+?/alt
+|2,1,1618659933,47,"alt"
+?/<C
+|2,1,1618659241,47,"<C"
+?/K
+|2,1,1618482376,47,"K"
+?/frozendict
+|2,1,1618472632,47,"frozendict"
+?/Screen
+|2,1,1618477027,47,"Screen"
+?/screen
+|2,1,1618477009,47,"screen"
+?/WORKON
+|2,1,1618382866,47,"WORKON"
+?/brew
+|2,1,1618382247,47,"brew"
+? \<public_id\>
+|2,1,1618323169,,"\\<public_id\\>"
+? \<print\>
+|2,1,1618323056,,"\\<print\\>"
+?/surround
+|2,1,1618318208,47,"surround"
+?/story
+|2,1,1618302818,47,"story"
+?/story_post_save
+|2,1,1618302735,47,"story_post_save"
+?/Update
+|2,1,1618302445,47,"Update"
+?/Save
+|2,1,1618302441,47,"Save"
+?/save
+|2,1,1618302437,47,"save"
+?/ArticleSave
+|2,1,1618302435,47,"ArticleSave"
+?/StorySave
+|2,1,1618302429,47,"StorySave"
+?/license
+|2,1,1618302049,47,"license"
+?/download
+|2,1,1618301940,47,"download"
+?/sandu
+|2,1,1618300302,47,"sandu"
+?/>
+|2,1,1618300270,47,">"
 ?/git
 |2,1,1618298596,47,"git"
 ?/logo-white
@@ -204,8 +284,6 @@ $\r
 |2,1,1617607930,47,"resize"
 ?/grep
 |2,1,1616660107,47,"grep"
-?/screen
-|2,1,1614244595,47,"screen"
 ?/mod+m
 |2,1,1614153993,47,"mod+m"
 ? \\n
@@ -354,66 +432,54 @@ $\r
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@y
+|2,3,1618302292,,"y"
 @span>
 |2,3,1609686077,,"span>"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	CHAR	0
-	https://transform.nws.ai/https%3A%2F%2Fcdn.thenewsroom.io%2Fplatform%2Fstory_media%2F1288798056%2FSLOWEAR-logo-white_xqxBWT2.svg/compress/
-|3,1,0,0,1,0,1617970994,"https://transform.nws.ai/https%3A%2F%2Fcdn.thenewsroom.io%2Fplatform%2Fstory_media%2F1288798056%2FSLOWEAR-logo-white_xqxBWT2.svg/compress/"
-"1	LINE	0
-	    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-|3,0,1,1,1,0,1616768309,"    xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\""
+"0	CHAR	0
+	Esc
+|3,0,0,0,1,0,1618660462,"Esc"
+""1	LINE	0
+	map <M-1> :NERDTreeToggle<CR>
+|3,1,1,1,1,0,1618660557,"map <M-1> :NERDTreeToggle<CR>"
 "2	LINE	0
-	    xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
-|3,0,2,1,1,0,1616768019,"    xmlns:sketch=\"http://www.bohemiancoding.com/sketch/ns\""
+	map <C-s> <ESC>:w<CR>
+	map <C-w> <ESC>:q<CR>
+	
+|3,0,2,1,3,0,1618660517,"map <C-s> <ESC>:w<CR>","map <C-w> <ESC>:q<CR>",""
 "3	LINE	0
-	<svg version="1.1" viewBox="0 0 16 16" x="0px"
-	    xmlns="http://www.w3.org/2000/svg"
-	    xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
-	    <title>border-solid</title>
-	    <desc>Created with Sketch.</desc>
-	    <g fill="rgba(255, 221, 240, 1)" fill-rule="evenodd"
-	        stroke="none" stroke-width="1">
-	        <g fill="rgba(255, 221, 240, 1)">
-	            <rect height="3" sketch:type="MSShapeGroup" width="16" x="0" y="6.5" />
-	        </g>
-	    </g>
-	</svg>
-|3,0,3,1,12,0,1616768004,"<svg version=\"1.1\" viewBox=\"0 0 16 16\" x=\"0px\"","    xmlns=\"http://www.w3.org/2000/svg\"","    xmlns:xlink=\"http://www.w3.org/1999/xlink\" y=\"0px\">","    <title>border-solid</title>","    <desc>Created with Sketch.</desc>","    <g fill=\"rgba(255, 221, 240, 1)\" fill-rule=\"evenodd\"","        stroke=\"none\" stroke-width=\"1\">","        <g fill=\"rgba(255, 221, 240, 1)\">",>95
-|<"            <rect height=\"3\" sketch:type=\"MSShapeGroup\" width=\"16\" x=\"0\" y=\"6.5\" />","        </g>","    </g>","</svg>"
+	
+|3,0,3,1,1,0,1618660176,""
 "4	LINE	0
-	<svg version="1.1" viewBox="0 0 16 16" x="0px"
-	    xmlns="http://www.w3.org/2000/svg"
-	    xmlns:xlink="http://www.w3.org/1999/xlink" y="0px">
-	    <title>border-solid</title>
-	    <desc>Created with Sketch.</desc>
-	    <g fill="rgba(255, 221, 240, 1)" fill-rule="evenodd"
-	        stroke="none" stroke-width="1">
-	        <g fill="rgba(255, 221, 240, 1)">
-	            <rect height="3" sketch:type="MSShapeGroup" width="16" x="0" y="6.5" />
-	        </g>
-	    </g>
-	</svg>
-|3,0,4,1,12,0,1616763951,"<svg version=\"1.1\" viewBox=\"0 0 16 16\" x=\"0px\"","    xmlns=\"http://www.w3.org/2000/svg\"","    xmlns:xlink=\"http://www.w3.org/1999/xlink\" y=\"0px\">","    <title>border-solid</title>","    <desc>Created with Sketch.</desc>","    <g fill=\"rgba(255, 221, 240, 1)\" fill-rule=\"evenodd\"","        stroke=\"none\" stroke-width=\"1\">","        <g fill=\"rgba(255, 221, 240, 1)\">",>95
-|<"            <rect height=\"3\" sketch:type=\"MSShapeGroup\" width=\"16\" x=\"0\" y=\"6.5\" />","        </g>","    </g>","</svg>"
+	
+|3,0,4,1,1,0,1618660163,""
 "5	LINE	0
-	        # -i $DISPLAY+1920,0 \
-|3,0,5,1,1,0,1615458831,"        # -i $DISPLAY+1920,0 \\"
+	map <leader>n :NERDTreeToggle<CR>
+	map <M-1> :NERDTreeToggle<CR>
+|3,0,5,1,2,0,1618660127,"map <leader>n :NERDTreeToggle<CR>","map <M-1> :NERDTreeToggle<CR>"
 "6	LINE	0
-		grepcljs="grep -r --include=*.cljs" \
-|3,0,6,1,1,0,1613464101,"	grepcljs=\"grep -r --include=*.cljs\" \\"
+	" Replace all is aliased to S.
+	nnoremap S :%s//g<Left><Left>
+	
+|3,0,6,1,3,0,1618660116,"\" Replace all is aliased to S.","nnoremap S :%s//g<Left><Left>",""
 "7	LINE	0
-	                      
-|3,0,7,1,1,0,1613053975,"                      "
+	" Shortcutting split navigation, saving a keypress:
+	map <C-h> <C-w>h
+	map <C-j> <C-w>j
+	map <C-k> <C-w>k
+	map <C-l> <C-w>l
+	
+|3,0,7,1,6,0,1618660107,"\" Shortcutting split navigation, saving a keypress:","map <C-h> <C-w>h","map <C-j> <C-w>j","map <C-k> <C-w>k","map <C-l> <C-w>l",""
 "8	LINE	0
-		sshp="ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23" \
-|3,0,8,1,1,0,1612094482,"	sshp=\"ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23\" \\"
+	      \   'kitestatus': 'kite#statusline',
+|3,0,8,1,1,0,1618659688,"      \\   'kitestatus': 'kite#statusline',"
 "9	LINE	0
-	    -device usb-host,vendorid=0x05ac,productid=0x12ab \
-|3,0,9,1,1,0,1611924740,"    -device usb-host,vendorid=0x05ac,productid=0x12ab \\"
+	            media_id = layer['source']['id']
+|3,0,9,1,1,0,1618482436,"            media_id = layer['source']['id']"
 "a	CHAR	0
 	$USAGE < 50
 |3,0,10,0,1,0,1609671429,"$USAGE < 50"
@@ -421,26 +487,32 @@ $\r
 	#!/usr/bin/perl
 |3,0,11,1,1,0,1608728902,"#!/usr/bin/perl"
 "c	CHAR	0
-	tx 
-|3,0,12,0,1,0,1611758545,"tx "
+	cs'"f'l
+|3,0,12,0,1,0,1618471533,"cs'\"f'l"
 "d	CHAR	0
 	dkujddkkpjkA \jA:qwjkkjkjF~i\kkddjP:w
 |3,0,13,0,1,0,1610314749,"dkujddkkpjkA \\jA:qwjkkjkjF~i\\kkddjP:w"
 "f	CHAR	0
-	"$2 * 100 / $1" 
-|3,0,15,0,1,0,1608917214,"\"$2 * 100 / $1\" "
+	diwds(n
+|3,0,15,0,1,0,1618472657,"diwds(n"
 "g	CHAR	0
 	Â°C/
 |3,0,16,0,1,0,1608749139,"Â°C/"
 "j	CHAR	0
 	jj:1€ýa"q€ýa€ýa
 |3,0,19,0,1,0,1611515822,"jj:1€ýa\"q€ýa€ýa"
+"k	CHAR	0
+	ds€ýadawd€ýacs<'fK
+|3,0,20,0,1,0,1618471207,"ds€ýadawd€ýacs<'fK"
 "m	CHAR	0
 	MAX_BRIGHTNESS
 |3,0,22,0,1,0,1608887940,"MAX_BRIGHTNESS"
 "r	CHAR	0
 	(echo "$1" | bc -l | sed 's/./,/')
 |3,0,27,0,1,0,1608925829,"(echo \"$1\" | bc -l | sed 's/./,/')"
+"s@	CHAR	0
+	nxds(
+|3,2,28,0,1,0,1618482434,"nxds("
 "w	CHAR	0
 	(echo "$1" | bc -l)
 |3,0,32,0,1,0,1608924906,"(echo \"$1\" | bc -l)"
@@ -448,341 +520,388 @@ $\r
 	$
 |3,0,34,0,1,0,1609671572,"$"
 "-	CHAR	0
-	rw,umask=0077
-|3,0,36,0,1,0,1617454884,"rw,umask=0077"
+	Esc
+|3,0,36,0,1,0,1618660452,"Esc"
 
 # global variables:
 
 # File marks:
-'0  1  0  ~/.config/dconf/user
-|4,48,1,0,1618299596,"~/.config/dconf/user"
-'1  1  0  ~/.config/kdenliverc
-|4,49,1,0,1618299522,"~/.config/kdenliverc"
-'2  1  12  ~/.gitignore
-|4,50,1,12,1618298755,"~/.gitignore"
-'3  1  0  ~/.gitignore
-|4,51,1,0,1618298720,"~/.gitignore"
-'4  15  1  ~/.config/shell/aliasrc
-|4,52,15,1,1618298645,"~/.config/shell/aliasrc"
-'5  15  18  ~/.config/shell/aliasrc
-|4,53,15,18,1618298628,"~/.config/shell/aliasrc"
-'6  1  0  ~/Pictures/circle.svg
-|4,54,1,0,1617973589,"~/Pictures/circle.svg"
-'7  10  51  ~/tests/nws/second_ad.html
-|4,55,10,51,1617971819,"~/tests/nws/second_ad.html"
-'8  48  0  ~/tests/nws/second_ad.html
-|4,56,48,0,1617970494,"~/tests/nws/second_ad.html"
-'9  48  0  ~/tests/nws/second_ad.html
-|4,57,48,0,1617970494,"~/tests/nws/second_ad.html"
+'0  95  48  ~/.vimrc
+|4,48,95,48,1618660735,"~/.vimrc"
+'1  94  43  ~/.vimrc
+|4,49,94,43,1618660625,"~/.vimrc"
+'2  94  43  ~/.vimrc
+|4,50,94,43,1618660625,"~/.vimrc"
+'3  211  13  ~/.vimrc
+|4,51,211,13,1618660455,"~/.vimrc"
+'4  211  13  ~/.vimrc
+|4,52,211,13,1618660455,"~/.vimrc"
+'5  210  13  ~/.vimrc
+|4,53,210,13,1618660455,"~/.vimrc"
+'6  210  13  ~/.vimrc
+|4,54,210,13,1618660455,"~/.vimrc"
+'7  211  14  ~/.vimrc
+|4,55,211,14,1618660395,"~/.vimrc"
+'8  211  14  ~/.vimrc
+|4,56,211,14,1618660395,"~/.vimrc"
+'9  210  14  ~/.vimrc
+|4,57,210,14,1618660395,"~/.vimrc"
 
 # Jumplist (newest first):
--'  1  0  ~/.config/dconf/user
-|4,39,1,0,1618299596,"~/.config/dconf/user"
--'  1  0  ~/.config/kdenliverc
-|4,39,1,0,1618299522,"~/.config/kdenliverc"
--'  1  0  ~/.config/kdenliverc
-|4,39,1,0,1618299522,"~/.config/kdenliverc"
--'  1  12  ~/.gitignore
-|4,39,1,12,1618298755,"~/.gitignore"
--'  1  12  ~/.gitignore
-|4,39,1,12,1618298755,"~/.gitignore"
--'  1  12  ~/.gitignore
-|4,39,1,12,1618298755,"~/.gitignore"
--'  1  12  ~/.gitignore
-|4,39,1,12,1618298755,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1618298720,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1618298720,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1618298720,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1618298720,"~/.gitignore"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  1  ~/.config/shell/aliasrc
-|4,39,15,1,1618298645,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  15  18  ~/.config/shell/aliasrc
-|4,39,15,18,1618298628,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  49  17  ~/.config/shell/aliasrc
-|4,39,49,17,1618298600,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
--'  29  1  ~/.config/shell/aliasrc
-|4,39,29,1,1618298596,"~/.config/shell/aliasrc"
+-'  95  48  ~/.vimrc
+|4,39,95,48,1618660735,"~/.vimrc"
+-'  94  4  ~/.vimrc
+|4,39,94,4,1618660625,"~/.vimrc"
+-'  94  43  ~/.vimrc
+|4,39,94,43,1618660625,"~/.vimrc"
+-'  78  0  ~/.vimrc
+|4,39,78,0,1618660614,"~/.vimrc"
+-'  72  0  ~/.vimrc
+|4,39,72,0,1618660614,"~/.vimrc"
+-'  67  0  ~/.vimrc
+|4,39,67,0,1618660614,"~/.vimrc"
+-'  78  0  ~/.vimrc
+|4,39,78,0,1618660614,"~/.vimrc"
+-'  72  0  ~/.vimrc
+|4,39,72,0,1618660614,"~/.vimrc"
+-'  67  0  ~/.vimrc
+|4,39,67,0,1618660614,"~/.vimrc"
+-'  90  0  ~/.vimrc
+|4,39,90,0,1618660613,"~/.vimrc"
+-'  96  0  ~/.vimrc
+|4,39,96,0,1618660613,"~/.vimrc"
+-'  90  0  ~/.vimrc
+|4,39,90,0,1618660613,"~/.vimrc"
+-'  95  0  ~/.vimrc
+|4,39,95,0,1618660613,"~/.vimrc"
+-'  98  0  ~/.vimrc
+|4,39,98,0,1618660612,"~/.vimrc"
+-'  104  0  ~/.vimrc
+|4,39,104,0,1618660612,"~/.vimrc"
+-'  110  0  ~/.vimrc
+|4,39,110,0,1618660612,"~/.vimrc"
+-'  97  0  ~/.vimrc
+|4,39,97,0,1618660612,"~/.vimrc"
+-'  103  0  ~/.vimrc
+|4,39,103,0,1618660612,"~/.vimrc"
+-'  109  0  ~/.vimrc
+|4,39,109,0,1618660612,"~/.vimrc"
+-'  112  0  ~/.vimrc
+|4,39,112,0,1618660611,"~/.vimrc"
+-'  116  0  ~/.vimrc
+|4,39,116,0,1618660611,"~/.vimrc"
+-'  137  0  ~/.vimrc
+|4,39,137,0,1618660611,"~/.vimrc"
+-'  145  0  ~/.vimrc
+|4,39,145,0,1618660611,"~/.vimrc"
+-'  159  0  ~/.vimrc
+|4,39,159,0,1618660611,"~/.vimrc"
+-'  164  0  ~/.vimrc
+|4,39,164,0,1618660611,"~/.vimrc"
+-'  167  0  ~/.vimrc
+|4,39,167,0,1618660611,"~/.vimrc"
+-'  170  0  ~/.vimrc
+|4,39,170,0,1618660611,"~/.vimrc"
+-'  179  0  ~/.vimrc
+|4,39,179,0,1618660611,"~/.vimrc"
+-'  199  0  ~/.vimrc
+|4,39,199,0,1618660611,"~/.vimrc"
+-'  204  0  ~/.vimrc
+|4,39,204,0,1618660611,"~/.vimrc"
+-'  210  0  ~/.vimrc
+|4,39,210,0,1618660611,"~/.vimrc"
+-'  213  0  ~/.vimrc
+|4,39,213,0,1618660611,"~/.vimrc"
+-'  111  0  ~/.vimrc
+|4,39,111,0,1618660611,"~/.vimrc"
+-'  115  0  ~/.vimrc
+|4,39,115,0,1618660611,"~/.vimrc"
+-'  136  0  ~/.vimrc
+|4,39,136,0,1618660611,"~/.vimrc"
+-'  144  0  ~/.vimrc
+|4,39,144,0,1618660611,"~/.vimrc"
+-'  158  0  ~/.vimrc
+|4,39,158,0,1618660611,"~/.vimrc"
+-'  163  0  ~/.vimrc
+|4,39,163,0,1618660611,"~/.vimrc"
+-'  166  0  ~/.vimrc
+|4,39,166,0,1618660611,"~/.vimrc"
+-'  169  0  ~/.vimrc
+|4,39,169,0,1618660611,"~/.vimrc"
+-'  178  0  ~/.vimrc
+|4,39,178,0,1618660611,"~/.vimrc"
+-'  198  0  ~/.vimrc
+|4,39,198,0,1618660611,"~/.vimrc"
+-'  203  0  ~/.vimrc
+|4,39,203,0,1618660611,"~/.vimrc"
+-'  209  0  ~/.vimrc
+|4,39,209,0,1618660611,"~/.vimrc"
+-'  212  0  ~/.vimrc
+|4,39,212,0,1618660611,"~/.vimrc"
+-'  215  0  ~/.vimrc
+|4,39,215,0,1618660610,"~/.vimrc"
+-'  214  0  ~/.vimrc
+|4,39,214,0,1618660610,"~/.vimrc"
+-'  198  0  ~/.vimrc
+|4,39,198,0,1618660524,"~/.vimrc"
+-'  197  0  ~/.vimrc
+|4,39,197,0,1618660524,"~/.vimrc"
+-'  211  0  ~/.vimrc
+|4,39,211,0,1618660522,"~/.vimrc"
+-'  210  0  ~/.vimrc
+|4,39,210,0,1618660522,"~/.vimrc"
+-'  210  13  ~/.vimrc
+|4,39,210,13,1618660455,"~/.vimrc"
+-'  209  13  ~/.vimrc
+|4,39,209,13,1618660448,"~/.vimrc"
+-'  212  0  ~/.vimrc
+|4,39,212,0,1618660402,"~/.vimrc"
+-'  211  0  ~/.vimrc
+|4,39,211,0,1618660402,"~/.vimrc"
+-'  210  14  ~/.vimrc
+|4,39,210,14,1618660395,"~/.vimrc"
+-'  216  0  ~/.vimrc
+|4,39,216,0,1618660379,"~/.vimrc"
+-'  218  0  ~/.vimrc
+|4,39,218,0,1618660379,"~/.vimrc"
+-'  215  0  ~/.vimrc
+|4,39,215,0,1618660379,"~/.vimrc"
+-'  217  0  ~/.vimrc
+|4,39,217,0,1618660379,"~/.vimrc"
+-'  217  0  ~/.vimrc
+|4,39,217,0,1618660379,"~/.vimrc"
+-'  97  0  ~/.vimrc
+|4,39,97,0,1618660321,"~/.vimrc"
+-'  96  0  ~/.vimrc
+|4,39,96,0,1618660321,"~/.vimrc"
+-'  96  0  ~/.vimrc
+|4,39,96,0,1618660321,"~/.vimrc"
+-'  103  0  ~/.vimrc
+|4,39,103,0,1618660287,"~/.vimrc"
+-'  109  0  ~/.vimrc
+|4,39,109,0,1618660287,"~/.vimrc"
+-'  111  0  ~/.vimrc
+|4,39,111,0,1618660287,"~/.vimrc"
+-'  102  0  ~/.vimrc
+|4,39,102,0,1618660287,"~/.vimrc"
+-'  108  0  ~/.vimrc
+|4,39,108,0,1618660287,"~/.vimrc"
+-'  110  0  ~/.vimrc
+|4,39,110,0,1618660287,"~/.vimrc"
+-'  102  0  ~/.vimrc
+|4,39,102,0,1618660287,"~/.vimrc"
+-'  108  0  ~/.vimrc
+|4,39,108,0,1618660287,"~/.vimrc"
+-'  110  0  ~/.vimrc
+|4,39,110,0,1618660287,"~/.vimrc"
+-'  115  0  ~/.vimrc
+|4,39,115,0,1618660286,"~/.vimrc"
+-'  136  0  ~/.vimrc
+|4,39,136,0,1618660286,"~/.vimrc"
+-'  114  0  ~/.vimrc
+|4,39,114,0,1618660286,"~/.vimrc"
+-'  114  0  ~/.vimrc
+|4,39,114,0,1618660286,"~/.vimrc"
+-'  114  0  ~/.vimrc
+|4,39,114,0,1618660286,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1618660286,"~/.vimrc"
+-'  113  0  ~/.vimrc
+|4,39,113,0,1618660286,"~/.vimrc"
+-'  114  0  ~/.vimrc
+|4,39,114,0,1618660286,"~/.vimrc"
+-'  135  0  ~/.vimrc
+|4,39,135,0,1618660286,"~/.vimrc"
+-'  113  0  ~/.vimrc
+|4,39,113,0,1618660286,"~/.vimrc"
+-'  144  0  ~/.vimrc
+|4,39,144,0,1618660283,"~/.vimrc"
+-'  143  0  ~/.vimrc
+|4,39,143,0,1618660283,"~/.vimrc"
+-'  143  0  ~/.vimrc
+|4,39,143,0,1618660283,"~/.vimrc"
+-'  158  0  ~/.vimrc
+|4,39,158,0,1618660282,"~/.vimrc"
+-'  163  0  ~/.vimrc
+|4,39,163,0,1618660282,"~/.vimrc"
+-'  166  0  ~/.vimrc
+|4,39,166,0,1618660282,"~/.vimrc"
+-'  157  0  ~/.vimrc
+|4,39,157,0,1618660282,"~/.vimrc"
+-'  162  0  ~/.vimrc
+|4,39,162,0,1618660282,"~/.vimrc"
+-'  165  0  ~/.vimrc
+|4,39,165,0,1618660282,"~/.vimrc"
+-'  157  0  ~/.vimrc
+|4,39,157,0,1618660282,"~/.vimrc"
+-'  162  0  ~/.vimrc
+|4,39,162,0,1618660282,"~/.vimrc"
+-'  165  0  ~/.vimrc
+|4,39,165,0,1618660282,"~/.vimrc"
+-'  169  0  ~/.vimrc
+|4,39,169,0,1618660281,"~/.vimrc"
+-'  178  0  ~/.vimrc
+|4,39,178,0,1618660281,"~/.vimrc"
+-'  203  0  ~/.vimrc
+|4,39,203,0,1618660281,"~/.vimrc"
+-'  209  0  ~/.vimrc
+|4,39,209,0,1618660281,"~/.vimrc"
+-'  168  0  ~/.vimrc
+|4,39,168,0,1618660281,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/dconf/user
-	*	1618299594	0
+> ~/.vimrc
+	*	1618660734	0
+	"	95	48
+	^	95	10
+	.	95	10
+	+	7	0
+	+	6	0
+	+	10	0
+	+	12	0
+	+	13	0
+	+	15	0
+	+	16	0
+	+	135	0
+	+	156	0
+	+	180	0
+	+	160	0
+	+	162	0
+	+	163	0
+	+	165	0
+	+	172	0
+	+	166	0
+	+	171	0
+	+	168	0
+	+	169	0
+	+	168	42
+	+	93	0
+	+	11	0
+	+	14	0
+	+	58	21
+	+	59	15
+	+	93	0
+	+	74	0
+	+	93	0
+	+	105	0
+	+	106	0
+	+	74	0
+	+	92	0
+	+	105	0
+	+	106	0
+	+	168	36
+	+	82	0
+	+	87	0
+	+	88	0
+	+	87	0
+	+	78	0
+	+	82	0
+	+	77	0
+	+	79	12
+	+	78	0
+	+	155	0
+	+	148	5
+	+	150	68
+	+	155	31
+	+	155	41
+	+	155	9
+	+	150	58
+	+	155	0
+	+	150	46
+	+	154	0
+	+	150	44
+	+	152	0
+	+	154	0
+	+	153	6
+	+	150	6
+	+	154	36
+	+	150	68
+	+	153	40
+	+	154	0
+	+	150	68
+	+	168	0
+	+	169	0
+	+	172	0
+	+	160	0
+	+	139	0
+	+	156	0
+	+	153	58
+	+	139	5
+	+	114	1
+	+	160	0
+	+	205	0
+	+	168	0
+	+	211	0
+	+	139	0
+	+	201	0
+	+	215	0
+	+	214	10
+	+	201	0
+	+	202	0
+	+	198	0
+	+	205	0
+	+	204	0
+	+	205	0
+	+	211	11
+	+	211	0
+	+	211	15
+	+	211	0
+	+	211	14
+	+	211	0
+	+	211	13
+	+	211	0
+	+	216	0
+	+	94	10
+	+	95	10
+
+> ~/NERD_tree_1
+	*	1618660550	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> /usr/share/vim/vim81/doc/intro.txt
+	*	1618660365	0
+	"	410	5
+	m	470	9
+
+> /usr/share/vim/vim81/doc/options.txt
+	*	1618659663	0
+	"	691	0
+
+> /usr/share/vim/vim81/doc/debugger.txt
+	*	1618659613	0
+	"	36	31
+
+> /usr/share/vim/vim81/doc/map.txt
+	*	1618659562	0
+	"	204	56
+
+> ~/workdir/backend/app/charge/schema.py
+	*	1618658932	0
+	"	1941	8
+
+> ~/workdir/backend/NERD_tree_1
+	*	1618658928	0
 	"	1	0
+	.	1	0
+	+	1	0
 
-> ~/.config/kdenliverc
-	*	1618299512	0
-	"	1	0
-
-> ~/.gitignore
-	*	1618298754	0
-	"	1	12
-	^	1	13
-	.	1	12
-	+	1	12
-
-> ~/.config/shell/aliasrc
-	*	1618298634	0
-	"	15	1
-	^	29	20
-	.	29	19
-	+	4	0
-	+	56	0
-	+	53	0
-	+	56	0
-	+	54	0
-	+	56	0
-	+	55	0
-	+	54	25
-	+	56	0
-	+	55	0
-	+	54	0
-	+	55	20
-	+	12	34
-	+	56	0
-	+	22	0
-	+	56	0
-	+	39	0
-	+	41	0
-	+	42	22
-	+	56	0
-	+	42	16
-	+	54	0
-	+	49	8
-	+	42	0
-	+	27	0
-	+	43	0
+> ~/workdir/backend/app/charge/utils/config.py
+	*	1618488375	0
+	"	96	25
+	^	35	9
+	.	96	25
+	+	37	0
 	+	35	0
-	+	46	0
-	+	47	0
-	+	46	31
-	+	12	15
-	+	43	0
-	+	39	0
-	+	31	0
-	+	15	8
-	+	39	0
-	+	29	37
-	+	30	17
-	+	29	19
-
-> ~/Pictures/circle.svg
-	*	1617973549	0
-	"	1	0
-
-> ~/tests/nws/second_ad.html
-	*	1617971817	0
-	"	10	51
-	^	48	7
-	.	48	6
-	+	48	6
-
-> ~/tests/nws/first_ad.html
-	*	1617970488	0
-	"	42	6
-	^	42	7
-	.	42	6
-	+	42	6
-
-> ~/workdir/amphtml/validator/build.py
-	*	1617694193	0
-	"	604	2
-	^	604	14
-	.	604	13
-	+	604	13
-
-> ~/workdir/amphtml/validator/WORKSPACE
-	*	1617694099	0
-	"	1	0
-
-> ~/workdir/amphtml/validator/package.json
-	*	1617694069	0
-	"	19	0
-
-> ~/workdir/amphtml/validator/dist/validator-generated.js
-	*	1617694000	0
-	"	2484	0
-
-> ~/workdir/amphtml/validator/dist/validator-generated.json
-	*	1617693839	0
-	"	5646	4
+	+	36	0
+	+	42	13
+	+	96	25
 
 > ~/.config/i3/config
-	*	1617607935	0
-	"	213	8
+	*	1618477027	0
+	"	282	2
 	^	216	18
 	.	284	0
 	+	289	16
@@ -887,25 +1006,11 @@ $\r
 	+	284	0
 	a	246	25
 
-> /etc/fstab
-	*	1617604993	0
-	"	13	64
-	^	13	65
-	.	14	0
-	+	13	0
-	+	14	0
-	+	13	0
-	+	14	0
-
-> ~/workdir/story-builder/bin/deploy
-	*	1617359061	0
-	"	55	4
-
 > ~/.config/shell/profile
-	*	1617355983	0
-	"	172	0
-	^	160	0
-	.	160	0
+	*	1618382866	0
+	"	49	7
+	^	178	2
+	.	178	1
 	+	14	15
 	+	15	30
 	+	172	0
@@ -934,6 +1039,232 @@ $\r
 	+	158	0
 	+	157	0
 	+	160	0
+	+	178	1
+
+> ~/.config/zsh/.zshrc
+	*	1618382281	0
+	"	134	5
+	^	134	6
+	.	134	5
+	+	156	0
+	+	155	4
+	+	157	0
+	+	134	5
+
+> ~/workdir/backend/app/charge/const/creatives.py
+	*	1618345157	0
+	"	2095	8
+
+> ~/workdir/backend/app/charge/api/uploader.py
+	*	1618326719	0
+	"	51	51
+
+> ~/workdir/backend/app/charge/api/resizes.py
+	*	1618323918	0
+	"	35	0
+
+> ~/workdir/backend/app/charge/models/__init__.py
+	*	1618323818	0
+	"	309	47
+	^	309	48
+	.	309	47
+	+	307	19
+	+	308	21
+	+	309	47
+
+> ~/workdir/backend/app/charge/utils/media_sources.py
+	*	1618323135	0
+	"	429	4
+
+> ~/workdir/backend/app/charge/models/article.py
+	*	1618323092	0
+	"	1393	40
+	^	1393	41
+	.	1393	40
+	+	1388	51
+	+	1388	35
+	+	1394	37
+	+	1395	83
+	+	1393	40
+
+> ~/workdir/backend/app/charge/management/commands/media_size.py
+	*	1618322965	0
+	"	7	30
+	^	7	31
+	.	7	31
+	+	7	31
+
+> ~/workdir/backend/app/charge/management/commands/tie_stories_media.py
+	*	1618318344	0
+	"	4	30
+	^	4	31
+	.	4	31
+	+	4	31
+
+> ~/workdir/backend/app/charge/management/commands/find_licensed_media.py
+	*	1618318328	0
+	"	5	30
+	^	5	31
+	.	5	31
+	+	5	31
+
+> ~/workdir/backend/app/charge/api/stories.py
+	*	1618318285	0
+	"	71	0
+	^	71	1
+	.	71	0
+	+	68	57
+	+	61	42
+	+	68	59
+	+	72	0
+	+	68	34
+	+	69	29
+	+	69	27
+	+	71	0
+
+> /usr/share/doc/fzf/README.Debian
+	*	1618304594	0
+	"	21	3
+
+> ~/workdir/backend/app/charge/urls.py
+	*	1618304534	0
+	"	146	4
+
+> ~/workdir/backend/app/charge/tasks.py
+	*	1618303180	0
+	"	479	31
+
+> ~/dotfiles/MERGE_MSG
+	*	1618300668	0
+	"	1	0
+
+> ~/.config/dconf/user
+	*	1618299594	0
+	"	1	0
+
+> ~/.config/kdenliverc
+	*	1618299512	0
+	"	1	0
+
+> ~/.gitignore
+	*	1618298754	0
+	"	1	12
+	^	1	13
+	.	1	12
+	+	1	12
+
+> ~/.config/shell/aliasrc
+	*	1618298634	0
+	"	15	1
+	^	29	20
+	.	29	19
+	+	4	0
+	+	56	0
+	+	53	0
+	+	56	0
+	+	54	0
+	+	56	0
+	+	55	0
+	+	54	25
+	+	56	0
+	+	55	0
+	+	54	0
+	+	55	20
+	+	12	34
+	+	56	0
+	+	22	0
+	+	56	0
+	+	39	0
+	+	41	0
+	+	42	22
+	+	56	0
+	+	42	16
+	+	54	0
+	+	49	8
+	+	42	0
+	+	27	0
+	+	43	0
+	+	35	0
+	+	46	0
+	+	47	0
+	+	46	31
+	+	12	15
+	+	43	0
+	+	39	0
+	+	31	0
+	+	15	8
+	+	39	0
+	+	29	37
+	+	30	17
+	+	29	19
+
+> ~/.gitconfig
+	*	1618297501	0
+	"	10	0
+	^	10	0
+	.	10	0
+	+	2	0
+	+	11	0
+	+	3	12
+	+	6	14
+	+	11	0
+	+	8	0
+	+	10	0
+
+> ~/Pictures/circle.svg
+	*	1617973549	0
+	"	1	0
+
+> ~/tests/nws/second_ad.html
+	*	1617971817	0
+	"	10	51
+	^	48	7
+	.	48	6
+	+	48	6
+
+> ~/tests/nws/first_ad.html
+	*	1617970488	0
+	"	42	6
+	^	42	7
+	.	42	6
+	+	42	6
+
+> ~/workdir/amphtml/validator/build.py
+	*	1617694193	0
+	"	604	2
+	^	604	14
+	.	604	13
+	+	604	13
+
+> ~/workdir/amphtml/validator/WORKSPACE
+	*	1617694099	0
+	"	1	0
+
+> ~/workdir/amphtml/validator/package.json
+	*	1617694069	0
+	"	19	0
+
+> ~/workdir/amphtml/validator/dist/validator-generated.js
+	*	1617694000	0
+	"	2484	0
+
+> ~/workdir/amphtml/validator/dist/validator-generated.json
+	*	1617693839	0
+	"	5646	4
+
+> /etc/fstab
+	*	1617604993	0
+	"	13	64
+	^	13	65
+	.	14	0
+	+	13	0
+	+	14	0
+	+	13	0
+	+	14	0
+
+> ~/workdir/story-builder/bin/deploy
+	*	1617359061	0
+	"	55	4
 
 > /tmp/clojure-917765222675588454.edn
 	*	1617352679	0
@@ -968,12 +1299,6 @@ $\r
 	+	11	0
 	+	14	56
 	+	14	0
-
-> ~/workdir/backend/NERD_tree_1
-	*	1616660066	0
-	"	6	0
-	.	1	0
-	+	1	0
 
 > ~/.local/bin/trecording
 	*	1615458835	0
@@ -1052,112 +1377,6 @@ $\r
 	+	2	0
 	+	2	123
 
-> ~/.vimrc
-	*	1613085726	0
-	"	95	10
-	^	149	69
-	.	149	68
-	+	106	0
-	+	104	0
-	+	106	0
-	+	104	0
-	+	106	0
-	+	109	32
-	+	108	17
-	+	111	0
-	+	17	21
-	+	19	0
-	+	20	0
-	+	16	42
-	+	17	0
-	+	20	0
-	+	18	25
-	+	49	0
-	+	51	0
-	+	50	19
-	+	54	0
-	+	60	0
-	+	55	0
-	+	56	0
-	+	103	0
-	+	104	0
-	+	106	0
-	+	103	0
-	+	104	0
-	+	106	0
-	+	165	0
-	+	181	0
-	+	1	0
-	+	2	0
-	+	21	0
-	+	5	0
-	+	9	0
-	+	8	0
-	+	7	0
-	+	6	0
-	+	10	0
-	+	12	0
-	+	13	0
-	+	15	0
-	+	16	0
-	+	133	0
-	+	156	0
-	+	189	0
-	+	166	0
-	+	168	0
-	+	169	0
-	+	171	0
-	+	181	0
-	+	172	0
-	+	180	0
-	+	176	0
-	+	178	0
-	+	176	42
-	+	93	0
-	+	11	0
-	+	14	0
-	+	58	21
-	+	59	15
-	+	93	0
-	+	74	0
-	+	93	0
-	+	103	0
-	+	104	0
-	+	74	0
-	+	92	0
-	+	103	0
-	+	104	0
-	+	177	36
-	+	82	0
-	+	87	0
-	+	88	0
-	+	87	0
-	+	78	0
-	+	82	0
-	+	77	0
-	+	79	12
-	+	78	0
-	+	154	0
-	+	147	5
-	+	149	68
-	+	154	31
-	+	154	41
-	+	154	9
-	+	149	58
-	+	154	0
-	+	149	46
-	+	153	0
-	+	149	44
-	+	151	0
-	+	153	0
-	+	152	6
-	+	149	6
-	+	153	36
-	+	149	68
-	+	152	40
-	+	153	0
-	+	149	68
-
 > ~/workdir/story-builder/src/story_builder/views/story.cljs
 	*	1613076912	0
 	"	1168	11
@@ -1196,10 +1415,6 @@ $\r
 	.	2	0
 	+	1	1
 	+	2	0
-
-> ~/workdir/backend/app/charge/api/uploader.py
-	*	1613053605	0
-	"	174	0
 
 > ~/.ideavimrc
 	*	1612866820	0
@@ -1581,200 +1796,3 @@ $\r
 	+	47	0
 	+	38	49
 	+	35	54
-
-> ~/.local/bin/linkhandler
-	*	1611148713	0
-	"	16	2
-	^	14	33
-	.	14	33
-	+	24	0
-	+	22	0
-	+	22	34
-	+	22	0
-	+	1	8
-	+	22	17
-	+	22	24
-	+	22	25
-	+	22	13
-	+	22	10
-	+	1	8
-	+	22	0
-	+	14	33
-
-> /tmp/mails/20210120-113205-140229358712200.eml
-	*	1611145843	0
-	"	1050	0
-
-> /tmp/mails/20210120-105611-140230172196256.log
-	*	1611140349	0
-	"	4584	0
-
-> ~/.config/x11/xinitrc
-	*	1611130074	0
-	"	9	0
-
-> ~/workdir/story-builder/resources/public/js/compiled/out/cljsjs/resumable.js/development/resumable.js.inc.js
-	*	1611051888	0
-	"	1017	14
-	.	20	0
-	+	32	0
-	+	20	0
-
-> ~/Pictures/svg-test/downloaded-from-internet/Adidas_Logo.svg
-	*	1610983576	0
-	"	1	0
-
-> ~/Pictures/svg-test/animated-made-with-svgator/animated-shape.svg
-	*	1610983530	0
-	"	1	0
-
-> ~/Pictures/svg-test/made-with-illustrator/made-with-ai.svg
-	*	1610983475	0
-	"	1	0
-
-> ~/Pictures/green-arrow.svg
-	*	1610967342	0
-	"	1	0
-
-> ~/.config/i3/i3blocks.conf
-	*	1610963741	0
-	"	89	0
-	^	97	10
-	.	97	9
-	+	37	0
-	+	40	10
-	+	49	10
-	+	95	0
-	+	94	1
-	+	100	0
-	+	27	29
-	+	81	9
-	+	85	0
-	+	86	0
-	+	79	21
-	+	80	0
-	+	79	0
-	+	80	0
-	+	96	0
-	+	95	6
-	+	80	6
-	+	82	10
-	+	79	0
-	+	57	6
-	+	46	9
-	+	49	9
-	+	48	0
-	+	47	0
-	+	37	0
-	+	123	41
-	+	123	40
-	+	123	0
-	+	125	0
-	+	101	9
-	+	79	8
-	+	85	9
-	+	83	0
-	+	86	10
-	+	88	22
-	+	86	9
-	+	101	0
-	+	100	9
-	+	88	13
-	+	97	9
-
-> ~/.vim/plugged/vim-polyglot/doc/polyglot.txt
-	*	1610963093	0
-	"	11	0
-
-> /usr/share/vim/vim81/doc/intro.txt
-	*	1610963035	0
-	"	279	7
-
-> ~/workdir/story-builder/src/story_builder/views/modifiers.cljs
-	*	1610958011	0
-	"	1098	90
-	.	1098	0
-	+	1098	0
-
-> ~/.config/x11/xresources
-	*	1610638201	0
-	"	108	0
-	^	3	1
-	.	5	24
-	+	3	0
-	+	2	0
-	+	5	24
-
-> ~/.local/bin/brightness
-	*	1610611417	0
-	"	46	9
-	^	46	10
-	.	46	9
-	+	1	17
-	+	52	0
-	+	44	6
-	+	45	8
-	+	47	0
-	+	45	8
-	+	47	0
-	+	46	9
-
-> ~/.config/shell/inputrc
-	*	1610610649	0
-	"	1	0
-
-> ~/.config/transmission-daemon/settings.json
-	*	1610560502	0
-	"	64	39
-	^	64	40
-	.	64	39
-	+	67	24
-	+	67	0
-	+	55	39
-	+	56	66
-	+	68	39
-	+	64	39
-
-> /usr/lib/systemd/system/transmission-daemon.service
-	*	1610560346	0
-	"	8	67
-	^	8	68
-	.	8	67
-	+	6	9
-	+	8	89
-	+	6	0
-	+	7	0
-	+	6	5
-	+	8	85
-	+	8	68
-	+	6	9
-	+	8	67
-
-> ~/.config/transmission/settings.json
-	*	1610486607	0
-	"	98	0
-
-> ~/Documents/nws-data.md
-	*	1610439211	0
-	"	9	0
-	^	9	3
-	.	5	0
-	+	2	0
-	+	4	3
-	+	5	0
-	+	9	2
-	+	8	0
-	+	9	0
-	+	7	0
-	+	6	0
-	+	8	0
-	+	7	421
-	+	5	0
-
-> ~/workdir/backend/venv/bin/activate
-	*	1610356062	0
-	"	40	0
-
-> ~/.local/share/mimeapps.list
-	*	1610352236	0
-	"	1	0

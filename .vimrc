@@ -91,6 +91,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdtree'
     Plug 'ryanoasis/vim-devicons'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plug 'scrooloose/nerdtree-project-plugin'
+    Plug 'PhilRunninger/nerdtree-visual-selection'
 
     Plug 'sheerun/vim-polyglot'
 
@@ -109,7 +111,7 @@ colo seoul256
 " colorscheme wal
 
 " Set transparency
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
 
 
 " Nerd Commenter:
@@ -134,13 +136,12 @@ let g:NERDToggleCheckAllLines = 1
 " Nerd Commenter --
 
 " Nerd tree
-	map <leader>n :NERDTreeToggle<CR>
-	autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-    if has('nvim')
-        let NERDTreeBookmarksFile = stdpath('data') . '/NERDTreeBookmarks'
-    else
-        let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
-    endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+if has('nvim')
+    let NERDTreeBookmarksFile = stdpath('data') . '/NERDTreeBookmarks'
+else
+    let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
+endif
 
 " Light Line:
 set laststatus=2
@@ -149,19 +150,12 @@ let g:lightline = {
       \ 'colorscheme': 'seoul256',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified', 'kitestatus' , 'gitstatus'] ]
+      \             [ 'readonly', 'filename', 'modified', 'gitstatus'] ]
       \ },
       \ 'component_function': {
-      \   'kitestatus': 'kite#statusline',
       \   'gitstatus': 'FugitiveStatusline'
       \ },
       \ }
-
-" Shortcutting split navigation, saving a keypress:
-	map <C-h> <C-w>h
-	map <C-j> <C-w>j
-	map <C-k> <C-w>k
-	map <C-l> <C-w>l
 
 " Enable vim-iced's default key mapping
 " This is recommended for newbies
@@ -171,20 +165,17 @@ let g:iced#clojuredocs#use_clj_docs_on_cljs = v:true
 " Git gutter update time
 set updatetime=100
 
-" Replace all is aliased to S.
-	nnoremap S :%s//g<Left><Left>
-
 " Save file as sudo on files that require root permission
-	cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Ensure files are read as what I want:
-	let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
-	map <leader>v :VimwikiIndex
-	let g:vimwiki_list = [{'path': '~/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
-	autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
-	autocmd BufRead,BufNewFile ~/.config/i3/config set filetype=i3config
-	autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
-	autocmd BufRead,BufNewFile *.tex set filetype=tex
+let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
+map <leader>v :VimwikiIndex
+let g:vimwiki_list = [{'path': '~/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
+autocmd BufRead,BufNewFile ~/.config/i3/config set filetype=i3config
+autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
+autocmd BufRead,BufNewFile *.tex set filetype=tex
 
 " Function for toggling the bottom statusbar:
 let s:hidden_all = 1
@@ -205,5 +196,20 @@ function! ToggleHiddenAll()
 endfunction
 nnoremap <leader>h :call ToggleHiddenAll()<CR>
 
+
+" Keyboard shortcuts:
+ 
 " FZF:
 map <C-p> :Files<CR>
+
+" Shortcutting split navigation, saving a keypress:
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+" Replace all is aliased to S.
+nnoremap S :%s//g<Left><Left>
+
+" Nerd tree
+map <leader>n :NERDTreeToggle<CR>

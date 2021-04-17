@@ -131,7 +131,7 @@ plugins=(
     # transfer
     urltools
     zsh-navigation-tools
-    fast-syntax-highlighting
+    # fast-syntax-highlighting
     universalarchive
 )
 
@@ -152,3 +152,6 @@ source $ZSH/oh-my-zsh.sh
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
 
+# Fzf
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/doc/fzf/examples/completion.zsh
