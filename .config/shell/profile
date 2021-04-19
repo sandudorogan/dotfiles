@@ -13,6 +13,7 @@ export PATH="$PATH:$(du "$HOME/.local/bin" | cut -f2 | paste -sd ':' -)"
 # Default programs:
 export EDITOR="vim"
 export TERMINAL="gnome-terminal"
+export TERM="gnome-terminal"
 export BROWSER="firefox"
 
 # ~/ Clean-up:
