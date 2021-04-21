@@ -7,4 +7,7 @@ xinput
 libinput # Can record then repeat actions.
 # transmission remote cli: 
 tremc
+#
 find / -name '*.desktop' -exec grep -H 'Image Viewer' {} \; 2>/dev/null
+# Update fonts cache:
+fc-cache -f -v

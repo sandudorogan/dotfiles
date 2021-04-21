@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/workspace
+~MSle0~/TRANS
 
 # Last Substitute Search Pattern:
 ~MSle0&\\n
@@ -20,14 +20,78 @@
 $\r
 
 # Command Line History (newest to oldest):
-:w
-|2,0,1618823080,,"w"
+:Maps
+|2,0,1618921405,,"Maps"
 :q
-|2,0,1618822748,,"q"
+|2,0,1618921398,,"q"
+:b1
+|2,0,1618921363,,"b1"
+:w
+|2,0,1618925538,,"w"
+:Git push
+|2,0,1618925415,,"Git push"
 :wq
-|2,0,1618821954,,"wq"
+|2,0,1618925412,,"wq"
+:Git pull
+|2,0,1618925403,,"Git pull"
+:Git commit
+|2,0,1618925340,,"Git commit"
+:b4
+|2,0,1618925025,,"b4"
+:buffers
+|2,0,1618925018,,"buffers"
+:winc =
+|2,0,1618918399,,"winc ="
+:Tags
+|2,0,1618916661,,"Tags"
+:'<,'> Rg
+|2,0,1618914689,,"'<,'> Rg"
+:Rg '<,'>
+|2,0,1618914666,,"Rg '<,'>"
+:Git blame
+|2,0,1618906406,,"Git blame"
+:b3
+|2,0,1618906396,,"b3"
+:b
+|2,0,1618906383,,"b"
+:Match
+|2,0,1618920923,,"Match"
+:q!
+|2,0,1618917679,,"q!"
+:ColorHighlight
+|2,0,1618912156,,"ColorHighlight"
+:Rg TRANSFORM_URL
+|2,0,1618913606,,"Rg TRANSFORM_URL"
+:Git status
+|2,0,1618911734,,"Git status"
+:GBrowse
+|2,0,1618911245,,"GBrowse"
+:Git diff
+|2,0,1618910823,,"Git diff"
+:Git
+|2,0,1618906232,,"Git"
+:CocConfig
+|2,0,1618834552,,"CocConfig"
+:ew
+|2,0,1618837432,,"ew"
+:CocList folders
+|2,0,1618835058,,"CocList folders"
 :Help
-|2,0,1618660355,,"Help"
+|2,0,1618832789,,"Help"
+:verbose imap <C-j>
+|2,0,1618832534,,"verbose imap <C-j>"
+:qjjjjjjjj
+|2,0,1618832380,,"qjjjjjjjj"
+:CocList
+|2,0,1618832239,,"CocList"
+:CocList marketplace
+|2,0,1618831513,,"CocList marketplace"
+:CocList marketplace python
+|2,0,1618831485,,"CocList marketplace python"
+:verbose imap <tab>
+|2,0,1618828865,,"verbose imap <tab>"
+:Help 
+|2,0,1618828705,,"Help "
 :Help key notation
 |2,0,1618660352,,"Help key notation"
 :Help normal
@@ -36,16 +100,12 @@ $\r
 |2,0,1618659945,,"Q"
 :qw
 |2,0,1618659663,,"qw"
-:Help 
-|2,0,1618659629,,"Help "
 :Help alt
 |2,0,1618659625,,"Help alt"
 :Rg 
 |2,0,1618496395,,"Rg "
 :Rg delete_files
 |2,0,1618496256,,"Rg delete_files"
-:q!
-|2,0,1618482331,,"q!"
 :Rg STREAM_PROFILES
 |2,0,1618326758,,"Rg STREAM_PROFILES"
 :Rg transform_media
@@ -66,10 +126,6 @@ $\r
 |2,0,1618309130,,"Rd"
 :Lines
 |2,0,1618302518,,"Lines"
-:Tags
-|2,0,1618302288,,"Tags"
-:ew
-|2,0,1617970488,,"ew"
 :w !sudo tee %
 |2,0,1617454946,,"w !sudo tee %"
 :w!
@@ -80,8 +136,6 @@ $\r
 |2,0,1616768040,,"wM"
 :buf5
 |2,0,1613053901,,"buf5"
-:buffers
-|2,0,1613053891,,"buffers"
 :set cc=80
 |2,0,1613053408,,"set cc=80"
 :%s/\\n/\r/g
@@ -196,8 +250,6 @@ $\r
 |2,0,1609446949,,"tabnew .vimrc"
 :ColorToggle
 |2,0,1609495007,,"ColorToggle"
-:ColorHighlight
-|2,0,1609494947,,"ColorHighlight"
 :CtrlP .cache
 |2,0,1609494861,,"CtrlP .cache"
 :W
@@ -220,6 +272,44 @@ $\r
 |2,0,1609276957,,"'<,'>norm $ ."
 
 # Search String History (newest to oldest):
+?/CreateTag
+|2,1,1618837957,47,"CreateTag"
+?/match
+|2,1,1618921099,47,"match"
+?/Soroca
+|2,1,1618933205,47,"Soroca"
+?/Baran
+|2,1,1618933142,47,"Baran"
+?/Dorogan
+|2,1,1618933118,47,"Dorogan"
+?/down
+|2,1,1618916305,47,"down"
+?/matchit
+|2,1,1618920941,47,"matchit"
+??Plug
+|2,1,1618920854,63,"Plug"
+? \<export\>
+|2,1,1618918100,,"\\<export\\>"
+?/cmd
+|2,1,1618917611,47,"cmd"
+?/cursor
+|2,1,1618913667,47,"cursor"
+?/TRANS
+|2,1,1618913623,47,"TRANS"
+?/variable
+|2,1,1618830912,47,"variable"
+?/variables
+|2,1,1618830909,47,"variables"
+??status
+|2,1,1618829102,63,"status"
+?/update
+|2,1,1618828959,47,"update"
+?/sign
+|2,1,1618828342,47,"sign"
+?/Plug
+|2,1,1618825253,47,"Plug"
+?/plug
+|2,1,1618825250,47,"plug"
 ?/workspace
 |2,1,1618822586,47,"workspace"
 ?/class
@@ -360,8 +450,6 @@ $\r
 |2,1,1610305440,47,"alias"
 ??plu
 |2,1,1610304317,63,"plu"
-?/plug
-|2,1,1610303874,47,"plug"
 ? \<ws6\>
 |2,1,1610106117,,"\\<ws6\\>"
 ?/Developer
@@ -439,7 +527,7 @@ $\r
 
 # Input Line History (newest to oldest):
 @y
-|2,3,1618302292,,"y"
+|2,3,1618916663,,"y"
 @span>
 |2,3,1609686077,,"span>"
 
@@ -447,160 +535,71 @@ $\r
 
 # Registers:
 "0	LINE	0
-	exec --no-startup-id i3-msg 'workspace $ws4; exec gnome-terminal --command "cd ~/workdir/story-builder"'
-|3,0,0,1,1,0,1618822671,"exec --no-startup-id i3-msg 'workspace $ws4; exec gnome-terminal --command \"cd ~/workdir/story-builder\"'"
+	npx cypress run --config video=false
+|3,0,0,1,1,0,1618925428,"npx cypress run --config video=false"
 "1	LINE	0
-	GenericName=Web Browser
-|3,0,1,1,1,0,1618821195,"GenericName=Web Browser"
+	" Change cursor shape on mode change
+	:autocmd InsertEnter * set cul
+	:autocmd InsertLeave * set nocul
+	
+	
+|3,0,1,1,5,0,1618920846,"\" Change cursor shape on mode change",":autocmd InsertEnter * set cul",":autocmd InsertLeave * set nocul","",""
 "2	LINE	0
-	Name=Firefox Web Browser
-|3,0,2,1,1,0,1618821188,"Name=Firefox Web Browser"
+	# Vi mode:
+	# bindkey -v
+	# export KEYTIMEOUT=1
+	
+|3,0,2,1,4,0,1618918054,"# Vi mode:","# bindkey -v","# export KEYTIMEOUT=1",""
 "3	LINE	0
-	GenericName[ar]=متصفح ويب
-	GenericName[ast]=Restolador Web
-	GenericName[bn]=ওয়েব ব্রাউজার
-	GenericName[ca]=Navegador web
-	GenericName[cs]=Webový prohlížeč
-	GenericName[da]=Webbrowser
-	GenericName[el]=Περιηγητής διαδικτύου
-	GenericName[es]=Navegador web
-	GenericName[et]=Veebibrauser
-	GenericName[fa]=مرورگر اینترنتی
-	GenericName[fi]=WWW-selain
-	GenericName[fr]=Navigateur Web
-	GenericName[gl]=Navegador Web
-	GenericName[he]=דפדפן אינטרנט
-	GenericName[hr]=Web preglednik
-	GenericName[hu]=Webböngésző
-	GenericName[it]=Browser web
-	GenericName[ja]=ウェブ・ブラウザ
-	GenericName[ko]=웹 브라우저
-	GenericName[ku]=Geroka torê
-	GenericName[lt]=Interneto naršyklė
-	GenericName[nb]=Nettleser
-	GenericName[nl]=Webbrowser
-	GenericName[nn]=Nettlesar
-	GenericName[no]=Nettleser
-	GenericName[pl]=Przeglądarka WWW
-	GenericName[pt]=Navegador Web
-	GenericName[pt_BR]=Navegador Web
-	GenericName[ro]=Navigator Internet
-	GenericName[ru]=Веб-браузер
-	GenericName[sk]=Internetový prehliadač
-	GenericName[sl]=Spletni brskalnik
-	GenericName[sv]=Webbläsare
-	GenericName[tr]=Web Tarayıcı
-	GenericName[ug]=توركۆرگۈ
-	GenericName[uk]=Веб-браузер
-	GenericName[vi]=Trình duyệt Web
-	GenericName[zh_CN]=网络浏览器
-	GenericName[zh_TW]=網路瀏覽器
-|3,0,3,1,39,0,1618821145,"GenericName[ar]=متصفح ويب","GenericName[ast]=Restolador Web","GenericName[bn]=ওয়েব ব্রাউজার","GenericName[ca]=Navegador web","GenericName[cs]=Webový prohlížeč","GenericName[da]=Webbrowser","GenericName[el]=Περιηγητής διαδικτύου","GenericName[es]=Navegador web","GenericName[et]=Veebibrauser","GenericName[fa]=مرورگر اینترنتی","GenericName[fi]=WWW-selain",>32
-|<"GenericName[fr]=Navigateur Web","GenericName[gl]=Navegador Web","GenericName[he]=דפדפן אינטרנט","GenericName[hr]=Web preglednik","GenericName[hu]=Webböngésző","GenericName[it]=Browser web","GenericName[ja]=ウェブ・ブラウザ","GenericName[ko]=웹 브라우저","GenericName[ku]=Geroka torê","GenericName[lt]=Interneto naršyklė","GenericName[nb]=Nettleser","GenericName[nl]=Webbrowser","GenericName[nn]=Nettlesar","GenericName[no]=Nettleser",>35
-|<"GenericName[pl]=Przeglądarka WWW","GenericName[pt]=Navegador Web","GenericName[pt_BR]=Navegador Web","GenericName[ro]=Navigator Internet","GenericName[ru]=Веб-браузер","GenericName[sk]=Internetový prehliadač","GenericName[sl]=Spletni brskalnik","GenericName[sv]=Webbläsare","GenericName[tr]=Web Tarayıcı","GenericName[ug]=توركۆرگۈ","GenericName[uk]=Веб-браузер","GenericName[vi]=Trình duyệt Web","GenericName[zh_CN]=网络浏览器",>36
-|<"GenericName[zh_TW]=網路瀏覽器"
+	# Basic auto/tab complete:
+	autoload -U compinit
+	zstyle ':completion:*' menu select
+	zmodload zsh/complist
+	compinit
+	_comp_options+=(globdots)		# Include hidden files.
+	
+|3,0,3,1,7,0,1618918044,"# Basic auto/tab complete:","autoload -U compinit","zstyle ':completion:*' menu select","zmodload zsh/complist","compinit","_comp_options+=(globdots)		# Include hidden files.",""
 "4	LINE	0
-	GenericName[ar]=متصفح ويب
-	GenericName[ast]=Restolador Web
-	GenericName[bn]=ওয়েব ব্রাউজার
-	GenericName[ca]=Navegador web
-	GenericName[cs]=Webový prohlížeč
-	GenericName[da]=Webbrowser
-	GenericName[el]=Περιηγητής διαδικτύου
-	GenericName[es]=Navegador web
-	GenericName[et]=Veebibrauser
-	GenericName[fa]=مرورگر اینترنتی
-	GenericName[fi]=WWW-selain
-	GenericName[fr]=Navigateur Web
-	GenericName[gl]=Navegador Web
-	GenericName[he]=דפדפן אינטרנט
-	GenericName[hr]=Web preglednik
-	GenericName[hu]=Webböngésző
-	GenericName[it]=Browser web
-	GenericName[ja]=ウェブ・ブラウザ
-	GenericName[ko]=웹 브라우저
-	GenericName[ku]=Geroka torê
-	GenericName[lt]=Interneto naršyklė
-	GenericName[nb]=Nettleser
-	GenericName[nl]=Webbrowser
-	GenericName[nn]=Nettlesar
-	GenericName[no]=Nettleser
-	GenericName[pl]=Przeglądarka WWW
-	GenericName[pt]=Navegador Web
-	GenericName[pt_BR]=Navegador Web
-	GenericName[ro]=Navigator Internet
-	GenericName[ru]=Веб-браузер
-	GenericName[sk]=Internetový prehliadač
-	GenericName[sl]=Spletni brskalnik
-	GenericName[sv]=Webbläsare
-	GenericName[tr]=Web Tarayıcı
-	GenericName[ug]=توركۆرگۈ
-	GenericName[uk]=Веб-браузер
-	GenericName[vi]=Trình duyệt Web
-	GenericName[zh_CN]=网络浏览器
-	GenericName[zh_TW]=網路瀏覽器
-|3,0,4,1,39,0,1618821135,"GenericName[ar]=متصفح ويب","GenericName[ast]=Restolador Web","GenericName[bn]=ওয়েব ব্রাউজার","GenericName[ca]=Navegador web","GenericName[cs]=Webový prohlížeč","GenericName[da]=Webbrowser","GenericName[el]=Περιηγητής διαδικτύου","GenericName[es]=Navegador web","GenericName[et]=Veebibrauser","GenericName[fa]=مرورگر اینترنتی","GenericName[fi]=WWW-selain",>32
-|<"GenericName[fr]=Navigateur Web","GenericName[gl]=Navegador Web","GenericName[he]=דפדפן אינטרנט","GenericName[hr]=Web preglednik","GenericName[hu]=Webböngésző","GenericName[it]=Browser web","GenericName[ja]=ウェブ・ブラウザ","GenericName[ko]=웹 브라우저","GenericName[ku]=Geroka torê","GenericName[lt]=Interneto naršyklė","GenericName[nb]=Nettleser","GenericName[nl]=Webbrowser","GenericName[nn]=Nettlesar","GenericName[no]=Nettleser",>35
-|<"GenericName[pl]=Przeglądarka WWW","GenericName[pt]=Navegador Web","GenericName[pt_BR]=Navegador Web","GenericName[ro]=Navigator Internet","GenericName[ru]=Веб-браузер","GenericName[sk]=Internetový prehliadač","GenericName[sl]=Spletni brskalnik","GenericName[sv]=Webbläsare","GenericName[tr]=Web Tarayıcı","GenericName[ug]=توركۆرگۈ","GenericName[uk]=Веб-браузер","GenericName[vi]=Trình duyệt Web","GenericName[zh_CN]=网络浏览器",>36
-|<"GenericName[zh_TW]=網路瀏覽器"
+	source $HOME/.local/bin/virtualenvwrapper.sh
+	
+|3,0,4,1,2,0,1618918034,"source $HOME/.local/bin/virtualenvwrapper.sh",""
 "5	LINE	0
-	Name[ar]=متصفح الويب فَيَرفُكْس
-	Name[ast]=Restolador web Firefox
-	Name[bn]=ফায়ারফক্স ওয়েব ব্রাউজার
-	Name[ca]=Navegador web Firefox
-	Name[cs]=Firefox Webový prohlížeč
-	Name[da]=Firefox - internetbrowser
-	Name[el]=Περιηγητής Firefox
-	Name[es]=Navegador web Firefox
-	Name[et]=Firefoxi veebibrauser
-	Name[fa]=مرورگر اینترنتی Firefox
-	Name[fi]=Firefox-selain
-	Name[fr]=Navigateur Web Firefox
-	Name[gl]=Navegador web Firefox
-	Name[he]=דפדפן האינטרנט Firefox
-	Name[hr]=Firefox web preglednik
-	Name[hu]=Firefox webböngésző
-	Name[it]=Firefox Browser Web
-	Name[ja]=Firefox ウェブ・ブラウザ
-	Name[ko]=Firefox 웹 브라우저
-	Name[ku]=Geroka torê Firefox
-	Name[lt]=Firefox interneto naršyklė
-	Name[nb]=Firefox Nettleser
-	Name[nl]=Firefox webbrowser
-	Name[nn]=Firefox Nettlesar
-	Name[no]=Firefox Nettleser
-	Name[pl]=Przeglądarka WWW Firefox
-	Name[pt]=Firefox Navegador Web
-	Name[pt_BR]=Navegador Web Firefox
-	Name[ro]=Firefox – Navigator Internet
-	Name[ru]=Веб-браузер Firefox
-	Name[sk]=Firefox - internetový prehliadač
-	Name[sl]=Firefox spletni brskalnik
-	Name[sv]=Firefox webbläsare
-	Name[tr]=Firefox Web Tarayıcısı
-	Name[ug]=Firefox توركۆرگۈ
-	Name[uk]=Веб-браузер Firefox
-	Name[vi]=Trình duyệt web Firefox
-	Name[zh_CN]=Firefox 网络浏览器
-	Name[zh_TW]=Firefox 網路瀏覽器
-|3,0,5,1,39,0,1618821128,"Name[ar]=متصفح الويب فَيَرفُكْس","Name[ast]=Restolador web Firefox","Name[bn]=ফায়ারফক্স ওয়েব ব্রাউজার","Name[ca]=Navegador web Firefox","Name[cs]=Firefox Webový prohlížeč","Name[da]=Firefox - internetbrowser","Name[el]=Περιηγητής Firefox","Name[es]=Navegador web Firefox","Name[et]=Firefoxi veebibrauser","Name[fa]=مرورگر اینترنتی Firefox",>25
-|<"Name[fi]=Firefox-selain","Name[fr]=Navigateur Web Firefox","Name[gl]=Navegador web Firefox","Name[he]=דפדפן האינטרנט Firefox","Name[hr]=Firefox web preglednik","Name[hu]=Firefox webböngésző","Name[it]=Firefox Browser Web","Name[ja]=Firefox ウェブ・ブラウザ","Name[ko]=Firefox 웹 브라우저","Name[ku]=Geroka torê Firefox","Name[lt]=Firefox interneto naršyklė","Name[nb]=Firefox Nettleser","Name[nl]=Firefox webbrowser","Name[nn]=Firefox Nettlesar",>28
-|<"Name[no]=Firefox Nettleser","Name[pl]=Przeglądarka WWW Firefox","Name[pt]=Firefox Navegador Web","Name[pt_BR]=Navegador Web Firefox","Name[ro]=Firefox – Navigator Internet","Name[ru]=Веб-браузер Firefox","Name[sk]=Firefox - internetový prehliadač","Name[sl]=Firefox spletni brskalnik","Name[sv]=Firefox webbläsare","Name[tr]=Firefox Web Tarayıcısı","Name[ug]=Firefox توركۆرگۈ","Name[uk]=Веб-браузер Firefox","Name[vi]=Trình duyệt web Firefox",>37
-|<"Name[zh_CN]=Firefox 网络浏览器","Name[zh_TW]=Firefox 網路瀏覽器"
+	# Use vim keys in tab complete menu:
+	bindkey -M menuselect 'h' vi-backward-char
+	bindkey -M menuselect 'k' vi-up-line-or-history
+	bindkey -M menuselect 'l' vi-forward-char
+	bindkey -M menuselect 'j' vi-down-line-or-history
+	bindkey -v '^?' backward-delete-char
+	
+|3,0,5,1,7,0,1618918003,"# Use vim keys in tab complete menu:","bindkey -M menuselect 'h' vi-backward-char","bindkey -M menuselect 'k' vi-up-line-or-history","bindkey -M menuselect 'l' vi-forward-char","bindkey -M menuselect 'j' vi-down-line-or-history","bindkey -v '^?' backward-delete-char",""
 "6	LINE	0
-	map <M-1> :NERDTreeToggle<CR>
-|3,0,6,1,1,0,1618660557,"map <M-1> :NERDTreeToggle<CR>"
+	# Change cursor shape for different vi modes.
+	function zle-keymap-select () {
+	    case $KEYMAP in
+	        vicmd) echo -ne '\e[1 q';;      # block
+	        viins|main) echo -ne '\e[5 q';; # beam
+	    esac
+	}
+	zle -N zle-keymap-select
+	zle-line-init() {
+	    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+	    echo -ne "\e[5 q"
+	}
+	zle -N zle-line-init
+	echo -ne '\e[5 q' # Use beam shape cursor on startup.
+	preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+	
+|3,0,6,1,16,0,1618917919,"# Change cursor shape for different vi modes.","function zle-keymap-select () {","    case $KEYMAP in","        vicmd) echo -ne '\\e[1 q';;      # block","        viins|main) echo -ne '\\e[5 q';; # beam","    esac","}","zle -N zle-keymap-select","zle-line-init() {","    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)","    echo -ne \"\\e[5 q\"","}","zle -N zle-line-init",>56
+|<"echo -ne '\\e[5 q' # Use beam shape cursor on startup.","preexec() { echo -ne '\\e[5 q' ;} # Use beam shape cursor for each new prompt.",""
 "7	LINE	0
-	map <C-s> <ESC>:w<CR>
-	map <C-w> <ESC>:q<CR>
-	
-|3,0,7,1,3,0,1618660517,"map <C-s> <ESC>:w<CR>","map <C-w> <ESC>:q<CR>",""
+	"
+|3,0,7,1,1,0,1618917636,"\""
 "8	LINE	0
-	
-|3,0,8,1,1,0,1618660176,""
+	    Plug 'Xuyuanp/nerdtree-git-plugin'
+|3,0,8,1,1,0,1618906540,"    Plug 'Xuyuanp/nerdtree-git-plugin'"
 "9	LINE	0
-	
-|3,0,9,1,1,0,1618660163,""
+	    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+|3,0,9,1,1,0,1618906492,"    Plug 'mg979/vim-visual-multi', {'branch': 'master'}"
 "a	CHAR	0
 	$USAGE < 50
 |3,0,10,0,1,0,1609671429,"$USAGE < 50"
@@ -642,244 +641,728 @@ $\r
 |3,0,34,0,1,0,1609671572,"$"
 ""-	CHAR	0
 	"
-|3,1,36,0,1,0,1618823078,"\""
+|3,1,36,0,1,0,1618920849,"\""
 
 # global variables:
 
 # File marks:
-'0  420  102  ~/.config/i3/config
-|4,48,420,102,1618823084,"~/.config/i3/config"
-'1  420  95  ~/.config/i3/config
-|4,49,420,95,1618822748,"~/.config/i3/config"
-'2  16  0  ~/.config/shell/profile
-|4,50,16,0,1618821994,"~/.config/shell/profile"
-'3  16  0  ~/.config/shell/profile
-|4,51,16,0,1618821976,"~/.config/shell/profile"
-'4  16  26  ~/.config/shell/profile
-|4,52,16,26,1618821954,"~/.config/shell/profile"
-'5  16  26  ~/.config/shell/profile
-|4,53,16,26,1618821954,"~/.config/shell/profile"
-'6  15  7  ~/.config/shell/profile
-|4,54,15,7,1618821939,"~/.config/shell/profile"
-'7  15  7  ~/.config/shell/profile
-|4,55,15,7,1618821939,"~/.config/shell/profile"
-'8  15  7  ~/.config/shell/profile
-|4,56,15,7,1618821939,"~/.config/shell/profile"
-'9  15  7  ~/.config/shell/profile
-|4,57,15,7,1618821939,"~/.config/shell/profile"
+'0  128  42  ~/workdir/backend/app/charge/utils/resizes.py
+|4,48,128,42,1618937785,"~/workdir/backend/app/charge/utils/resizes.py"
+'1  348  4  ~/workdir/backend/app/charge/schema.py
+|4,49,348,4,1618937785,"~/workdir/backend/app/charge/schema.py"
+'2  83  4  ~/.vimrc
+|4,50,83,4,1618937784,"~/.vimrc"
+'3  29  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,51,29,0,1618937784,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+'4  27145  57  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,52,27145,57,1618933377,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+'5  2399  16  ~/workdir/backend/app/charge/schema.py
+|4,53,2399,16,1618921301,"~/workdir/backend/app/charge/schema.py"
+'6  44  45  ~/workdir/story-builder/src/frontend/story_builder/views/story.cljs
+|4,54,44,45,1618921117,"~/workdir/story-builder/src/frontend/story_builder/views/story.cljs"
+'7  44  45  ~/workdir/story-builder/src/frontend/story_builder/views/story.cljs
+|4,55,44,45,1618921117,"~/workdir/story-builder/src/frontend/story_builder/views/story.cljs"
+'8  83  29  ~/.vimrc
+|4,56,83,29,1618921082,"~/.vimrc"
+'9  78  33  ~/workdir/backend/app/charge/schema.py
+|4,57,78,33,1618918286,"~/workdir/backend/app/charge/schema.py"
 
 # Jumplist (newest first):
--'  420  102  ~/.config/i3/config
-|4,39,420,102,1618823084,"~/.config/i3/config"
--'  420  95  ~/.config/i3/config
-|4,39,420,95,1618822748,"~/.config/i3/config"
--'  419  38  ~/.config/i3/config
-|4,39,419,38,1618822610,"~/.config/i3/config"
--'  419  38  ~/.config/i3/config
-|4,39,419,38,1618822610,"~/.config/i3/config"
--'  126  27  ~/.config/i3/config
-|4,39,126,27,1618822601,"~/.config/i3/config"
--'  126  27  ~/.config/i3/config
-|4,39,126,27,1618822601,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1618822586,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1618822586,"~/.config/i3/config"
--'  418  88  ~/.config/i3/config
-|4,39,418,88,1618822567,"~/.config/i3/config"
--'  418  88  ~/.config/i3/config
-|4,39,418,88,1618822567,"~/.config/i3/config"
--'  16  0  ~/.config/shell/profile
-|4,39,16,0,1618821994,"~/.config/shell/profile"
--'  16  0  ~/.config/shell/profile
-|4,39,16,0,1618821994,"~/.config/shell/profile"
--'  16  0  ~/.config/shell/profile
-|4,39,16,0,1618821976,"~/.config/shell/profile"
--'  16  0  ~/.config/shell/profile
-|4,39,16,0,1618821976,"~/.config/shell/profile"
--'  16  26  ~/.config/shell/profile
-|4,39,16,26,1618821954,"~/.config/shell/profile"
--'  16  26  ~/.config/shell/profile
-|4,39,16,26,1618821954,"~/.config/shell/profile"
--'  15  0  ~/.config/shell/profile
-|4,39,15,0,1618821944,"~/.config/shell/profile"
--'  15  0  ~/.config/shell/profile
-|4,39,15,0,1618821944,"~/.config/shell/profile"
--'  15  0  ~/.config/shell/profile
-|4,39,15,0,1618821944,"~/.config/shell/profile"
--'  15  0  ~/.config/shell/profile
-|4,39,15,0,1618821944,"~/.config/shell/profile"
--'  15  0  ~/.config/shell/profile
-|4,39,15,0,1618821944,"~/.config/shell/profile"
--'  15  0  ~/.config/shell/profile
-|4,39,15,0,1618821944,"~/.config/shell/profile"
--'  15  7  ~/.config/shell/profile
-|4,39,15,7,1618821939,"~/.config/shell/profile"
--'  15  7  ~/.config/shell/profile
-|4,39,15,7,1618821939,"~/.config/shell/profile"
--'  69  12  ~/.config/shell/profile
-|4,39,69,12,1618821935,"~/.config/shell/profile"
--'  68  12  ~/.config/shell/profile
-|4,39,68,12,1618821935,"~/.config/shell/profile"
--'  69  12  ~/.config/shell/profile
-|4,39,69,12,1618821935,"~/.config/shell/profile"
--'  68  12  ~/.config/shell/profile
-|4,39,68,12,1618821935,"~/.config/shell/profile"
--'  69  12  ~/.config/shell/profile
-|4,39,69,12,1618821935,"~/.config/shell/profile"
--'  68  12  ~/.config/shell/profile
-|4,39,68,12,1618821935,"~/.config/shell/profile"
--'  69  12  ~/.config/shell/profile
-|4,39,69,12,1618821935,"~/.config/shell/profile"
--'  68  12  ~/.config/shell/profile
-|4,39,68,12,1618821935,"~/.config/shell/profile"
--'  69  12  ~/.config/shell/profile
-|4,39,69,12,1618821935,"~/.config/shell/profile"
--'  68  12  ~/.config/shell/profile
-|4,39,68,12,1618821935,"~/.config/shell/profile"
--'  69  12  ~/.config/shell/profile
-|4,39,69,12,1618821935,"~/.config/shell/profile"
--'  68  12  ~/.config/shell/profile
-|4,39,68,12,1618821935,"~/.config/shell/profile"
--'  75  12  ~/.config/shell/profile
-|4,39,75,12,1618821934,"~/.config/shell/profile"
--'  74  12  ~/.config/shell/profile
-|4,39,74,12,1618821934,"~/.config/shell/profile"
--'  73  12  ~/.config/shell/profile
-|4,39,73,12,1618821934,"~/.config/shell/profile"
--'  72  12  ~/.config/shell/profile
-|4,39,72,12,1618821934,"~/.config/shell/profile"
--'  75  12  ~/.config/shell/profile
-|4,39,75,12,1618821934,"~/.config/shell/profile"
--'  74  12  ~/.config/shell/profile
-|4,39,74,12,1618821934,"~/.config/shell/profile"
--'  73  12  ~/.config/shell/profile
-|4,39,73,12,1618821934,"~/.config/shell/profile"
--'  72  12  ~/.config/shell/profile
-|4,39,72,12,1618821934,"~/.config/shell/profile"
--'  75  12  ~/.config/shell/profile
-|4,39,75,12,1618821934,"~/.config/shell/profile"
--'  74  12  ~/.config/shell/profile
-|4,39,74,12,1618821934,"~/.config/shell/profile"
--'  73  12  ~/.config/shell/profile
-|4,39,73,12,1618821934,"~/.config/shell/profile"
--'  74  12  ~/.config/shell/profile
-|4,39,74,12,1618821934,"~/.config/shell/profile"
--'  73  12  ~/.config/shell/profile
-|4,39,73,12,1618821934,"~/.config/shell/profile"
--'  72  12  ~/.config/shell/profile
-|4,39,72,12,1618821934,"~/.config/shell/profile"
--'  75  12  ~/.config/shell/profile
-|4,39,75,12,1618821934,"~/.config/shell/profile"
--'  74  12  ~/.config/shell/profile
-|4,39,74,12,1618821934,"~/.config/shell/profile"
--'  73  12  ~/.config/shell/profile
-|4,39,73,12,1618821934,"~/.config/shell/profile"
--'  72  12  ~/.config/shell/profile
-|4,39,72,12,1618821934,"~/.config/shell/profile"
--'  75  12  ~/.config/shell/profile
-|4,39,75,12,1618821934,"~/.config/shell/profile"
--'  74  12  ~/.config/shell/profile
-|4,39,74,12,1618821934,"~/.config/shell/profile"
--'  73  12  ~/.config/shell/profile
-|4,39,73,12,1618821934,"~/.config/shell/profile"
--'  72  12  ~/.config/shell/profile
-|4,39,72,12,1618821934,"~/.config/shell/profile"
--'  75  12  ~/.config/shell/profile
-|4,39,75,12,1618821934,"~/.config/shell/profile"
--'  74  12  ~/.config/shell/profile
-|4,39,74,12,1618821934,"~/.config/shell/profile"
--'  73  12  ~/.config/shell/profile
-|4,39,73,12,1618821934,"~/.config/shell/profile"
--'  74  12  ~/.config/shell/profile
-|4,39,74,12,1618821934,"~/.config/shell/profile"
--'  73  12  ~/.config/shell/profile
-|4,39,73,12,1618821934,"~/.config/shell/profile"
--'  72  12  ~/.config/shell/profile
-|4,39,72,12,1618821934,"~/.config/shell/profile"
--'  71  12  ~/.config/shell/profile
-|4,39,71,12,1618821933,"~/.config/shell/profile"
--'  70  12  ~/.config/shell/profile
-|4,39,70,12,1618821933,"~/.config/shell/profile"
--'  71  12  ~/.config/shell/profile
-|4,39,71,12,1618821933,"~/.config/shell/profile"
--'  70  12  ~/.config/shell/profile
-|4,39,70,12,1618821933,"~/.config/shell/profile"
--'  72  12  ~/.config/shell/profile
-|4,39,72,12,1618821933,"~/.config/shell/profile"
--'  71  12  ~/.config/shell/profile
-|4,39,71,12,1618821933,"~/.config/shell/profile"
--'  70  12  ~/.config/shell/profile
-|4,39,70,12,1618821933,"~/.config/shell/profile"
--'  71  12  ~/.config/shell/profile
-|4,39,71,12,1618821933,"~/.config/shell/profile"
--'  70  12  ~/.config/shell/profile
-|4,39,70,12,1618821933,"~/.config/shell/profile"
--'  69  12  ~/.config/shell/profile
-|4,39,69,12,1618821933,"~/.config/shell/profile"
--'  71  12  ~/.config/shell/profile
-|4,39,71,12,1618821933,"~/.config/shell/profile"
--'  70  12  ~/.config/shell/profile
-|4,39,70,12,1618821933,"~/.config/shell/profile"
--'  71  12  ~/.config/shell/profile
-|4,39,71,12,1618821933,"~/.config/shell/profile"
--'  70  12  ~/.config/shell/profile
-|4,39,70,12,1618821933,"~/.config/shell/profile"
--'  72  12  ~/.config/shell/profile
-|4,39,72,12,1618821933,"~/.config/shell/profile"
--'  71  12  ~/.config/shell/profile
-|4,39,71,12,1618821933,"~/.config/shell/profile"
--'  70  12  ~/.config/shell/profile
-|4,39,70,12,1618821933,"~/.config/shell/profile"
--'  71  12  ~/.config/shell/profile
-|4,39,71,12,1618821933,"~/.config/shell/profile"
--'  70  12  ~/.config/shell/profile
-|4,39,70,12,1618821933,"~/.config/shell/profile"
--'  69  12  ~/.config/shell/profile
-|4,39,69,12,1618821933,"~/.config/shell/profile"
--'  50  0  ~/.config/shell/profile
-|4,39,50,0,1618821931,"~/.config/shell/profile"
--'  49  0  ~/.config/shell/profile
-|4,39,49,0,1618821931,"~/.config/shell/profile"
--'  50  0  ~/.config/shell/profile
-|4,39,50,0,1618821931,"~/.config/shell/profile"
--'  49  0  ~/.config/shell/profile
-|4,39,49,0,1618821931,"~/.config/shell/profile"
--'  50  0  ~/.config/shell/profile
-|4,39,50,0,1618821931,"~/.config/shell/profile"
--'  49  0  ~/.config/shell/profile
-|4,39,49,0,1618821931,"~/.config/shell/profile"
--'  50  0  ~/.config/shell/profile
-|4,39,50,0,1618821931,"~/.config/shell/profile"
--'  49  0  ~/.config/shell/profile
-|4,39,49,0,1618821931,"~/.config/shell/profile"
--'  50  0  ~/.config/shell/profile
-|4,39,50,0,1618821931,"~/.config/shell/profile"
--'  49  0  ~/.config/shell/profile
-|4,39,49,0,1618821931,"~/.config/shell/profile"
--'  50  0  ~/.config/shell/profile
-|4,39,50,0,1618821931,"~/.config/shell/profile"
--'  49  0  ~/.config/shell/profile
-|4,39,49,0,1618821931,"~/.config/shell/profile"
--'  1  0  /usr/share/applications/org.gnome.Terminal.desktop
-|4,39,1,0,1618821915,"/usr/share/applications/org.gnome.Terminal.desktop"
--'  1  0  /usr/share/applications/org.gnome.Terminal.desktop
-|4,39,1,0,1618821915,"/usr/share/applications/org.gnome.Terminal.desktop"
--'  1  0  /usr/share/applications/org.gnome.Terminal.desktop
-|4,39,1,0,1618821915,"/usr/share/applications/org.gnome.Terminal.desktop"
--'  1  0  /usr/share/applications/org.gnome.Terminal.desktop
-|4,39,1,0,1618821915,"/usr/share/applications/org.gnome.Terminal.desktop"
+-'  128  42  ~/workdir/backend/app/charge/utils/resizes.py
+|4,39,128,42,1618937785,"~/workdir/backend/app/charge/utils/resizes.py"
+-'  348  4  ~/workdir/backend/app/charge/schema.py
+|4,39,348,4,1618937785,"~/workdir/backend/app/charge/schema.py"
+-'  83  4  ~/.vimrc
+|4,39,83,4,1618937784,"~/.vimrc"
+-'  29  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,39,29,0,1618937784,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+-'  27145  57  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,27145,57,1618933377,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  27053  76  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,27053,76,1618933373,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  27051  59  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,27051,59,1618933370,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  27037  60  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,27037,60,1618933367,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  27031  77  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,27031,77,1618933365,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  27024  69  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,27024,69,1618933364,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26973  56  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26973,56,1618933361,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26841  61  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26841,61,1618933360,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26696  94  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26696,94,1618933357,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26677  51  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26677,51,1618933355,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26547  65  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26547,65,1618933352,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26535  57  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26535,57,1618933351,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26527  78  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26527,78,1618933348,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26506  63  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26506,63,1618933344,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26484  50  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26484,50,1618933342,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26407  72  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26407,72,1618933340,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26249  59  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26249,59,1618933308,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26171  50  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26171,50,1618933305,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26126  52  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26126,52,1618933288,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26125  68  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26125,68,1618933286,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26111  64  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26111,64,1618933284,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26042  71  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26042,71,1618933280,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26037  72  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26037,72,1618933278,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26034  55  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26034,55,1618933275,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26012  61  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26012,61,1618933273,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25990  56  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25990,56,1618933271,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25855  50  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25855,50,1618933268,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25852  57  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25852,57,1618933265,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25850  54  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25850,54,1618933262,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25726  60  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25726,60,1618933254,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25725  69  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25725,69,1618933249,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25721  75  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25721,75,1618933247,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25720  48  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25720,48,1618933244,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25652  83  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25652,83,1618933241,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25556  45  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25556,45,1618933238,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25476  67  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25476,67,1618933236,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25351  95  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25351,95,1618933233,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25268  83  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25268,83,1618933230,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25262  61  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25262,61,1618933219,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25132  60  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25132,60,1618933214,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  25107  38  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,25107,38,1618933211,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  23185  35  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,23185,35,1618933184,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  17415  33  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,17415,33,1618933183,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  16997  33  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,16997,33,1618933182,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  16040  35  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,16040,35,1618933181,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  13593  34  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,13593,34,1618933180,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  8457  35  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,8457,35,1618933180,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  8393  28  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,8393,28,1618933179,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  7700  36  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,7700,36,1618933178,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  6648  34  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,6648,34,1618933178,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  5446  37  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,5446,37,1618933177,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  5207  34  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,5207,34,1618933177,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  4018  28  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,4018,28,1618933176,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  2964  36  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,2964,36,1618933175,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  45019  34  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,45019,34,1618933172,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  42889  36  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,42889,36,1618933170,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  41541  28  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,41541,28,1618933168,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  38857  34  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,38857,34,1618933167,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  37854  37  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,37854,37,1618933166,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  35327  38  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,35327,38,1618933164,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  33791  39  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,33791,39,1618933163,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  31096  38  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,31096,38,1618933162,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  30176  36  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,30176,36,1618933161,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  28303  35  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,28303,35,1618933160,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  27119  37  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,27119,37,1618933159,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  26463  36  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,26463,36,1618933158,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  4736  35  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,4736,35,1618933142,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  39926  37  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,39926,37,1618933136,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  29039  33  ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+|4,39,29039,33,1618933130,"~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt"
+-'  38  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,39,38,0,1618926761,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+-'  53  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,39,53,0,1618926761,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+-'  26  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,39,26,0,1618926760,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+-'  22  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,39,22,0,1618926759,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+-'  8  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,39,8,0,1618926759,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+-'  6  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,39,6,0,1618926759,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+-'  1  0  ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+|4,39,1,0,1618926739,"~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs"
+-'  10  2  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,10,2,1618926738,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  71  3  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,71,3,1618926689,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  70  0  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,70,0,1618926664,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  53  0  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,53,0,1618926661,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  26  0  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,26,0,1618926661,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  20  0  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,20,0,1618926661,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  14  0  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,14,0,1618926661,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  9  0  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,9,0,1618926656,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  7  0  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,7,0,1618926655,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  1  0  ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+|4,39,1,0,1618926655,"~/workdir/story-builder/cypress/integration/login/landing_page.cljs"
+-'  209  0  ~/workdir/story-builder/bin/deploy
+|4,39,209,0,1618926606,"~/workdir/story-builder/bin/deploy"
+-'  9  0  ~/workdir/story-builder/config/env-dev-defaults.edn
+|4,39,9,0,1618925965,"~/workdir/story-builder/config/env-dev-defaults.edn"
+-'  219  2  ~/workdir/story-builder/bin/deploy
+|4,39,219,2,1618925323,"~/workdir/story-builder/bin/deploy"
+-'  206  0  ~/workdir/story-builder/bin/deploy
+|4,39,206,0,1618925303,"~/workdir/story-builder/bin/deploy"
+-'  1  0  ~/workdir/story-builder/doc/integration-test.md
+|4,39,1,0,1618925089,"~/workdir/story-builder/doc/integration-test.md"
+-'  1  0  ~/workdir/story-builder/doc/deployment.md
+|4,39,1,0,1618925015,"~/workdir/story-builder/doc/deployment.md"
+-'  275  9  ~/workdir/story-builder/bin/deploy
+|4,39,275,9,1618924810,"~/workdir/story-builder/bin/deploy"
+-'  225  1  ~/workdir/story-builder/bin/deploy
+|4,39,225,1,1618924763,"~/workdir/story-builder/bin/deploy"
+-'  197  4  ~/workdir/story-builder/bin/deploy
+|4,39,197,4,1618924012,"~/workdir/story-builder/bin/deploy"
+-'  244  9  ~/workdir/story-builder/bin/deploy
+|4,39,244,9,1618923999,"~/workdir/story-builder/bin/deploy"
 
 # History of marks within files (newest to oldest):
 
-> ~/.config/i3/config
-	*	1618823084	0
-	"	420	102
-	^	420	85
-	.	420	102
-	+	238	0
-	+	235	31
+> ~/workdir/backend/app/charge/schema.py
+	*	1618937785	0
+	"	348	4
+	.	1943	0
+	+	1942	0
+	+	1943	0
+
+> ~/workdir/backend/app/charge/utils/resizes.py
+	*	1618937785	0
+	"	128	42
+
+> ~/.vimrc
+	*	1618937784	0
+	"	83	4
+	^	83	10
+	.	83	10
+	+	177	0
+	+	168	0
+	+	142	0
+	+	164	0
+	+	157	58
+	+	142	5
+	+	117	1
+	+	168	0
+	+	211	0
+	+	173	0
+	+	217	0
+	+	142	0
+	+	206	0
+	+	221	0
+	+	220	10
+	+	206	0
+	+	207	0
+	+	205	0
+	+	211	0
+	+	210	0
+	+	211	0
+	+	217	11
+	+	217	0
+	+	217	15
+	+	217	0
+	+	217	14
+	+	217	0
+	+	217	13
+	+	217	0
+	+	222	0
+	+	98	10
+	+	99	10
+	+	92	10
+	+	29	0
+	+	28	0
+	+	27	0
+	+	28	0
+	+	31	0
+	+	93	10
+	+	92	0
+	+	93	0
+	+	92	0
+	+	229	0
+	+	223	4
+	+	173	0
+	+	231	15
+	+	168	0
+	+	164	35
+	+	160	11
+	+	161	7
+	+	156	50
+	+	157	69
+	+	160	35
+	+	161	37
+	+	168	1
+	+	161	0
+	+	164	42
+	+	161	9
+	+	160	41
+	+	160	66
+	+	168	0
+	+	361	0
+	+	160	0
+	+	163	0
+	+	229	0
+	+	226	0
+	+	225	0
+	+	228	0
+	+	226	95
+	+	229	0
+	+	280	0
+	+	226	0
+	+	228	0
 	+	227	0
+	+	104	0
+	+	90	0
+	+	84	0
+	+	85	0
+	+	95	0
+	+	91	10
+	+	157	0
+	+	101	46
+	+	92	69
+	+	91	31
+	+	90	70
+	+	91	69
+	+	92	92
+	+	101	70
+	+	91	70
+	+	92	70
+	+	88	73
+	+	85	136
+	+	209	16
+	+	205	0
+	+	203	0
+	+	205	35
+	+	205	0
+	+	204	0
+	+	83	10
+	c	361	0
+	l	163	6
+
+> ~/Movies/Facebook Leak [2019][533M Records][106 Countries]/Moldova.txt
+	*	1618933376	0
+	"	27145	57
+
+> ~/workdir/story-builder/cypress/integration/login/user_registration_page.cljs
+	*	1618926761	0
+	"	29	0
+
+> ~/workdir/story-builder/cypress/integration/login/landing_page.cljs
+	*	1618926691	0
+	"	10	2
+
+> ~/workdir/story-builder/bin/deploy
+	*	1618925965	0
+	"	209	0
+	^	19	23
+	.	19	22
+	+	209	0
+	+	212	0
+	+	194	70
+	+	195	6
+	+	198	1
+	+	195	16
+	+	195	6
+	+	195	98
+	+	195	6
+	+	197	24
+	+	213	42
+	+	213	0
+	+	213	1
+	+	213	0
+	+	243	0
+	+	218	0
+	+	243	33
+	+	218	9
+	+	243	7
+	+	218	37
+	+	243	35
+	+	195	15
+	+	195	5
+	+	195	6
+	+	196	0
+	+	195	88
+	+	194	0
+	+	195	0
+	+	194	7
+	+	195	11
+	+	195	93
+	+	201	69
+	+	207	5
+	+	216	0
+	+	217	0
+	+	216	80
+	+	223	9
+	+	223	99
+	+	223	7
+	+	216	7
+	+	206	13
+	+	211	4
+	+	206	0
+	+	208	0
+	+	210	10
+	+	214	16
+	+	224	18
+	+	223	98
+	+	187	36
+	+	187	39
+	+	170	32
+	+	171	8
+	+	177	33
+	+	171	8
+	+	172	0
+	+	177	31
+	+	177	33
+	+	181	0
+	+	177	31
+	+	176	0
+	+	178	8
+	+	179	1
+	+	187	0
+	+	180	0
+	+	171	8
+	+	173	0
+	+	177	22
+	+	219	8
+	+	244	6
+	+	19	22
+
+> ~/workdir/backend/app/charge/tasks.py
+	*	1618925914	0
+	"	1072	19
+	^	1072	7
+	.	1072	0
+	+	1072	0
+
+> ~/workdir/story-builder/config/env-dev-defaults.edn
+	*	1618925538	0
+	"	9	0
+	^	9	0
+	.	9	0
+	+	9	0
+
+> ~/workdir/story-builder/doc/integration-test.md
+	*	1618925051	0
+	"	1	0
+
+> ~/workdir/story-builder/doc/deployment.md
+	*	1618925015	0
+	"	1	0
+
+> ~/workdir/backend/pyrightconfig.json
+	*	1618921376	0
+	"	13	4
+	^	14	21
+	.	14	20
+	+	16	0
+	+	10	30
+	+	11	19
+	+	2	16
+	+	3	11
+	+	5	16
+	+	6	0
+	+	9	5
+	+	6	14
+	+	7	0
+	+	9	0
+	+	8	24
+	+	10	27
+	+	11	22
+	+	12	27
+	+	13	30
+	+	14	20
+
+> ~/workdir/backend/NERD_tree_1
+	*	1618921305	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/workdir/story-builder/src/frontend/story_builder/views/story.cljs
+	*	1618921262	0
+	"	132	2
+
+> ~/workdir/story-builder/NERD_tree_1
+	*	1618921136	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/workdir/backend/app/charge/api/stories.py
+	*	1618920167	0
+	"	351	25
+	^	384	11
+	.	347	0
+	+	68	57
+	+	61	42
+	+	68	59
+	+	72	0
+	+	68	34
+	+	69	29
+	+	69	27
+	+	71	0
+	+	334	0
+	+	384	0
+	+	347	0
+
+> /tmp/zshNQL9CC
+	*	1618918141	0
+	"	1	13
+
+> /tmp/zsh5HZIUF
+	*	1618918116	0
+	"	1	13
+
+> ~/.config/zsh/.zshrc
+	*	1618918105	0
+	"	108	0
+	^	108	1
+	.	108	0
+	+	154	0
+	+	153	4
+	+	155	0
+	+	98	5
+	+	45	0
+	+	13	0
+	+	87	0
+	+	13	0
+	+	87	4
+	+	13	0
+	+	124	0
+	+	13	0
+	+	117	0
+	+	8	0
+	+	157	0
+	+	156	0
+	+	13	0
+	+	110	0
+	+	13	0
+	+	106	0
+	+	108	0
+
+> ~/NERD_tree_1
+	*	1618918069	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> /tmp/zshVzljRo
+	*	1618917906	0
+	"	2	25
+
+> /tmp/zshxPwRHq
+	*	1618917894	0
+	"	1	7
+
+> /tmp/zshSFvflE
+	*	1618917845	0
+	"	2	10
+
+> /tmp/zshRPGqTF
+	*	1618917827	0
+	"	1	6
+
+> ~/workdir/backend/README.md
+	*	1618917179	0
+	"	11	7
+	^	11	20
+	.	12	0
+	+	1	0
+	+	12	0
+
+> ~/workdir/backend/app/charge/urls.py
+	*	1618916308	0
+	"	146	50
+
+> ~/workdir/backend/app/charge/api/resizes.py
+	*	1618916300	0
+	"	161	0
+
+> ~/workdir/backend/app/charge/env/local.py
+	*	1618916262	0
+	"	9	2
+	^	9	2
+	.	9	0
+	+	9	0
+
+> /tmp/vbAskDT/24
+	*	1618910823	0
+	"	1	0
+
+> ~/workdir/backend/app/charge/utils/media_sources.py
+	*	1618910745	0
+	"	92	4
+
+> fugitive:///home/sandu/workdir/story-builder/.git//57cead0b69298c808b675501c0aeb0ab7e5c9a7f
+	*	1618906413	0
+	"	30	0
+	.	1	0
+	+	1	0
+
+> /tmp/vrgZU1U/27.fugitiveblame
+	*	1618906407	0
+	"	208	0
+
+> /tmp/vrgZU1U/12.fugitiveblame
+	*	1618906360	0
+	"	202	0
+
+> fugitive:///home/sandu/workdir/story-builder/.git//b6f9f69a2baa5c0964e576482a7636f5d4a0febd
+	*	1618906339	0
+	"	35	0
+	.	1	0
+	+	1	0
+
+> /tmp/vrgZU1U/6.fugitiveblame
+	*	1618906316	0
+	"	157	0
+
+> ~/workdir/story-builder/NERD_tree_2
+	*	1618906248	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.virtualenvs/backend/lib/python3.9/site-packages/graphene/relay/mutation.py
+	*	1618838073	0
+	"	18	6
+
+> ~/.vim/coc-settings.json
+	*	1618836301	0
+	"	3	47
+	^	3	48
+	.	3	47
+	+	1	1
+	+	4	12
+	+	4	24
+	+	4	12
+	+	4	0
+	+	4	8
+	+	4	4
+	+	4	41
+	+	4	0
+	+	2	52
+	+	3	47
+
+> ~/.vim/plugged/coc.nvim/doc/coc.txt
+	*	1618834490	0
+	"	1912	35
+
+> ~/.vim/plugged/lightline.vim/doc/lightline.txt
+	*	1618830958	0
+	"	107	20
+
+> ~/.config/shell/profile
+	*	1618830037	0
+	"	18	16
+	^	18	17
+	.	18	16
+	+	14	15
+	+	15	30
+	+	174	0
+	+	163	46
+	+	163	0
+	+	171	0
+	+	50	0
+	+	46	0
+	+	49	21
+	+	20	0
+	+	46	0
+	+	17	28
+	+	49	0
+	+	78	0
+	+	55	0
+	+	61	0
+	+	55	0
+	+	61	0
+	+	60	0
+	+	78	0
+	+	17	22
+	+	46	5
+	+	45	0
+	+	46	80
+	+	46	0
+	+	160	0
+	+	159	0
+	+	162	0
+	+	180	1
+	+	16	26
+	+	18	16
+
+> /usr/share/vim/vim81/doc/sign.txt
+	*	1618828783	0
+	"	119	22
+
+> ~/.important_data
+	*	1618825306	0
+	"	13	13
+	^	13	0
+	.	13	0
+	+	11	0
+	+	12	0
+	+	10	0
+	+	12	20
+	+	13	0
+
+> ~/dotfiles/MERGE_MSG
+	*	1618823874	0
+	"	1	0
+
+> ~/.config/i3/config
+	*	1618823724	0
+	"	418	21
+	^	418	22
+	.	418	21
 	+	229	41
 	+	229	0
 	+	229	30
@@ -971,60 +1454,20 @@ $\r
 	+	417	38
 	+	418	0
 	+	419	101
-	+	420	0
-	+	420	95
+	+	419	0
+	+	419	95
 	+	419	84
-	+	420	85
+	+	419	85
 	+	419	108
-	+	420	102
+	+	419	102
+	+	419	0
+	+	420	0
+	+	418	21
 	a	235	25
-
-> ~/.config/shell/profile
-	*	1618821989	0
-	"	16	0
-	^	16	27
-	.	16	26
-	+	14	15
-	+	15	30
-	+	173	0
-	+	162	46
-	+	162	0
-	+	170	0
-	+	49	0
-	+	45	0
-	+	48	21
-	+	19	0
-	+	45	0
-	+	17	28
-	+	48	0
-	+	77	0
-	+	54	0
-	+	60	0
-	+	54	0
-	+	60	0
-	+	59	0
-	+	77	0
-	+	17	22
-	+	45	5
-	+	44	0
-	+	45	80
-	+	45	0
-	+	159	0
-	+	158	0
-	+	161	0
-	+	179	1
-	+	16	26
 
 > /usr/share/applications/org.gnome.Terminal.desktop
 	*	1618821897	0
 	"	1	0
-
-> ~/.important_data
-	*	1618821868	0
-	"	10	70
-	^	10	0
-	.	10	0
-	+	10	0
 
 > ~/.local/share/applications/firefoxDeveloperEdition.desktop
 	*	1618821195	0
@@ -1057,110 +1500,6 @@ $\r
 	+	3	0
 	+	44	0
 
-> ~/.vimrc
-	*	1618782532	0
-	"	126	28
-	^	95	10
-	.	95	10
-	+	7	0
-	+	6	0
-	+	10	0
-	+	12	0
-	+	13	0
-	+	15	0
-	+	16	0
-	+	135	0
-	+	156	0
-	+	180	0
-	+	160	0
-	+	162	0
-	+	163	0
-	+	165	0
-	+	172	0
-	+	166	0
-	+	171	0
-	+	168	0
-	+	169	0
-	+	168	42
-	+	93	0
-	+	11	0
-	+	14	0
-	+	58	21
-	+	59	15
-	+	93	0
-	+	74	0
-	+	93	0
-	+	105	0
-	+	106	0
-	+	74	0
-	+	92	0
-	+	105	0
-	+	106	0
-	+	168	36
-	+	82	0
-	+	87	0
-	+	88	0
-	+	87	0
-	+	78	0
-	+	82	0
-	+	77	0
-	+	79	12
-	+	78	0
-	+	155	0
-	+	148	5
-	+	150	68
-	+	155	31
-	+	155	41
-	+	155	9
-	+	150	58
-	+	155	0
-	+	150	46
-	+	154	0
-	+	150	44
-	+	152	0
-	+	154	0
-	+	153	6
-	+	150	6
-	+	154	36
-	+	150	68
-	+	153	40
-	+	154	0
-	+	150	68
-	+	168	0
-	+	169	0
-	+	172	0
-	+	160	0
-	+	139	0
-	+	156	0
-	+	153	58
-	+	139	5
-	+	114	1
-	+	160	0
-	+	205	0
-	+	168	0
-	+	211	0
-	+	139	0
-	+	201	0
-	+	215	0
-	+	214	10
-	+	201	0
-	+	202	0
-	+	198	0
-	+	205	0
-	+	204	0
-	+	205	0
-	+	211	11
-	+	211	0
-	+	211	15
-	+	211	0
-	+	211	14
-	+	211	0
-	+	211	13
-	+	211	0
-	+	216	0
-	+	94	10
-	+	95	10
-
 > ~/workdir/backend/getty_ids.json
 	*	1618660846	0
 	"	1	0
@@ -1172,18 +1511,6 @@ $\r
 > ~/workdir/backend/data.md
 	*	1618660841	0
 	"	1	0
-
-> ~/NERD_tree_1
-	*	1618660819	0
-	"	40	0
-	.	1	0
-	+	1	0
-
-> ~/workdir/backend/NERD_tree_1
-	*	1618660566	0
-	"	6	0
-	.	1	0
-	+	1	0
 
 > /usr/share/vim/vim81/doc/intro.txt
 	*	1618660365	0
@@ -1202,10 +1529,6 @@ $\r
 	*	1618659562	0
 	"	204	56
 
-> ~/workdir/backend/app/charge/schema.py
-	*	1618658932	0
-	"	1941	8
-
 > ~/workdir/backend/app/charge/utils/config.py
 	*	1618488375	0
 	"	96	25
@@ -1217,16 +1540,6 @@ $\r
 	+	42	13
 	+	96	25
 
-> ~/.config/zsh/.zshrc
-	*	1618382281	0
-	"	134	5
-	^	134	6
-	.	134	5
-	+	156	0
-	+	155	4
-	+	157	0
-	+	134	5
-
 > ~/workdir/backend/app/charge/const/creatives.py
 	*	1618345157	0
 	"	2095	8
@@ -1234,10 +1547,6 @@ $\r
 > ~/workdir/backend/app/charge/api/uploader.py
 	*	1618326719	0
 	"	51	51
-
-> ~/workdir/backend/app/charge/api/resizes.py
-	*	1618323918	0
-	"	35	0
 
 > ~/workdir/backend/app/charge/models/__init__.py
 	*	1618323818	0
@@ -1247,10 +1556,6 @@ $\r
 	+	307	19
 	+	308	21
 	+	309	47
-
-> ~/workdir/backend/app/charge/utils/media_sources.py
-	*	1618323135	0
-	"	429	4
 
 > ~/workdir/backend/app/charge/models/article.py
 	*	1618323092	0
@@ -1284,35 +1589,9 @@ $\r
 	.	5	31
 	+	5	31
 
-> ~/workdir/backend/app/charge/api/stories.py
-	*	1618318285	0
-	"	71	0
-	^	71	1
-	.	71	0
-	+	68	57
-	+	61	42
-	+	68	59
-	+	72	0
-	+	68	34
-	+	69	29
-	+	69	27
-	+	71	0
-
 > /usr/share/doc/fzf/README.Debian
 	*	1618304594	0
 	"	21	3
-
-> ~/workdir/backend/app/charge/urls.py
-	*	1618304534	0
-	"	146	4
-
-> ~/workdir/backend/app/charge/tasks.py
-	*	1618303180	0
-	"	479	31
-
-> ~/dotfiles/MERGE_MSG
-	*	1618300668	0
-	"	1	0
 
 > ~/.config/dconf/user
 	*	1618299594	0
@@ -1438,10 +1717,6 @@ $\r
 	+	13	0
 	+	14	0
 
-> ~/workdir/story-builder/bin/deploy
-	*	1617359061	0
-	"	55	4
-
 > /tmp/clojure-917765222675588454.edn
 	*	1617352679	0
 	"	1	0
@@ -1557,12 +1832,6 @@ $\r
 	*	1613076912	0
 	"	1168	11
 
-> ~/workdir/story-builder/NERD_tree_1
-	*	1613076763	0
-	"	49	0
-	.	1	0
-	+	1	0
-
 > ~/workdir/story-builder/buildspec.yml
 	*	1613056617	0
 	"	1	0
@@ -1658,237 +1927,3 @@ $\r
 	"	10	0
 	.	1	0
 	+	1	0
-
-> ~/workdir/macOS-Simple-KVM/headless.sh
-	*	1611928591	0
-	"	47	44
-	^	47	45
-	.	47	44
-	+	52	0
-	+	48	0
-	+	43	0
-	+	47	0
-	+	50	0
-	+	48	0
-	+	47	0
-	+	48	0
-	+	45	0
-	+	47	33
-	+	47	44
-
-> ~/config
-	*	1611923185	0
-	"	1	0
-	.	1	0
-	+	2	42355
-	+	2	42356
-	+	2	42355
-	+	2	0
-	+	1	0
-
-> ~/snap/sosumi/common/launch
-	*	1611911745	0
-	"	25	11
-	^	5	5
-	.	5	4
-	+	9	17
-	+	7	7
-	+	16	79
-	+	25	0
-	+	24	0
-	+	5	4
-
-> /etc/qemu-ifup
-	*	1611910471	0
-	"	12	7
-	^	12	10
-	.	12	7
-	+	1	0
-	+	12	9
-	+	1	0
-	+	12	7
-
-> ~/workdir/macOS-Simple-KVM/basic.sh
-	*	1611908987	0
-	"	27	4
-	^	27	61
-	.	27	24
-	+	11	7
-	+	13	17
-	+	14	55
-	+	17	0
-	+	21	0
-	+	23	0
-	+	24	0
-	+	26	0
-	+	29	0
-	+	27	0
-	+	27	19
-	+	30	0
-	+	27	0
-	+	29	0
-	+	31	0
-	+	29	0
-	+	31	40
-	+	31	0
-	+	22	15
-	+	14	96
-	+	14	55
-	+	31	0
-	+	29	0
-	+	27	0
-	+	28	0
-	+	27	14
-	+	29	0
-	+	11	7
-	+	13	17
-	+	27	24
-	a	27	50
-	i	27	50
-
-> ~/workdir/macOS-Simple-KVM/template.xml
-	*	1611836823	0
-	"	43	67
-	^	43	68
-	.	43	67
-	+	43	67
-
-> /snap/sosumi/18/bin/sosumi
-	*	1611831041	0
-	"	62	0
-	^	56	12
-	.	56	11
-	+	56	11
-
-> /etc/netctl/kvm-bridge
-	*	1611819285	0
-	"	1	42
-	^	1	43
-	.	1	42
-	+	7	0
-	+	4	24
-	+	1	42
-
-> /snap/sosumi/18/bin/fetch-macos.py
-	*	1611819071	0
-	"	139	23
-
-> /snap/sosumi/18/bin/install
-	*	1611818585	0
-	"	1	0
-
-> ~/snap/sosumi/common/install
-	*	1611818485	0
-	"	24	4
-	^	24	0
-	.	24	0
-	+	7	7
-	+	9	17
-	+	25	0
-	+	26	0
-	+	24	0
-	+	25	0
-	+	24	0
-
-> /snap/sosumi/18/bin/desktop-launch
-	*	1611818004	0
-	"	516	0
-
-> /snap/sosumi/18/bin/virgl_test_server
-	*	1611817854	0
-	"	1	0
-
-> /snap/sosumi/18/bin/runner
-	*	1611817847	0
-	"	1	0
-
-> ~/snap/sosumi/common/firmware/OVMF_VARS-1024x768.fd
-	*	1611816657	0
-	"	1	0
-
-> /etc/network/interfaces
-	*	1611816027	0
-	"	7	2
-	^	7	24
-	.	7	23
-	+	7	36
-	+	1	0
-	+	3	0
-	+	4	0
-	+	3	15
-	+	7	23
-
-> /snap/bin/sosumi
-	*	1611757999	0
-	"	1	0
-
-> ~/Programs/virtualbox/oracle_vbox.asc
-	*	1611655079	0
-	"	53	0
-	^	53	0
-	.	52	34
-	+	52	34
-
-> ~/workdir/tests/pirlii_proiect1.py
-	*	1611529202	0
-	"	20	6
-	^	25	22
-	.	25	21
-	+	11	28
-	+	6	0
-	+	12	45
-	+	13	34
-	+	5	7
-	+	16	25
-	+	15	40
-	+	16	7
-	+	21	21
-	+	14	8
-	+	20	21
-	+	21	30
-	+	22	0
-	+	7	4
-	+	25	21
-	m	9	0
-
-> /tmp/kite_tutorial.py
-	*	1611529202	0
-	"	71	0
-
-> ~/out.json
-	*	1611500618	0
-	"	51	6
-
-> ~/Selected Stories 2021-01-20.eml
-	*	1611229166	0
-	"	477	29
-
-> /usr/share/applications/defaults.list
-	*	1611219303	0
-	"	297	0
-
-> /usr/share/applications/sxiv.desktop
-	*	1611219164	0
-	"	1	0
-
-> /usr/share/applications/firefox.desktop
-	*	1611219045	0
-	"	161	0
-	.	159	0
-	+	159	0
-
-> /usr/share/applications/google-chrome.desktop
-	*	1611218834	0
-	"	109	0
-
-> ~/.local/share/applications/chrome-pjkljhegncpnkpknbcohdijeoejaedia-Default.desktop
-	*	1611218199	0
-	"	1	0
-
-> ~/.local/share/applications/chrome-fhbjgbiflinjbdggehcddcbncdddomop-Default.desktop
-	*	1611218188	0
-	"	1	0
-
-> ~/.local/share/applications/chrome-gbchcmhmhahfdphkhkmpfmihenigjmpp-Default.desktop
-	*	1611218181	0
-	"	1	0
