@@ -1,0 +1,17 @@
+{
+    "coc.preferences.extensionUpdateCheck": "daily",
+    "python.venvPath": "/home/sandu/.virtualenvs",
+    "html.format.contentUnformatted": "pre,code,textarea,h1,h2,h3,span,p",
+    "languageserver": {
+      "clojure-lsp": {
+        "command": "zsh",
+        "args": ["-c", "clojure-lsp"],
+        "filetypes": ["clojure"],
+        "rootPatterns": ["project.clj", "shadow-cljs.edn"],
+        "additionalSchemes": ["jar", "zipfile"],
+        "trace.server": "verbose",
+        "initializationOptions": {
+        }
+      }
+    }
+}
