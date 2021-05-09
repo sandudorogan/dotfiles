@@ -1,54 +1,88 @@
-let mapleader =","
+" Sets:
+"
+" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+set splitbelow splitright
+" Enable autocompletion:
+set wildmode=longest,list,full
+" sync system clipboard w/ unnamed register
+set clipboard^=unnamed
+set clipboard^=unnamedplus
+set encoding=UTF-8
+set title
+" show line numbers
+set number
+" set tabs to have 4 spaces
+set ts=4 softtabstop=4
+" indent when moving to the next line while writing code
+set autoindent
+" expand tabs into spaces
+set expandtab
+set smartindent
+" when using the >> or << commands, shift lines by 4 spaces
+set shiftwidth=4
+" show a visual line under the cursor's current line
+" set cursorline
+" show the matching part of the pair for [] {} and ()
+set showmatch
+" Fixing fish issues
+set shell=sh
+set number relativenumber
+" Polignot requirement
+set nocompatible
+set laststatus=2
+set noshowmode
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=100
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+" Function for toggling the bottom statusbar:
+let s:hidden_all = 1
+function! ToggleHiddenAll()
+    if s:hidden_all  == 0
+        let s:hidden_all = 1
+        set noshowmode
+        set noruler
+        set laststatus=0
+        set noshowcmd
+    else
+        let s:hidden_all = 0
+        set showmode
+        set ruler
+        set laststatus=2
+        set showcmd
+    endif
+endfunction
+" Use .vimrc file from current dir
+set exrc
+" Navigate without saving buffer
+set hidden
+" Don't wrap lines
+set nowrap
+" Highlight searches incrementally
+set incsearch
+" Scroll with cursor
+set scrolloff=8
+
+let mapleader =" "
 
 " enable syntax highlighting
 syntax enable
 syntax on
 
-" Enable autocompletion:
-set wildmode=longest,list,full
-
-" Perform dot commands over visual blocks:
-vnoremap . :normal .<CR>
-
-" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
-set splitbelow splitright
-
-" sync system clipboard w/ unnamed register
-set clipboard^=unnamed
-set clipboard^=unnamedplus
-
-set encoding=UTF-8
-set title
-
-" show line numbers
-set number
-
-" set tabs to have 4 spaces
-set ts=4
-
 " Because we dont want to screw with PEP 8
 autocmd FileType python let g:black_linelength = 79         " max file length
 
-" indent when moving to the next line while writing code
-set autoindent
-
-" expand tabs into spaces
-set expandtab
-
-" when using the >> or << commands, shift lines by 4 spaces
-set shiftwidth=4
-
-" show a visual line under the cursor's current line
-" set cursorline
-
-" show the matching part of the pair for [] {} and ()
-set showmatch
-
 " enable all python syntax highlighting features
 let python_highlight_all = 1
-
-" Fixing fish issues
-set shell=sh
 
 " save file position
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -56,10 +90,6 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 " indent based on plugin/filetype
 filetype plugin indent on
 
-set number relativenumber
-
-" Polignot requirement
-set nocompatible
 
 " Vim Plug:
 " Install vim-plug if not found
@@ -90,6 +120,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-fugitive'                                          " :Git commands
     Plug 'tpope/vim-rhubarb'                                           " :GBrowse
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    " Language servers
+    Plug 'mbbill/undotree'
 
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -138,7 +169,7 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 " Nerd Commenter --
 
-" Nerd tree
+" Nerd Tree:
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 if has('nvim')
     let NERDTreeBookmarksFile = stdpath('data') . '/NERDTreeBookmarks'
@@ -147,8 +178,6 @@ else
 endif
 
 " Light Line:
-set laststatus=2
-set noshowmode
 let g:lightline = {
       \ 'colorscheme': 'seoul256',
       \ 'active': {
@@ -182,27 +211,11 @@ autocmd BufRead,BufNewFile ~/.config/i3/config set filetype=i3config
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 
-" Function for toggling the bottom statusbar:
-let s:hidden_all = 1
-function! ToggleHiddenAll()
-    if s:hidden_all  == 0
-        let s:hidden_all = 1
-        set noshowmode
-        set noruler
-        set laststatus=0
-        set noshowcmd
-    else
-        let s:hidden_all = 0
-        set showmode
-        set ruler
-        set laststatus=2
-        set showcmd
-    endif
-endfunction
-nnoremap <leader>h :call ToggleHiddenAll()<CR>
-
-
 " Keyboard shortcuts:
+nnoremap <leader>h :call ToggleHiddenAll()<CR>
+nnoremap <leader>u :UndotreeToggle<CR>
+" Perform dot commands over visual blocks:
+vnoremap . :normal .<CR>
  
 " FZF:
 map <C-p> :Files<CR>
@@ -225,22 +238,6 @@ map <leader>n :NERDTreeToggle<CR>
 
 let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-css', 'coc-marketplace', 'coc-pyright', 'coc-sh']
 autocmd FileType json syntax match Comment +\/\/.\+$+
-
-" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
-" delays and poor user experience.
-set updatetime=100
-
-" Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
-
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
