@@ -87,6 +87,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'chrisbra/Colorizer'                                          " Color colornames and codes (green -> :ColorHighlight)
     Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-repeat'                                            " Advanced .
     Plug 'tpope/vim-fugitive'                                          " :Git commands
     Plug 'tpope/vim-rhubarb'                                           " :GBrowse
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    " Language servers
@@ -99,6 +100,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'PhilRunninger/nerdtree-visual-selection'
 
     Plug 'sheerun/vim-polyglot'                                        " Code coloring
+
+    Plug 'tpope/vim-fireplace'
+    Plug 'guns/vim-clojure-static'
+    Plug 'guns/vim-clojure-highlight'
 
     Plug 'guns/vim-sexp',    {'for': 'clojure'}
 call plug#end()
@@ -206,7 +211,7 @@ nnoremap <leader>h :call ToggleHiddenAll()<CR>
  
 " FZF:
 map <C-p> :Files<CR>
-map <C-F> :Rg<CR>
+map <C-S-f> :Rg<CR>
 
 " Shortcutting split navigation, saving a keypress:
 map <C-h> <C-w>h
@@ -223,7 +228,7 @@ map <leader>n :NERDTreeToggle<CR>
 " --
 " Coc specific options:
 
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-css', 'coc-marketplace', 'coc-pyright', 'coc-sh']
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-css', 'coc-tsserver', 'coc-html', 'coc-marketplace', 'coc-pyright', 'coc-sh']
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
@@ -347,13 +352,13 @@ nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
+command! -nargs=0 Format :call CocActionAsync('format')
 
 " Add `:Fold` command to fold current buffer.
-command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+command! -nargs=? Fold :call     CocActionAsync('fold', <f-args>)
 
 " Add `:OR` command for organize imports of the current buffer.
-command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.organizeImport')
 
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
