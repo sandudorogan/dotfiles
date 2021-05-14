@@ -17,6 +17,8 @@ set ts=4 softtabstop=4
 set autoindent
 " expand tabs into spaces
 set expandtab
+" Reload unedited, externally changed files. 
+set autoread
 set smartindent
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
@@ -66,7 +68,7 @@ set exrc
 " Navigate without saving buffer
 set hidden
 " Don't wrap lines
-set nowrap
+" set nowrap
 " Highlight searches incrementally
 set incsearch
 " Scroll with cursor
@@ -181,6 +183,7 @@ if has('nvim')
 else
     let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
 endif
+let NERDTreeIgnore=['__pycache__[[dir]]']
 
 " Light Line:
 let g:lightline = {
@@ -195,7 +198,7 @@ let g:lightline = {
       \ },
       \ 'component_function': {
       \   'cocstatus': 'coc#status',
-      \   'gitstatus': 'FugitiveStatusline'
+      \   'gitstatus': 'fugitive#statusline'
       \ },
       \ }
 
