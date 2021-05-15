@@ -83,7 +83,9 @@ set title
 " show line numbers
 set number
 " Alacritty pseudo fix for mouse
-set ttymouse=sgr
+if !has('nvim')
+    set ttymouse=sgr
+endif
 " set tabs to have 4 spaces
 set ts=4 softtabstop=4
 " indent when moving to the next line while writing code
