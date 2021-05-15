@@ -1,6 +1,77 @@
-" Sets:
-"
-" Splits open at the bottom and right, which is non-retarded, unlike vim defaults.
+" --------------------------------- Vim Plug ---------------------------------
+
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+" Run PlugInstall if there are missing plugins
+autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \| PlugInstall --sync | source $MYVIMRC
+\| endif
+
+call plug#begin('~/.vim/plugged')
+    Plug 'junegunn/seoul256.vim'
+    Plug 'junegunn/goyo.vim'
+
+    Plug 'itchyny/lightline.vim'
+
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'andymass/vim-matchup'
+    Plug 'preservim/nerdcommenter'
+    " Shows change status on the left. [c; ]c; <leader>hs; <leader>hu;
+    Plug 'airblade/vim-gitgutter'                                      
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    " Color colornames and codes (green -> :ColorHighlight)
+    Plug 'chrisbra/Colorizer'                                          
+    Plug 'tpope/vim-surround'
+    " Advanced .
+    Plug 'tpope/vim-repeat'                                            
+    " :Git commands
+    Plug 'tpope/vim-fugitive'                                          
+    " :GBrowse
+    Plug 'tpope/vim-rhubarb'                                           
+    " Language servers
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}                    
+    Plug 'mbbill/undotree'
+
+    Plug 'preservim/nerdtree'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plug 'scrooloose/nerdtree-project-plugin'
+    Plug 'PhilRunninger/nerdtree-visual-selection'
+
+    " Code coloring
+    Plug 'sheerun/vim-polyglot'                                        
+
+    Plug 'tpope/vim-fireplace'
+    Plug 'guns/vim-clojure-static'
+    Plug 'guns/vim-sexp',    {'for': 'clojure'}
+call plug#end()
+" Vim Plug --
+
+
+" --------------------------------- Coc Vim ----------------------------------
+
+let g:coc_global_extensions = [
+            \  'coc-json', 
+            \  'coc-git', 
+            \  'coc-css', 
+            \  'coc-tsserver', 
+            \  'coc-html', 
+            \  'coc-marketplace', 
+            \  'coc-pyright', 
+            \  'coc-sh'
+            \ ]
+autocmd FileType json syntax match Comment +\/\/.\+$+
+
+
+" ----------------------------- General Settings -----------------------------
+
+" Splits open at the bottom and right
 set splitbelow splitright
 " Enable autocompletion:
 set wildmode=longest,list,full
@@ -11,6 +82,8 @@ set encoding=UTF-8
 set title
 " show line numbers
 set number
+" Alacritty pseudo fix for mouse
+set ttymouse=sgr
 " set tabs to have 4 spaces
 set ts=4 softtabstop=4
 " indent when moving to the next line while writing code
@@ -46,6 +119,70 @@ if has("patch-8.1.1564")
 else
   set signcolumn=yes
 endif
+" Use .vimrc file from current dir
+set exrc
+" Navigate without saving buffer
+set hidden
+" Don't wrap lines
+" set nowrap
+" Highlight searches incrementally
+set incsearch
+" Scroll with cursor
+set scrolloff=8
+set cc=80
+
+let mapleader =" "
+
+" enable syntax highlighting
+syntax enable
+syntax on
+
+" indent based on plugin/filetype
+filetype plugin indent on
+
+autocmd FileType python let g:black_linelength = 79         " max file length
+
+" save file position
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+
+" enable all python syntax highlighting features
+let python_highlight_all = 1
+
+" Color scheme
+" seoul256 (dark):
+"   Range:   233 (darkest) ~ 239 (lightest)
+"   Default: 237
+let g:seoul256_background = 234
+colo seoul256
+
+" colorscheme wal
+
+" Set transparency
+" hi Normal guibg=NONE ctermbg=NONE
+
+" Ensure files are read as what I want:
+let g:vimwiki_ext2syntax = {
+            \  '.Rmd': 'markdown', 
+            \  '.rmd': 'markdown',
+            \  '.md': 'markdown', 
+            \  '.markdown': 'markdown', 
+            \  '.mdown': 'markdown'
+            \ }
+let g:vimwiki_list = [
+            \  {
+            \   'path': '~/vimwiki', 
+            \   'syntax': 'markdown', 
+            \   'ext': '.md'
+            \  }
+            \ ]
+autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
+autocmd BufRead,BufNewFile ~/.config/i3/config set filetype=i3config
+autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
+autocmd BufRead,BufNewFile *.tex set filetype=tex
+
+
+" --------------------------- Keyboard shortcuts -----------------------------
+
 " Function for toggling the bottom statusbar:
 let s:hidden_all = 1
 function! ToggleHiddenAll()
@@ -63,163 +200,7 @@ function! ToggleHiddenAll()
         set showcmd
     endif
 endfunction
-" Use .vimrc file from current dir
-set exrc
-" Navigate without saving buffer
-set hidden
-" Don't wrap lines
-" set nowrap
-" Highlight searches incrementally
-set incsearch
-" Scroll with cursor
-set scrolloff=8
 
-let mapleader =" "
-
-" enable syntax highlighting
-syntax enable
-syntax on
-
-" Because we dont want to screw with PEP 8
-autocmd FileType python let g:black_linelength = 79         " max file length
-
-" enable all python syntax highlighting features
-let python_highlight_all = 1
-
-" save file position
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
-" indent based on plugin/filetype
-filetype plugin indent on
-
-
-" Vim Plug:
-" Install vim-plug if not found
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-endif
-
-" Run PlugInstall if there are missing plugins
-autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-  \| PlugInstall --sync | source $MYVIMRC
-\| endif
-
-call plug#begin('~/.vim/plugged')
-    Plug 'junegunn/seoul256.vim'
-    Plug 'junegunn/goyo.vim'
-    Plug 'junegunn/limelight.vim'
-    Plug 'itchyny/lightline.vim'
-
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'andymass/vim-matchup'
-    Plug 'preservim/nerdcommenter'
-    Plug 'airblade/vim-gitgutter'                                      " Shows change status on the left. [c; ]c; <leader>hs; <leader>hu;
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'chrisbra/Colorizer'                                          " Color colornames and codes (green -> :ColorHighlight)
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-repeat'                                            " Advanced .
-    Plug 'tpope/vim-fugitive'                                          " :Git commands
-    Plug 'tpope/vim-rhubarb'                                           " :GBrowse
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}                    " Language servers
-    Plug 'mbbill/undotree'
-
-    Plug 'preservim/nerdtree'
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'ryanoasis/vim-devicons'
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-    Plug 'scrooloose/nerdtree-project-plugin'
-    Plug 'PhilRunninger/nerdtree-visual-selection'
-
-    Plug 'sheerun/vim-polyglot'                                        " Code coloring
-
-    Plug 'tpope/vim-fireplace'
-    Plug 'guns/vim-clojure-static'
-    Plug 'guns/vim-clojure-highlight'
-
-    Plug 'guns/vim-sexp',    {'for': 'clojure'}
-call plug#end()
-" Vim Plug --
-
-
-" seoul256 (dark):
-"   Range:   233 (darkest) ~ 239 (lightest)
-"   Default: 237
-let g:seoul256_background = 234
-colo seoul256
-
-" colorscheme wal
-
-" Set transparency
-" hi Normal guibg=NONE ctermbg=NONE
-
-
-" Nerd Commenter:
-" Create default mappings
-let g:NERDCreateDefaultMappings = 1
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-" Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign = 'left'
-" Set a language to use its alternate delimiters by default
-let g:NERDAltDelims_java = 1
-" Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 0
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-" Enable NERDCommenterToggle to check all selected lines is commented or not
-let g:NERDToggleCheckAllLines = 1
-" Nerd Commenter --
-
-" Nerd Tree:
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-if has('nvim')
-    let NERDTreeBookmarksFile = stdpath('data') . '/NERDTreeBookmarks'
-else
-    let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
-endif
-let NERDTreeIgnore=['__pycache__[[dir]]']
-
-" Light Line:
-let g:lightline = {
-      \ 'colorscheme': 'seoul256',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'cocstatus', 'currentfunction' ],
-      \             [ 'readonly', 'filename', 'modified', 'gitstatus' ] ]
-      \ },
-      \ 'component': {
-      \   'currentfunction': "%{get(b:,'coc_current_function','')}"
-      \ },
-      \ 'component_function': {
-      \   'cocstatus': 'coc#status',
-      \   'gitstatus': 'fugitive#statusline'
-      \ },
-      \ }
-
-" Enable vim-iced's default key mapping
-" This is recommended for newbies
-let g:iced_enable_default_key_mappings = v:true
-let g:iced#clojuredocs#use_clj_docs_on_cljs = v:true
-
-" Save file as sudo on files that require root permission
-cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
-
-" Ensure files are read as what I want:
-let g:vimwiki_ext2syntax = {'.Rmd': 'markdown', '.rmd': 'markdown','.md': 'markdown', '.markdown': 'markdown', '.mdown': 'markdown'}
-map <leader>v :VimwikiIndex
-let g:vimwiki_list = [{'path': '~/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
-autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
-autocmd BufRead,BufNewFile ~/.config/i3/config set filetype=i3config
-autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
-autocmd BufRead,BufNewFile *.tex set filetype=tex
-
-" Keyboard shortcuts:
 nnoremap <leader>h :call ToggleHiddenAll()<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 " Perform dot commands over visual blocks:
@@ -227,7 +208,6 @@ vnoremap . :normal .<CR>
  
 " FZF:
 map <C-p> :Files<CR>
-map <C-S-f> :Rg<CR>
 
 " Shortcutting split navigation, saving a keypress:
 map <C-h> <C-w>h
@@ -241,11 +221,8 @@ nnoremap S :%s//g<Left><Left>
 " Nerd tree
 map <leader>n :NERDTreeToggle<CR>
 
-" --
-" Coc specific options:
-
-let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-css', 'coc-tsserver', 'coc-html', 'coc-marketplace', 'coc-pyright', 'coc-sh']
-autocmd FileType json syntax match Comment +\/\/.\+$+
+" Save file as sudo on files that require root permission
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -382,3 +359,58 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
+" ------------------------------ Nerd Commenter ------------------------------
+
+" Create default mappings
+let g:NERDCreateDefaultMappings = 1
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 0
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
+" Nerd Commenter --
+
+
+" -------------------------------- Nerd Tree --------------------------------
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+if has('nvim')
+    let NERDTreeBookmarksFile = stdpath('data') . '/NERDTreeBookmarks'
+else
+    let NERDTreeBookmarksFile = '~/.vim' . '/NERDTreeBookmarks'
+endif
+let NERDTreeIgnore=['__pycache__[[dir]]']
+
+
+" -------------------------------- Light Line --------------------------------
+
+let g:lightline = {
+      \ 'colorscheme': 'seoul256',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'cocstatus', 'currentfunction' ],
+      \             [ 'readonly', 'filename', 'modified', 'gitstatus' ] ]
+      \ },
+      \ 'component': {
+      \   'currentfunction': "%{get(b:,'coc_current_function','')}"
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'gitstatus': 'fugitive#statusline'
+      \ },
+      \ }
+
+
