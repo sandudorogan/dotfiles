@@ -17,8 +17,6 @@ if !has('nvim')
 endif
 " Enable mouse support on all modes
 set mouse=a
-" set tabs to have 4 spaces
-set ts=4 softtabstop=4
 " indent when moving to the next line while writing code
 set autoindent
 " expand tabs into spaces
@@ -28,11 +26,16 @@ set autoread
 set smartindent
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
+" set tabs to have 4 spaces
+set ts=4 
+" equal to shiftwidth
+set softtabstop=-1
+set smarttab
 " show a visual line under the cursor's current line
 " set cursorline
 " show the matching part of the pair for [] {} and ()
 set showmatch
-" Fixing fish issues
+" fish issues
 set shell=sh
 set number relativenumber
 " Polignot requirement
