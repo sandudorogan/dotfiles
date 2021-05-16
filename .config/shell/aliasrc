@@ -44,6 +44,7 @@ alias \
     coa="config add" \
     coc="config commit" \
     cod="config diff" \
+    cop="config push" \
     r="ranger" \
 	# xi="sudo xbps-install" \
 	# xr="sudo xbps-remove -R" \
