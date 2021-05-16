@@ -15,4 +15,4 @@ let g:lightline = {
       \ },
       \ }
 
-
+" call lightline#disable()

@@ -5,6 +5,11 @@ nnoremap <leader>h :call ToggleHiddenAll()<CR>
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 
+nnoremap vs :vsplit<CR>
+nnoremap hs :split<CR>
+nnoremap bn :bnext<CR>:redraw<CR>
+nnoremap bp :bprevious<CR>:redraw<CR>
+
 " Perform dot commands over visual blocks:
 vnoremap . :normal .<CR>
  

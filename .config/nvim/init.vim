@@ -5,8 +5,13 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'junegunn/seoul256.vim'
     Plug 'junegunn/goyo.vim'
 
-    Plug 'itchyny/lightline.vim'
+    " Plug 'itchyny/lightline.vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 
+    Plug 'jmcantrell/vim-virtualenv'
+
+    " Intuitive brackets management
     Plug 'jiangmiao/auto-pairs'
     Plug 'andymass/vim-matchup'
     Plug 'preservim/nerdcommenter'
@@ -24,6 +29,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     " :GBrowse
     Plug 'tpope/vim-rhubarb'                                           
     " Language servers
+
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    
     Plug 'mbbill/undotree'
 

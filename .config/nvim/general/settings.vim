@@ -6,8 +6,7 @@ set splitbelow splitright
 " Enable autocompletion:
 set wildmode=longest,list,full
 " sync system clipboard w/ unnamed register
-set clipboard^=unnamed
-set clipboard^=unnamedplus
+set clipboard+=unnamedplus
 set encoding=UTF-8
 set title
 " show line numbers
@@ -16,6 +15,8 @@ set number
 if !has('nvim')
     set ttymouse=sgr
 endif
+" Enable mouse support on all modes
+set mouse=a
 " set tabs to have 4 spaces
 set ts=4 softtabstop=4
 " indent when moving to the next line while writing code
@@ -37,20 +38,12 @@ set number relativenumber
 " Polignot requirement
 set nocompatible
 set laststatus=2
-set noshowmode
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=100
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+set signcolumn=yes
 " Use .vimrc file from current dir
 set exrc
 " Navigate without saving buffer
@@ -62,8 +55,10 @@ set incsearch
 " Scroll with cursor
 set scrolloff=8
 set cc=80
-set nobackup                            " This is recommended by coc
-set nowritebackup                       " This is recommended by coc
+set nobackup                            
+set nowritebackup                      
+set termguicolors
+set smartcase
 
 " enable syntax highlighting
 syntax enable
@@ -92,21 +87,7 @@ colo seoul256
 " Set transparency
 " hi Normal guibg=NONE ctermbg=NONE
 
-" Ensure files are read as what I want:
-let g:vimwiki_ext2syntax = {
-            \  '.Rmd': 'markdown', 
-            \  '.rmd': 'markdown',
-            \  '.md': 'markdown', 
-            \  '.markdown': 'markdown', 
-            \  '.mdown': 'markdown'
-            \ }
-let g:vimwiki_list = [
-            \  {
-            \   'path': '~/vimwiki', 
-            \   'syntax': 'markdown', 
-            \   'ext': '.md'
-            \  }
-            \ ]
+" Ensure file extension:
 autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markdown
 autocmd BufRead,BufNewFile ~/.config/i3/config set filetype=i3config
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
