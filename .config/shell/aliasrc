@@ -41,6 +41,9 @@ alias \
 	e="${EDITOR}" \
 	v="${EDITOR}" \
     co="config" \
+    coa="config add" \
+    coc="config commit" \
+    cod="config diff" \
     r="ranger" \
 	# xi="sudo xbps-install" \
 	# xr="sudo xbps-remove -R" \
