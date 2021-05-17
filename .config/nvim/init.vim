@@ -16,7 +16,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'andymass/vim-matchup'
     Plug 'preservim/nerdcommenter'
     " Shows change status on the left. [c; ]c; <leader>hs; <leader>hu;
-    Plug 'airblade/vim-gitgutter'                                      
+    " Plug 'airblade/vim-gitgutter'                                      
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     " Color colornames and codes (green -> :ColorHighlight)
@@ -33,9 +33,10 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    
     Plug 'mbbill/undotree'
 
+    Plug 'lambdalisue/glyph-palette.vim'
+    Plug 'ryanoasis/vim-devicons'
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'ryanoasis/vim-devicons'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'scrooloose/nerdtree-project-plugin'
     Plug 'PhilRunninger/nerdtree-visual-selection'
