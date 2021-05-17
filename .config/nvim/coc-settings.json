@@ -1,6 +1,19 @@
 {
     "coc.preferences.extensionUpdateCheck": "daily",
-    "python.venvPath": "/home/sandu/.virtualenvs",
+    "coc.preferences.colorSupport": true,
+    "coc.preferences.previewAutoClose": true,
+    "coc.preferences.formatOnSaveFiletypes": ["python", "clojure"],
+    "coc.preferences.bracketEnterImprove": true,
+    "coc.preferences.enableFloatHighlight": true,
+    "coc.preferences.rootPatterns": [
+        ".git",
+        ".hg",
+        ".projections.json"
+    ],
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.enableMessageDialog": true,
+    "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+    "python.venvPath": "~/.virtualenvs",
     "html.format.contentUnformatted": "pre,code,textarea,h1,h2,h3,span,p",
     "languageserver": {
       "clojure-lsp": {
