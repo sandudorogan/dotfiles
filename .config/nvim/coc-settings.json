@@ -1,4 +1,13 @@
 {
+    "codeLens.enable": true,
+    "diagnostic.errorSign": "✘",
+    "diagnostic.warningSign": "",
+    "diagnostic.infoSign": "",
+    "diagnostic.enableSign": true,
+    "diagnostic.enable": true,
+    "diagnostic.showUnused": true,
+    "diagnostic.signPriority": 100,
+    "git.realtimeGutters": true,
     "coc.preferences.extensionUpdateCheck": "daily",
     "coc.preferences.colorSupport": true,
     "coc.preferences.previewAutoClose": true,
