@@ -58,8 +58,6 @@ set incsearch
 " Scroll with cursor
 set scrolloff=8
 set cc=80
-set nobackup                            
-set nowritebackup                      
 set termguicolors
 set smartcase
 
