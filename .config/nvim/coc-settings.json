@@ -3,22 +3,31 @@
     "diagnostic.errorSign": "✘",
     "diagnostic.warningSign": "",
     "diagnostic.infoSign": "",
+    "diagnostic.hintSign": "",
+    // "diagnostic.hintSign": "",
+    // "diagnostic.hintSign": "",
+    // "diagnostic.hintSign": "",
     "diagnostic.enableSign": true,
     "diagnostic.enable": true,
     "diagnostic.showUnused": true,
-    "diagnostic.signPriority": 100,
-    "git.realtimeGutters": true,
+    "diagnostic.signPriority": 1000,
+    "diagnostic.refreshOnInsertMode": true,
+	"list.source.symbols.defaultOptions": [
+        "--interactive", 
+        "--number-select", 
+        "--auto-preview"
+    ],
+	"list.source.outline.defaultOptions": [
+        "--interactive", 
+        "--number-select", 
+        "--auto-preview"
+    ],
     "coc.preferences.extensionUpdateCheck": "daily",
     "coc.preferences.colorSupport": true,
     "coc.preferences.previewAutoClose": true,
     "coc.preferences.formatOnSaveFiletypes": ["python", "clojure"],
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableFloatHighlight": true,
-    "coc.preferences.rootPatterns": [
-        ".git",
-        ".hg",
-        ".projections.json"
-    ],
     "coc.preferences.formatOnType": true,
     "coc.preferences.enableMessageDialog": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,

@@ -8,6 +8,8 @@ let g:coc_global_extensions = [
             \  'coc-tsserver', 
             \  'coc-html', 
             \  'coc-marketplace', 
+            \  'coc-highlight',
+            \  'coc-lists',
             \  'coc-pyright', 
             \  'coc-sh',
             \  'coc-git'
@@ -131,7 +133,7 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
-autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
+" autocmd User CocStatusChange,CocDiagnosticChange call lightline#update()
 
 " Mappings for CoCList
 " Show all diagnostics.
