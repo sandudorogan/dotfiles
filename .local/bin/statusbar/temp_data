@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Import system colors:
-. ~/.cache/wal/colors.sh
+# . ~/.cache/wal/colors.sh
 
 TEMP=$(sensors | awk '/^Package/ {printf "%d°C", $4}')
 echo $TEMP
@@ -20,10 +20,10 @@ case "$BLOCK_BUTTON" in
         ;;
 esac
 
-if (( $(echo "$TEMP < 50" | sed 's/°C//; s/+//' | bc -l) )); then 
-    echo "$color7"
-elif (( $(echo "$TEMP < 75" | sed 's/°C//; s/+//' | bc -l) )); then
-    echo "$color8"
-else
-    echo "$color9"
-fi
+# if (( $(echo "$TEMP < 50" | sed 's/°C//; s/+//' | bc -l) )); then
+#     echo "$color7"
+# elif (( $(echo "$TEMP < 75" | sed 's/°C//; s/+//' | bc -l) )); then
+#     echo "$color8"
+# else
+#     echo "$color9"
+# fi

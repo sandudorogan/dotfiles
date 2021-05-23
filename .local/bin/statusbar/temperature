@@ -31,13 +31,13 @@ my $t_crit = 90;
 my $chip = "";
 my $temperature = -9999;
 
-my $colors_filename = "~/.cache/wal/colors.json"
+# my $colors_filename = "~/.cache/wal/colors.json"
 # Use the open() function to open the file.
-unless(open FILE, $colors_filename) {
-    # Die with error message
-    # if we can't open it.
-    die "\nUnable to open $colors_filename\n";
-}
+# unless(open FILE, $colors_filename) {
+#     # Die with error message
+#     # if we can't open it.
+#     die "\nUnable to open $colors_filename\n";
+# }
 
 # Get rid of the line separator.
 # This allows us to read everything
@@ -83,13 +83,13 @@ $temperature eq -9999 and die 'Cannot find temperature';
 print "$temperature°C\n" x2;
 
 # Print color, if needed
-if ($temperature >= $t_crit) {
-    print "#FF0000\n";
-    exit 33;
-} elsif ($temperature >= $t_warn) {
-    print "#FFFC00\n";
-} else {
-    print "";
-}
+# if ($temperature >= $t_crit) {
+#     print "#FF0000\n";
+#     exit 33;
+# } elsif ($temperature >= $t_warn) {
+#     print "#FFFC00\n";
+# } else {
+#     print "";
+# }
 
 exit 0;

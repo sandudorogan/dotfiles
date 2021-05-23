@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Import system colors:
-. ~/.cache/wal/colors.sh
+# . ~/.cache/wal/colors.sh
 
 PROCESSES="$(ps -eo pcpu,pmem,comm,pid --sort -pcpu | \
     head)"
@@ -21,11 +21,11 @@ esac
 USAGE=$(mpstat 1 1 | sed 's/,/\./g' | awk '/^Average/ {usage = 100 - $NF; printf("%5.2f", usage)}')
 
 echo "$USAGE%"
-echo 
-if [ $(echo "$USAGE < 50" | bc -l) -eq 1 ]; then 
-    echo "$color7"
-elif [ $(echo "$USAGE < 75" | bc -l) -eq 1 ]; then
-    echo "$color8"
-else
-    echo "$color9"
-fi
+# echo
+# if [ $(echo "$USAGE < 50" | bc -l) -eq 1 ]; then
+#     echo "$color7"
+# elif [ $(echo "$USAGE < 75" | bc -l) -eq 1 ]; then
+#     echo "$color8"
+# else
+#     echo "$color9"
+# fi
