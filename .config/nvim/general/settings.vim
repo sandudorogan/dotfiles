@@ -1,13 +1,14 @@
 " ----------------------------- General Settings -----------------------------
 
 
+set history=10000
 " Splits open at the bottom and right
 set splitbelow splitright
 " Enable autocompletion:
 set wildmode=longest,list,full
 " sync system clipboard w/ unnamed register
 set clipboard+=unnamedplus
-set encoding=UTF-8
+set encoding=utf-8
 set title
 " show line numbers
 set number
@@ -21,8 +22,6 @@ set mouse=a
 set autoindent
 " expand tabs into spaces
 set expandtab
-" Reload unedited, externally changed files. 
-set autoread
 set smartindent
 " when using the >> or << commands, shift lines by 4 spaces
 set shiftwidth=4
@@ -35,12 +34,8 @@ set smarttab
 " set cursorline
 " show the matching part of the pair for [] {} and ()
 set showmatch
-" fish issues
-set shell=sh
+set shell=zsh
 set number relativenumber
-" Polignot requirement
-set nocompatible
-set laststatus=2
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
 set updatetime=100
@@ -48,14 +43,15 @@ set updatetime=100
 set shortmess+=c
 set signcolumn=yes
 " Use .vimrc file from current dir
-set exrc
+" set exrc
 " Navigate without saving buffer
 set hidden
+" Reload unedited, externally changed files. 
+set autoread
 " Don't wrap lines
 " set nowrap
 " Highlight searches incrementally
 set incsearch
-" Scroll with cursor
 set scrolloff=8
 set cc=80
 set termguicolors
@@ -94,3 +90,14 @@ autocmd BufRead,BufNewFile ~/.config/i3/config set filetype=i3config
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
 
+"
+" This should enable Emacs like indentation
+let g:clojure_fuzzy_indent=1
+let g:clojure_align_multiline_strings = 1
+
+" Add some words which should be indented like defn etc: Compojure/compojure-api, midje and schema stuff mostly.
+let g:clojure_fuzzy_indent_patterns=['^GET', '^POST', '^PUT', '^DELETE', '^ANY', '^HEAD', '^PATCH', '^OPTIONS', '^def']
+autocmd FileType clojure setlocal lispwords+=describe,it,testing,facts,fact,provided
+
+" Disable some irritating mappings
+let g:sexp_enable_insert_mode_mappings = 0

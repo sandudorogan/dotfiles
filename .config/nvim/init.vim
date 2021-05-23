@@ -19,8 +19,6 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     " Plug 'airblade/vim-gitgutter'                                      
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    " Color colornames and codes (green -> :ColorHighlight)
-    Plug 'chrisbra/Colorizer'                                          
     Plug 'tpope/vim-surround'
     " Advanced .
     Plug 'tpope/vim-repeat'                                            
@@ -28,13 +26,14 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'tpope/vim-fugitive'                                          
     " :GBrowse
     Plug 'tpope/vim-rhubarb'                                           
-    " Language servers
+    Plug 'yuttie/comfortable-motion.vim'
 
+    " Language servers
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    
-    Plug 'mbbill/undotree'
 
     Plug 'lambdalisue/glyph-palette.vim'
     Plug 'ryanoasis/vim-devicons'
+    Plug 'mbbill/undotree'
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -44,9 +43,9 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     " Code coloring
     Plug 'sheerun/vim-polyglot'                                        
 
+    " Clojure
     Plug 'tpope/vim-fireplace'
     Plug 'guns/vim-clojure-static'
-    Plug 'guns/vim-sexp',    {'for': 'clojure'}
 call plug#end()
 
 
