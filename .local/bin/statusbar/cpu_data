@@ -10,11 +10,11 @@ case "$BLOCK_BUTTON" in
 - Middle click to invoke bpytop
 - Right click to show most CPU hungry programs"
         ;;
-    2) "$TERMINAL" -x "bpytop"
+    2) "$TERMINAL" -e "bpytop"
         ;;
     3) notify-send "CPU hogs:" "$PROCESSES"
         ;;
-    6) "$TERMINAL" -x "$EDITOR" "$0"
+    6) "$TERMINAL" -e "$EDITOR" "$0"
         ;;
 esac
 
