@@ -11,25 +11,17 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 
     Plug 'jmcantrell/vim-virtualenv'
 
-    " Intuitive brackets management
-    Plug 'jiangmiao/auto-pairs'
     Plug 'andymass/vim-matchup'
     Plug 'preservim/nerdcommenter'
-    " Shows change status on the left. [c; ]c; <leader>hs; <leader>hu;
-    " Plug 'airblade/vim-gitgutter'                                      
+    " Plug 'airblade/vim-gitgutter'                                      Shows change status on the left. [c; ]c; <leader>hs; <leader>hu;
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'tpope/vim-surround'
-    " Advanced .
-    Plug 'tpope/vim-repeat'                                            
-    " :Git commands
-    Plug 'tpope/vim-fugitive'                                          
-    " :GBrowse
-    Plug 'tpope/vim-rhubarb'                                           
+    Plug 'tpope/vim-repeat'                                            " Advanced .
+    Plug 'tpope/vim-fugitive'                                          " :Git commands
+    Plug 'tpope/vim-rhubarb'                                           " :GBrowse
+    Plug 'jiangmiao/auto-pairs', {'for': 'python'}                     " Intuitive brackets management
     Plug 'yuttie/comfortable-motion.vim'
-
-    " Language servers
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}                    
 
     Plug 'lambdalisue/glyph-palette.vim'
     Plug 'ryanoasis/vim-devicons'
@@ -39,16 +31,23 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'scrooloose/nerdtree-project-plugin'
     Plug 'PhilRunninger/nerdtree-visual-selection'
+    Plug 'haya14busa/incsearch.vim'
 
-    " Code coloring
-    Plug 'sheerun/vim-polyglot'                                        
+    Plug 'sheerun/vim-polyglot'                                        " Code coloring
 
-    " Clojure
-    Plug 'tpope/vim-fireplace'
-    Plug 'guns/vim-clojure-static'
+    Plug 'eraserhd/parinfer-rust', {'do': 'cargo build --release', 'for': 'clojure'}
+    Plug 'clojure-vim/clojure.vim', {'for': 'clojure'}
+    Plug 'tpope/vim-fireplace', {'for': 'clojure'}
+    Plug 'guns/vim-clojure-highlight', {'for': 'clojure'}
+    Plug 'guns/vim-sexp', {'for': 'clojure'}
+    Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
+
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}                    " Language servers
 call plug#end()
 
 
 source ~/.config/nvim/general/settings.vim
 source ~/.config/nvim/general/functions.vim
 source ~/.config/nvim/general/shortcuts.vim
+
+" vim: set syntax=vim:
