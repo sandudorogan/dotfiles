@@ -12,7 +12,8 @@ let g:coc_global_extensions = [
             \  'coc-lists',
             \  'coc-pyright', 
             \  'coc-sh',
-            \  'coc-git'
+            \  'coc-git',
+            \  'coc-vimlsp'
             \ ]
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
