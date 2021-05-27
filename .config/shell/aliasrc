@@ -41,6 +41,7 @@ alias \
 	e="${EDITOR}" \
 	v="${EDITOR}" \
     co="config" \
+    cos="config status" \
     coa="config add" \
     coc="config commit" \
     cod="config diff" \
