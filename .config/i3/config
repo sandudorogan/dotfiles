@@ -129,7 +129,7 @@ set $ws1 "1:Browser"
 set $ws2 "2:Front End"
 set $ws3 "3:Back End"
 set $ws4 "4:Env"
-set $ws5 "5:Slack &amp; Code"
+set $ws5 "5:Slack &amp; Mail"
 set $ws6 "6:ConsoleAndTop"
 set $ws7 "7:7"
 set $ws8 "8:8"
@@ -393,15 +393,18 @@ mode "$mode_gaps_left" {
         bindsym Escape mode "default"
 }
 
-gaps inner 10
-gaps top 10
-gaps bottom 10
+# gaps inner 10
+# gaps top 10
+# gaps bottom 10
 
 # Monitor configuration
 exec_always /home/sandu/.config/screenlayout/default.sh
 
 # Set colors
 exec_always wal -R
+
+# Vim anywhere
+bindsym $mod+Shift+v exec ~/.local/share/vim-anywhere/bin/run
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
