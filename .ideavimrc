@@ -2,4 +2,6 @@ set surround
 set multiple-cursors
 set ideajoin
 set sneak
+set scrolloff=8
 source ~/.vimrc
+source ~/.config/nvim/general/settings.vim
