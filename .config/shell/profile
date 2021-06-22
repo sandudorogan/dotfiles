@@ -52,6 +52,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export PROJECT_HOME=$HOME/workdir
 
+# Emacs
+export DOOMDIR="${XDG_CONFIG_HOME:-$HOME/.config}/doom"
+
 # Perl:
 PATH="$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
