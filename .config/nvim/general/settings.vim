@@ -45,8 +45,9 @@ endif
 
 autocmd FileType python let g:black_linelength = 79
 
-" save file position
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+au FocusLost * silent! wa " save on blur
+
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif " save file position
 
 let python_highlight_all = 1
 
