@@ -20,7 +20,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'tpope/vim-repeat'                                            " Advanced .
     Plug 'tpope/vim-fugitive'                                          " :Git commands
     Plug 'tpope/vim-rhubarb'                                           " :GBrowse
-    Plug 'jiangmiao/auto-pairs', {'for': 'python'}                     " Intuitive brackets management
+    Plug 'jiangmiao/auto-pairs', {'for': ['python', 'javascript']}     " Intuitive brackets management
     Plug 'yuttie/comfortable-motion.vim'
 
     Plug 'lambdalisue/glyph-palette.vim'
