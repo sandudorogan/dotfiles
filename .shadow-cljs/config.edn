@@ -1,0 +1,4 @@
+{:dependencies
+ [[cider/cider-nrepl "0.25.9"]
+  [refactor-nrepl/refactor-nrepl "2.5.1"]
+  [cljfmt/cljfmt     "0.7.0"]]}
