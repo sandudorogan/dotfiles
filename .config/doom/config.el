@@ -76,8 +76,7 @@
 (setq lsp-completion-enable 't
       lsp-completion-enable-additional-text-edit 't
       lsp-completion-use-last-result 't
-      lsp-log-io 't
-      lsp-semantic-tokens-enable 't
+      lsp-log-io nil
       lsp-headerline-breadcrumb-enable 't
       lsp-headerline-breadcrumb-enable-diagnostics 't
       lsp-semantic-tokens-apply-modifiers 't
@@ -85,7 +84,8 @@
       lsp-lens-enable nil
       lsp-enable-indentation nil
       lsp-ui-sideline-show-code-actions nil
-      lsp-disabled-clients '(js-ts))
+      lsp-disabled-clients '(js-ts)
+      tab-always-indent 'complete)
 
 (use-package! aggressive-indent
   :config
@@ -95,13 +95,13 @@
   :config
   (add-hook! 'clojure-mode-hook
              #'subword-mode
+             #'paredit-mode
              #'rainbow-delimiters-mode)
 
   (setq clojure-align-forms-automatically t
         clojure-indent-style 'align-arguments)
 
   (when (featurep! +lsp)
-
 
     (comment (after! lsp-clojure
                (dolist (m '(clojure-mode
@@ -133,7 +133,6 @@
   (clojure-mode . clj-refactor-mode)
   (clojure-mode . yas-minor-mode)
   :config
-  ;; (set-lookup-handlers! 'clj-refactor-mode nil)
   (set-lookup-handlers! 'clj-refactor-mode
     :references #'cljr-find-usages)
   (cljr-add-keybindings-with-prefix "C-c .")
@@ -196,7 +195,7 @@
         cider-default-cljs-repl 'shadow
         cider-shadow-default-options ":studio"
         cider-shadow-watched-builds '("studio" "sdk" "story-server")
-        cider-enhanced-cljs-completion-p nil
+        cider-enhanced-cljs-completion-p nil ;; keep nil until furher notice: https://github.com/clojure-emacs/clj-suitable#emacs-cider
         cider-stacktrace-default-filters '(tooling dup)))
 
 (use-package! smart-jump
