@@ -13,7 +13,9 @@ nnoremap <leader>bp :bprevious<CR>:redraw<CR>
 vnoremap . :normal .<CR>
  
 " FZF:
-map <C-p> :Files<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <C-f> :Rg<CR>
+nnoremap <C-b> :Buffers<CR>
 
 " Shortcutting split navigation, saving a keypress:
 map <C-h> <C-w>h

@@ -55,8 +55,8 @@ let python_highlight_all = 1
 " seoul256 (dark):
 "   Range:   233 (darkest) ~ 239 (lightest)
 "   Default: 237
-let g:seoul256_background = 234
-colo seoul256
+" let g:seoul256_background = 234
+colo doom-one
 
 " colorscheme wal
 
@@ -68,3 +68,6 @@ autocmd BufRead,BufNewFile /tmp/calcurse*,~/.calcurse/notes/* set filetype=markd
 autocmd BufRead,BufNewFile ~/.config/i3/config set filetype=i3config
 autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 autocmd BufRead,BufNewFile *.tex set filetype=tex
+
+
+let g:python3_host_prog = '/usr/bin/python3'

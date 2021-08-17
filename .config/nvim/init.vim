@@ -2,7 +2,9 @@ let g:mapleader = "\<Space>"
 
 
 call plug#begin('~/.local/share/nvim/site/plugged')
-    Plug 'junegunn/seoul256.vim'
+    " Plug 'junegunn/seoul256.vim'
+    " Plug 'dylanaraps/wal.vim'
+    Plug 'romgrk/doom-one.vim'
     Plug 'junegunn/goyo.vim'
 
     " Plug 'itchyny/lightline.vim'
@@ -20,11 +22,10 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'tpope/vim-repeat'                                            " Advanced .
     Plug 'tpope/vim-fugitive'                                          " :Git commands
     Plug 'tpope/vim-rhubarb'                                           " :GBrowse
-    Plug 'jiangmiao/auto-pairs', {'for': ['python', 'javascript']}     " Intuitive brackets management
+    Plug 'jiangmiao/auto-pairs'      " Intuitive brackets management
     Plug 'yuttie/comfortable-motion.vim'
 
     Plug 'lambdalisue/glyph-palette.vim'
-    Plug 'ryanoasis/vim-devicons'
     Plug 'mbbill/undotree'
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -32,10 +33,11 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'scrooloose/nerdtree-project-plugin'
     Plug 'PhilRunninger/nerdtree-visual-selection'
     Plug 'haya14busa/incsearch.vim'
+    Plug 'machakann/vim-highlightedyank'
 
     Plug 'sheerun/vim-polyglot'                                        " Code coloring
 
-    Plug 'eraserhd/parinfer-rust', {'do': 'cargo build --release', 'for': 'clojure'}
+    " Plug 'eraserhd/parinfer-rust', {'do': 'cargo build --release', 'for': 'clojure'}
     Plug 'clojure-vim/clojure.vim', {'for': 'clojure'}
     Plug 'tpope/vim-fireplace', {'for': 'clojure'}
     Plug 'guns/vim-clojure-highlight', {'for': 'clojure'}
@@ -43,6 +45,10 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    " Language servers
+
+    Plug 'ryanoasis/vim-devicons'                                      " Load devicons the last
+    " Plug 'adelarsq/vim-devicons-emoji'
+
 call plug#end()
 
 

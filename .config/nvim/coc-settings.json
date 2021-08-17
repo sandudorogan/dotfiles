@@ -1,5 +1,6 @@
 {
     "codeLens.enable": true,
+
     "diagnostic.errorSign": "✘",
     "diagnostic.warningSign": "",
     "diagnostic.infoSign": "",
@@ -12,6 +13,7 @@
     "diagnostic.showUnused": true,
     "diagnostic.signPriority": 1000,
     "diagnostic.refreshOnInsertMode": true,
+
 	"list.source.symbols.defaultOptions": [
         "--interactive", 
         "--number-select", 
@@ -22,28 +24,46 @@
         "--number-select", 
         "--auto-preview"
     ],
+
     "coc.preferences.extensionUpdateCheck": "daily",
     "coc.preferences.colorSupport": true,
-    "coc.preferences.previewAutoClose": true,
-    "coc.preferences.formatOnSaveFiletypes": ["python", "clojure"],
+    "coc.preferences.formatOnSaveFiletypes": ["python"],
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableFloatHighlight": true,
-    "coc.preferences.formatOnType": true,
+    "coc.preferences.semanticTokensHighlights": true,
+    "coc.preferences.formatOnType": false,
     "coc.preferences.enableMessageDialog": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
+
     "python.venvPath": "~/.virtualenvs",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["-S", "-l", "79"],
+    "python.linting.pydocstyleEnabled": true,
+
     "html.format.contentUnformatted": "pre,code,textarea,h1,h2,h3,span,p",
+
     "languageserver": {
-      "clojure-lsp": {
-        "command": "zsh",
-        "args": ["-c", "clojure-lsp"],
-        "filetypes": ["clojure"],
-        "rootPatterns": ["project.clj", "shadow-cljs.edn"],
-        "additionalSchemes": ["jar", "zipfile"],
-        "trace.server": "verbose",
-        "initializationOptions": {
-            "ignore-classpath-directories": true
+        "clojure-lsp": {
+            "command": "zsh",
+            "args": [
+                "-c",
+                "clojure-lsp"
+            ],
+            "filetypes": [
+                "clojure"
+            ],
+            "rootPatterns": [
+                "project.clj",
+                "shadow-cljs.edn",
+                "deps.edn"
+            ],
+            "additionalSchemes": [
+                "jar",
+                "zipfile"
+            ],
+            "initializationOptions": {
+                "ignore-classpath-directories": true
+            }
         }
-      }
     }
 }

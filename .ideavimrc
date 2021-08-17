@@ -19,6 +19,8 @@ set showmode
 set so=8
 set incsearch
 set nu
+set visualbell
+set noerrorbells
 
 """ Idea specific settings ------------------
 set ideajoin
@@ -43,4 +45,3 @@ map <leader>b <Action>(ToggleLineBreakpoint)
 map <leader>o <Action>(FileStructurePopup)
 
 source ~/.config/nvim/general/settings.vim
-

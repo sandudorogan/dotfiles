@@ -23,4 +23,3 @@ let g:clojure_maxlines = 0
 let g:clojure_special_indent_words = 'deftype,defrecord,reify,proxy,extend-type,extend-protocol,letfn'
 
 autocmd FileType clojure setlocal lispwords+=describe,it,testing,facts,fact,provided
-

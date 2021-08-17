@@ -19,8 +19,8 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-(setq doom-font (font-spec :family "JetBrains Mono" :size 16 :weight 'semi-light)
-      doom-variable-pitch-font (font-spec :family "sans" :size 17))
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font Mono" :size 13 :weight 'Regular)
+      doom-variable-pitch-font (font-spec :family "sans" :size 14))
 
 (setq auto-window-vscroll nil)
 
@@ -78,7 +78,7 @@
       lsp-completion-use-last-result 't
       lsp-log-io nil
       lsp-headerline-breadcrumb-enable 't
-      lsp-headerline-breadcrumb-enable-diagnostics 't
+      lsp-headerline-breadcrumb-enable-diagnostics nil
       lsp-semantic-tokens-apply-modifiers 't
       lsp-semantic-tokens-enable 't
       lsp-lens-enable nil
@@ -87,28 +87,23 @@
       lsp-disabled-clients '(js-ts)
       tab-always-indent 'complete)
 
-(use-package! aggressive-indent
+(use-package aggressive-indent
+  :init
+  (global-aggressive-indent-mode 1)
   :config
-  (global-aggressive-indent-mode 1))
+  (remove-hook 'before-save-hook #'aggressive-indent--process-changed-list-and-indent 'local))
 
-(use-package! clojure-mode
+(use-package clojure-mode
+  :init
+  (setq clojure-indent-style 'align-arguments
+        clojure-font-lock-keywords nil
+        clojure-align-forms-automatically 't)
+
   :config
   (add-hook! 'clojure-mode-hook
              #'subword-mode
              #'paredit-mode
-             #'rainbow-delimiters-mode)
-
-  (setq clojure-align-forms-automatically t
-        clojure-indent-style 'align-arguments)
-
-  (when (featurep! +lsp)
-
-    (comment (after! lsp-clojure
-               (dolist (m '(clojure-mode
-                            clojurec-mode
-                            clojurescript-mode
-                            clojurex-mode))
-                 (add-to-list 'lsp-language-id-configuration (cons m "clojure")))))))
+             #'rainbow-delimiters-mode))
 
 ;; (after! lsp-mode
 ;;   ;; TODO PR this upstream
@@ -127,11 +122,9 @@
 ;;                       (pythonPath . ,lsp-beancount-python-interpreter))
 ;;                     :server-id 'beancount-ls)))
 
-(use-package! clj-refactor
+(use-package clj-refactor
   ;; :pin melpa-stable
-  :hook
-  (clojure-mode . clj-refactor-mode)
-  (clojure-mode . yas-minor-mode)
+  :disabled t
   :config
   (set-lookup-handlers! 'clj-refactor-mode
     :references #'cljr-find-usages)
@@ -160,18 +153,16 @@
 
 (global-set-key (kbd "TAB") #'company-indent-or-complete-common)
 
-(use-package! cider
+(use-package cider
   ;; NOTE if `org-directory' doesn't exist, `cider-jack' in won't work
-  :hook
-  (clojure-mode-local-vars . cider-mode)
   :init
   (after! clojure-mode
     (set-repl-handler! 'clojure-mode #'+clojure/open-repl :persist t)
     (set-repl-handler! 'clojurescript-mode #'+clojure/open-cljs-repl :persist t)
     (set-eval-handler! '(clojure-mode clojurescript-mode) #'cider-eval-region))
   :config
-  (add-hook 'cider-mode-hook #'eldoc-mode)
-  (add-hook 'cider-mode-hook #'company-mode)
+                                        ;(add-hook 'cider-mode-hook #'eldoc-mode)
+                                        ;(add-hook 'cider-mode-hook #'company-mode)
   (add-hook 'cider-mode-hook #'cider-company-enable-fuzzy-completion)
   (add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
   (add-hook 'cider-repl-mode-hook #'company-mode)
@@ -180,7 +171,7 @@
     :definition #'+clojure-cider-lookup-definition
     :documentation #'cider-doc)
 
-  (setq cider-font-lock-dynamically '(macro core function var deprecated)
+  (setq cider-font-lock-dynamically '(core deprecated)
         cider-overlays-use-font-lock t
         cider-repl-history-display-style 'one-line
         cider-repl-history-file (concat doom-cache-dir "cider-repl-history")
