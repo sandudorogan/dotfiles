@@ -1,6 +1,5 @@
 alsamixer
-nmcli dev wifi connect "The ultimate undying" password "youwontlikeit"
-nmcli dev wifi connect "Undying Upgraded" password "ohshititsdeadtoo"
+nmcli dev wifi connect "" password ""
 bluetoothctl
 # Devices data:
 xinput

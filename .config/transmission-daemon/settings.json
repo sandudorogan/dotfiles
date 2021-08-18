@@ -18,7 +18,7 @@
     "encryption": 1,
     "idle-seeding-limit": 30,
     "idle-seeding-limit-enabled": false,
-    "incomplete-dir": "/home/sandu/Downloads",
+    "incomplete-dir": "/home/sandu/Downloads/",
     "incomplete-dir-enabled": false,
     "lpd-enabled": false,
     "message-level": 1,
@@ -65,6 +65,6 @@
     "umask": 18,
     "upload-slots-per-torrent": 14,
     "utp-enabled": true,
-    "watch-dir": "/home/sandu/Downloads",
+    "watch-dir": "/home/sandu/Downloads/",
     "watch-dir-enabled": true
 }

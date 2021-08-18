@@ -1,22 +1,18 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="google-chrome.desktop" score="19497.5" last-seen="1605889538"/>
-    <application id="vlc_vlc.desktop" score="68.5" last-seen="1605624069"/>
-    <application id="org.gnome.Screenshot.desktop" score="1" last-seen="1605776147"/>
-    <application id="pycharm-professional_pycharm-professional.desktop" score="838.28869438171387" last-seen="1606119936"/>
-    <application id="gnome-control-center.desktop" score="24.01959228515625" last-seen="1605535482"/>
-    <application id="update-manager.desktop" score="0" last-seen="1605599220"/>
-    <application id="org.gnome.Nautilus.desktop" score="9.75" last-seen="1605534871"/>
-    <application id="org.gnome.Totem.desktop" score="1" last-seen="1605533915"/>
-    <application id="code_code.desktop" score="386" last-seen="1605886887"/>
-    <application id="com.obsproject.Studio.desktop" score="0.5" last-seen="1605534859"/>
-    <application id="apport-gtk.desktop" score="11" last-seen="1605797735"/>
-    <application id="org.gnome.Terminal.desktop" score="1368.3691746947331" last-seen="1606120853"/>
-    <application id="intellij-idea-ultimate_intellij-idea-ultimate.desktop" score="10886.624404907227" last-seen="1606120883"/>
-    <application id="slack_slack.desktop" score="9131.6448110844321" last-seen="1606119956"/>
-    <application id="libreoffice-draw.desktop" score="58" last-seen="1605796840"/>
-    <application id="thunderbird.desktop" score="1" last-seen="1606119933"/>
-    <application id="firefox.desktop" score="7754.0031385421753" last-seen="1604915403"/>
+    <application id="brave-browser-beta.desktop" score="18572.790377140045" last-seen="1629268717"/>
+    <application id="slack_slack.desktop" score="4343.281952381134" last-seen="1629268613"/>
+    <application id="org.gnome.Nautilus.desktop" score="0" last-seen="1629190127"/>
+    <application id="org.gnome.FileRoller.desktop" score="4.5" last-seen="1629228746"/>
+    <application id="org.gnome.Terminal.desktop" score="0.5" last-seen="1628667115"/>
+    <application id="intellij-idea-ultimate_intellij-idea-ultimate.desktop" score="37" last-seen="1629118677"/>
+    <application id="com.alacritty.Alacritty.desktop" score="4411.0540266036987" last-seen="1629268882"/>
+    <application id="libreoffice-writer.desktop" score="10" last-seen="1629125144"/>
+    <application id="gnome-control-center.desktop" score="8.5313472747802734" last-seen="1629268221"/>
+    <application id="firefox.desktop" score="2" last-seen="1629268206"/>
+    <application id="emacs_emacs.desktop" score="48" last-seen="1629228757"/>
+    <application id="io.elementary.appcenter.desktop" score="20.06266975402832" last-seen="1629268188"/>
+    <application id="org.gnome.Totem.desktop" score="2" last-seen="1629229538"/>
   </context>
 </application-state>
