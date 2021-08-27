@@ -1,18 +1,12 @@
 <?xml version="1.0"?>
 <application-state>
   <context id="">
-    <application id="brave-browser-beta.desktop" score="18572.790377140045" last-seen="1629268717"/>
-    <application id="slack_slack.desktop" score="4343.281952381134" last-seen="1629268613"/>
-    <application id="org.gnome.Nautilus.desktop" score="0" last-seen="1629190127"/>
-    <application id="org.gnome.FileRoller.desktop" score="4.5" last-seen="1629228746"/>
-    <application id="org.gnome.Terminal.desktop" score="0.5" last-seen="1628667115"/>
-    <application id="intellij-idea-ultimate_intellij-idea-ultimate.desktop" score="37" last-seen="1629118677"/>
-    <application id="com.alacritty.Alacritty.desktop" score="4411.0540266036987" last-seen="1629268882"/>
-    <application id="libreoffice-writer.desktop" score="10" last-seen="1629125144"/>
-    <application id="gnome-control-center.desktop" score="8.5313472747802734" last-seen="1629268221"/>
-    <application id="firefox.desktop" score="2" last-seen="1629268206"/>
-    <application id="emacs_emacs.desktop" score="48" last-seen="1629228757"/>
-    <application id="io.elementary.appcenter.desktop" score="20.06266975402832" last-seen="1629268188"/>
-    <application id="org.gnome.Totem.desktop" score="2" last-seen="1629229538"/>
+    <application id="brave-browser-beta.desktop" score="19690.895188570023" last-seen="1630066580"/>
+    <application id="slack_slack.desktop" score="3039.140976190567" last-seen="1630065965"/>
+    <application id="io.elementary.appcenter.desktop" score="4" last-seen="1630049511"/>
+    <application id="org.gnome.Nautilus.desktop" score="3" last-seen="1630066576"/>
+    <application id="org.gnome.FileRoller.desktop" score="5" last-seen="1629968340"/>
+    <application id="com.alacritty.Alacritty.desktop" score="5301.5270133018494" last-seen="1630066579"/>
+    <application id="io.mpv.Mpv.desktop" score="152" last-seen="1630008384"/>
   </context>
 </application-state>
