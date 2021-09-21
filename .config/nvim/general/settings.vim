@@ -12,7 +12,6 @@ filetype plugin indent on
 set autoindent " indent when moving to the next line while writing code
 set autoread " Reload unedited, externally changed files. 
 set cc=80
-set clipboard+=unnamedplus " sync system clipboard w/ unnamed register
 set encoding=utf-8
 set expandtab " expand tabs into spaces
 set hidden " Navigate without saving buffer
@@ -71,3 +70,20 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 
 
 let g:python3_host_prog = '/usr/bin/python3'
+
+set clipboard+=unnamedplus " sync system clipboard w/ unnamed register
+" WSL system clipboard integration. 
+" Uses this helper: https://github.com/equalsraf/win32yank/releases
+" Comment when on other systems.
+let g:clipboard = {
+            \   'name': 'win32yank-wsl',
+            \   'copy': {
+            \      '+': 'win32yank.exe -i --crlf',
+            \      '*': 'win32yank.exe -i --crlf',
+            \   },
+            \   'paste': {
+            \      '+': 'win32yank.exe -o --lf',
+            \      '*': 'win32yank.exe -o --lf',
+            \   },
+            \   'cache_enabled': 0,
+            \ }

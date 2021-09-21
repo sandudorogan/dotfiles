@@ -30,7 +30,7 @@
     "coc.preferences.formatOnSaveFiletypes": ["python"],
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableFloatHighlight": true,
-    "coc.preferences.semanticTokensHighlights": true,
+    // "coc.preferences.semanticTokensHighlights": true,
     "coc.preferences.formatOnType": false,
     "coc.preferences.enableMessageDialog": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
@@ -52,6 +52,7 @@
             "filetypes": [
                 "clojure"
             ],
+            "trace.server": "verbose",
             "rootPatterns": [
                 "project.clj",
                 "shadow-cljs.edn",

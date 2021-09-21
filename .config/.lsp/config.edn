@@ -58,7 +58,6 @@
   :show-docs-arity-on-same-line? true
   :text-document-sync-kind :full
   :semantic-tokens? true
-  :sqlite-db-path "/home/sandu/.config/.lsp/sqlite.db"
   :auto-add-ns-to-new-files? true
   :lint-project-files-after-startup? true
   :additional-snippets [{:name "wrap-let-sexpr$"

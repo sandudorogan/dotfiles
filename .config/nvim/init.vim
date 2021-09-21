@@ -10,6 +10,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     " Plug 'itchyny/lightline.vim'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'edkolev/tmuxline.vim'
 
     Plug 'jmcantrell/vim-virtualenv'
 
