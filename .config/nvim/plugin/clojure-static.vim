@@ -15,11 +15,31 @@ let g:clojure_fuzzy_indent_patterns = [
             \   '^PATCH', 
             \   '^OPTIONS', 
             \   '^with', 
+            \   '-tpl$', 
             \   '^def', 
             \   '^let', 
-            \   '-tpl$'
+            \   '^mlet', 
+            \   '^let*', 
+            \   '^when-let', 
+            \   '^loop', 
+            \   '^when', 
+            \   '^cond', 
+            \   '^as->', 
+            \   '^->', 
+            \   '^->>', 
+            \   '^doto', 
+            \   '^cond->', 
+            \   '^case', 
+            \   '^with-*', 
+            \   '^\.',
+            \   'go-loop', 
+            \   'match', 
+            \   '^context', 
+            \   'this-as', 
+            \   '^are', 
+            \   '^dofor'
             \ ]
 let g:clojure_maxlines = 0
-let g:clojure_special_indent_words = 'deftype,defrecord,reify,proxy,extend-type,extend-protocol,letfn'
+let g:clojure_special_indent_words = 'deftype,defrecord,reify,proxy,extend-type,extend-protocol,letfn,defservice,let'
 
 " autocmd FileType clojure setlocal lispwords+=describe,it,testing,facts,fact,provided

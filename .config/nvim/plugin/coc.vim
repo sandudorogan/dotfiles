@@ -14,9 +14,22 @@ let g:coc_global_extensions = [
             \  'coc-sh',
             \  'coc-git',
             \  'coc-vimlsp',
-            \  'coc-htmldjango'
+            \  'coc-htmldjango',
+            \  'coc-sql',
             \ ]
+
 autocmd FileType json syntax match Comment +\/\/.\+$+
+
+"
+" Semantic highlighting is disabled by default!
+"
+" https://github.com/neoclide/coc.nvim/commit/76f407d45640aeadc97a555eac0939217d0dd662
+"
+" as it's being reworked and the current version interfers with treesitter (if installed)
+"
+" However, for me, in the meantime, let's switch it back on again!
+"
+let g:coc_default_semantic_highlight_groups = 1
 
 
 " Use tab for trigger completion with characters ahead and navigate.
@@ -76,8 +89,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 nmap <leader>rn <Plug>(coc-rename)
 
 " Formatting selected code.
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>f <Plug>(coc-format-selected)
+nmap <leader>f <Plug>(coc-format-selected)
 
 augroup mygroup
   autocmd!
@@ -109,14 +122,12 @@ xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.
-if has('nvim-0.4.0') || has('patch-8.2.0750')
-  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
-  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
-  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
-endif
+nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of language server.
@@ -141,7 +152,7 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " Show all diagnostics.
 nnoremap <silent><nowait> <leader>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent><nowait> <leader>e  :<C-u>CocList extensions<cr>
+" nnoremap <silent><nowait> <leader>e  :<C-u>CocList extensions<cr>
 " Show commands.
 nnoremap <silent><nowait> <leader>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
@@ -160,6 +171,23 @@ function! Expand(exp) abort
     let l:result = expand(a:exp)
     return l:result ==# '' ? '' : "file://" . l:result
 endfunction
+
+" nnoremap <silent> crai :call CocAction('runCommand', 'lsp-clojure-add-import-to-namespace')<CR>
+" nnoremap <silent> cram :call CocAction('runCommand', 'lsp-clojure-add-missing-libspec')<CR>
+" nnoremap <silent> crcn :call CocAction('runCommand', 'lsp-clojure-clean-ns')<CR>
+" nnoremap <silent> crcc :call CocAction('runCommand', 'lsp-clojure-cycle-coll')<CR>
+" nnoremap <silent> crcp :call CocAction('runCommand', 'lsp-clojure-cycle-privacy')<CR>
+" nnoremap <silent> crel :call CocAction('runCommand', 'lsp-clojure-expand-let')<CR>
+" nnoremap <silent> cref :call CocAction('runCommand', 'lsp-clojure-extract-function')<CR>
+" nnoremap <silent> cris :call CocAction('runCommand', 'lsp-clojure-inline-symbol')<CR>
+" nnoremap <silent> cril :call CocAction('runCommand', 'lsp-clojure-introduce-let')<CR>
+" nnoremap <silent> crml :call CocAction('runCommand', 'lsp-clojure-move-to-let')<CR>
+" nnoremap <silent> crth :call CocAction('runCommand', 'lsp-clojure-thread-first')<CR>
+" nnoremap <silent> crtf :call CocAction('runCommand', 'lsp-clojure-thread-first-all')<CR>
+" nnoremap <silent> crtt :call CocAction('runCommand', 'lsp-clojure-thread-last')<CR>
+" nnoremap <silent> crtl :call CocAction('runCommand', 'lsp-clojure-thread-last-all')<CR>
+" nnoremap <silent> crua :call CocAction('runCommand', 'lsp-clojure-unwind-all')<CR>
+" nnoremap <silent> cruw :call CocAction('runCommand', 'lsp-clojure-unwind-thread')<CR>
 
 nnoremap <silent> crcc :call CocRequest('clojure-lsp', 'workspace/executeCommand', {'command': 'cycle-coll', 'arguments': [Expand('%:p'), line('.') - 1, col('.') - 1]})<CR>
 nnoremap <silent> crth :call CocRequest('clojure-lsp', 'workspace/executeCommand', {'command': 'thread-first', 'arguments': [Expand('%:p'), line('.') - 1, col('.') - 1]})<CR>

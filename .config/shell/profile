@@ -16,6 +16,7 @@ export TERMINAL="alacritty"
 export TERM="alacritty"
 export BROWSER="firefox"
 export PAGER="bat"
+export SHELL="zsh"
 
 # ~/ Clean-up:
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -184,4 +185,4 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 export NVM_DIR="$HOME/.config"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-. "/home/sandu/.local/share/cargo/env"
+[ -f "${XDG_DATA_HOME}/cargo/env" ] && . "${XDG_DATA_HOME}/cargo/env" 

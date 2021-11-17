@@ -1,4 +1,5 @@
 let g:mapleader = "\<Space>"
+let g:maplocalleader = "\<Space>"
 
 
 call plug#begin('~/.local/share/nvim/site/plugged')
@@ -23,14 +24,18 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'tpope/vim-repeat'                                            " Advanced .
     Plug 'tpope/vim-fugitive'                                          " :Git commands
     Plug 'tpope/vim-rhubarb'                                           " :GBrowse
-    Plug 'jiangmiao/auto-pairs'      " Intuitive brackets management
+    Plug 'jiangmiao/auto-pairs'                                        " Intuitive brackets management
+    Plug 'luochen1990/rainbow'                                         " Rainbow parens 
     Plug 'yuttie/comfortable-motion.vim'
+
+    Plug 'ncm2/float-preview.nvim'
+    " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
     Plug 'lambdalisue/glyph-palette.vim'
     Plug 'mbbill/undotree'
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'scrooloose/nerdtree-project-plugin'
     Plug 'PhilRunninger/nerdtree-visual-selection'
     Plug 'haya14busa/incsearch.vim'
@@ -44,6 +49,11 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'guns/vim-clojure-highlight', {'for': 'clojure'}
     Plug 'guns/vim-sexp', {'for': 'clojure'}
     Plug 'tpope/vim-sexp-mappings-for-regular-people', {'for': 'clojure'}
+
+    Plug 'tpope/vim-dispatch'
+    Plug 'radenling/vim-dispatch-neovim'
+    Plug 'clojure-vim/vim-jack-in', {'for': 'clojure'}
+    " Plug 'Olical/conjure', {'for': 'clojure'}
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    " Language servers
 

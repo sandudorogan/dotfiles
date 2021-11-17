@@ -3,9 +3,11 @@
 # Please adapt and uncomment the following lines:
 	name = Sandu Dorogan
 	email = sandu.dorogan@gmail.com
+	signingKey = 5F120F8E9210CC38EC4C79A24EFAF9D5360997FD
 
 [core]
     pager = delta
+	autocrlf = false
 
 #[interactive]
 #    diffFilter = delta --color-only
@@ -29,3 +31,8 @@
     line-numbers-right-style = "#FFFFFF"
     line-numbers-minus-style = 124
     line-numbers-plus-style = 28
+
+[commit]
+	gpgSign = true
+[tag]
+	forceSignAnnotated = true

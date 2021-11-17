@@ -62,3 +62,30 @@ alias \
 
 alias zshconfig="$EDITOR $ZDOTDIR/.zshrc"
 alias ohmyzsh="r $ZSH"
+
+# Dates
+alias dt='date +%Y%m%d'    # frequent 8-digit stamp: 20160114
+alias dt8=dt
+alias day=dt
+alias dts='date +%s'       # seconds since epoch: 1452795263
+alias dte=dts
+alias dt10=dts
+alias dtep='print "use this to parse: date -d @123..."'  # parse the epoch
+alias dtp='date -d '       # parse
+alias dttm='date --utc +%Y%m%d%H%M%S'  # datetime: 20160114192940
+alias dt14=dttm
+alias dt13=dtb
+alias dto='date +%Y%j'     # ordinal date: 2016016 (16th day of year)
+alias dt7=dto
+# https://en.wikipedia.org/wiki/ISO_week_date
+alias dtwk='date +W%V'     # week date: W02
+alias dtyrwk='date +%GW%V' # year week date: 2016W02
+# ISO 8601
+alias dtw='date +%G-W%V-%' # year week: 2016-W02-4
+alias dti='date -I'        # ISO-8601: 2016-01-14
+alias dt-=dti
+alias dti='date -u +%Y%m%dT%H%M%S'        # 20160111T173110Z
+alias dti-='date -u +%Y-%m-%dT%H:%M:%SZ'  # 2016-01-11T17:31:10Z
+alias dti0='date -u -Iseconds'            # 2016-01-11T17:31:10+0000
+alias dto-='date +%Y-%j'                  # ordinal date: 2016-016
+alias dtb="date-iso2bson.rb <<<\"'`dt-`'\""  # for mongo bson

@@ -36,7 +36,10 @@ set termguicolors
 set title
 set tabstop=4 " set tabs to have 4 spaces
 set updatetime=100
+
 set wildmode=longest,list,full " Enable autocompletion:
+set wildmenu
+set completeopt=longest,menuone
 
 if !has('nvim')
     set ttymouse=sgr " Alacritty pseudo fix for mouse
@@ -76,14 +79,22 @@ set clipboard+=unnamedplus " sync system clipboard w/ unnamed register
 " Uses this helper: https://github.com/equalsraf/win32yank/releases
 " Comment when on other systems.
 let g:clipboard = {
-            \   'name': 'win32yank-wsl',
+            \   'name': 'win32yank',
             \   'copy': {
-            \      '+': 'win32yank.exe -i --crlf',
-            \      '*': 'win32yank.exe -i --crlf',
+            \      '+': 'win32yank -i --crlf',
+            \      '*': 'win32yank -i --crlf',
             \   },
             \   'paste': {
-            \      '+': 'win32yank.exe -o --lf',
-            \      '*': 'win32yank.exe -o --lf',
+            \      '+': 'win32yank -o --lf',
+            \      '*': 'win32yank -o --lf',
             \   },
-            \   'cache_enabled': 0,
+            \   'cache_enabled': 1,
             \ }
+
+" Automatically reload config on save
+if has ('autocmd') " Remain compatible with earlier versions
+ augroup vimrc     " Source vim configuration upon save
+    autocmd! BufWritePost $MYVIMRC source % | echom "Reloaded " . $MYVIMRC | redraw
+    autocmd! BufWritePost $MYGVIMRC if has('gui_running') | so % | echom "Reloaded " . $MYGVIMRC | endif | redraw
+  augroup END
+endif " has autocmd
