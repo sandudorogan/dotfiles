@@ -61,6 +61,7 @@
                 "ignore-classpath-directories": true,
                 "dependency-scheme": "jar",
                 "semantic-tokens?": true,
+                "source-paths": ["src", "test", "dev", "integration_test"],
                 "text-document-sync-kind": ":full",
                 "use-metadata-for-privacy?": false,
                 "lint-project-files-after-startup?": true,

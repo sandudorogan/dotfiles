@@ -75,6 +75,10 @@ HIST_STAMPS="dd/mm/yyyy"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_DEFAULT_SESSION_NAME="code"
+ZSH_TMUX_CONFIG="$HOME/.config/tmux/tmux.conf"
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -82,9 +86,9 @@ HIST_STAMPS="dd/mm/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
+    tmux
     emoji
     emoji-clock
-    vi-mode
     web-search
     colored-man-pages
     virtualenvwrapper
@@ -94,9 +98,15 @@ plugins=(
     # transfer
     urltools
     zsh-navigation-tools
+    zsh-interactive-cd
     # fast-syntax-highlighting
     universalarchive
     zsh-vi-mode
+    vi-mode
+    fzf
+    ag
+    lein
+    ubuntu
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -156,3 +166,5 @@ source /usr/share/doc/fzf/examples/completion.zsh
 
 source $HOME/.local/bin/virtualenvwrapper.sh
 
+# Direnv
+eval "$(direnv hook zsh)"
