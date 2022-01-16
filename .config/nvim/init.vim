@@ -15,18 +15,18 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 
     Plug 'jmcantrell/vim-virtualenv'
 
-    Plug 'andymass/vim-matchup'
-    Plug 'preservim/nerdcommenter'
     " Plug 'airblade/vim-gitgutter'                                      Shows change status on the left. [c; ]c; <leader>hs; <leader>hu;
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    Plug 'tpope/vim-commentary'
+    Plug 'tpope/vim-obsession'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-repeat'                                            " Advanced .
     Plug 'tpope/vim-fugitive'                                          " :Git commands
     Plug 'tpope/vim-rhubarb'                                           " :GBrowse
     Plug 'jiangmiao/auto-pairs'                                        " Intuitive brackets management
     Plug 'luochen1990/rainbow'                                         " Rainbow parens 
-    Plug 'yuttie/comfortable-motion.vim'
+    Plug 'yuttie/comfortable-motion.vim'                               " Inertial Ctrl+D/U
 
     Plug 'ncm2/float-preview.nvim'
     " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -35,7 +35,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'mbbill/undotree'
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
-    " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'scrooloose/nerdtree-project-plugin'
     Plug 'PhilRunninger/nerdtree-visual-selection'
     Plug 'haya14busa/incsearch.vim'
@@ -56,6 +56,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     " Plug 'Olical/conjure', {'for': 'clojure'}
 
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    " Language servers
+    Plug 'andymass/vim-matchup'                                        " Smart %
 
     Plug 'ryanoasis/vim-devicons'                                      " Load devicons the last
     " Plug 'adelarsq/vim-devicons-emoji'
