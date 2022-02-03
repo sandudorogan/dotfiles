@@ -18,9 +18,9 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     " Plug 'airblade/vim-gitgutter'                                      Shows change status on the left. [c; ]c; <leader>hs; <leader>hu;
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
-    Plug 'tpope/vim-commentary'
-    Plug 'tpope/vim-obsession'
-    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-commentary'                                        " gc
+    Plug 'tpope/vim-obsession'                                         " :Session
+    Plug 'tpope/vim-surround'                                          " ysaw'
     Plug 'tpope/vim-repeat'                                            " Advanced .
     Plug 'tpope/vim-fugitive'                                          " :Git commands
     Plug 'tpope/vim-rhubarb'                                           " :GBrowse
