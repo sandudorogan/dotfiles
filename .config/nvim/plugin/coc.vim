@@ -16,6 +16,7 @@ let g:coc_global_extensions = [
             \  'coc-vimlsp',
             \  'coc-htmldjango',
             \  'coc-sql',
+            \  'coc-tailwindcss',
             \ ]
 
 autocmd FileType json syntax match Comment +\/\/.\+$+

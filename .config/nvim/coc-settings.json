@@ -1,5 +1,6 @@
 {
     "codeLens.enable": true,
+    "codeLens.position": "right_align",
 
     "diagnostic.errorSign": "✘",
     "diagnostic.warningSign": "",
@@ -26,11 +27,9 @@
     ],
 
     "coc.preferences.extensionUpdateCheck": "daily",
-    "coc.preferences.colorSupport": true,
     "coc.preferences.formatOnSaveFiletypes": ["python"],
     "coc.preferences.bracketEnterImprove": true,
     "coc.preferences.enableFloatHighlight": true,
-    "coc.preferences.semanticTokensHighlights": true,
     "coc.preferences.formatOnType": false,
     "coc.preferences.enableMessageDialog": true,
     "coc.preferences.currentFunctionSymbolAutoUpdate": true,
@@ -38,7 +37,11 @@
     "coc.source.around.firstMatch": false,
     "coc.source.buffer.firstMatch": false,
 
-    // "codeLens.enable": true,
+    "semanticTokens.filetypes": ["*"],
+    "git.semanticCommit.filetypes": [
+        "gitcommit",
+        "gina-commit"
+    ],
 
     // "clojure.initialization-options.dependency-scheme": "jar",
     // "clojure.initialization-options.ignore-classpath-directories": true,
@@ -55,27 +58,7 @@
             "filetypes": ["clojure"],
             "rootPatterns": ["project.clj", "deps.edn", "shadow-cljs.edn"],
             "additionalSchemes": ["jar", "zipfile"],
-            "startup-message": true,
-            "trace.server": "verbose",
-            "initializationOptions": {
-                "ignore-classpath-directories": true,
-                "dependency-scheme": "jar",
-                "semantic-tokens?": true,
-                "source-paths": ["src", "test", "dev", "integration_test"],
-                "text-document-sync-kind": ":full",
-                "use-metadata-for-privacy?": false,
-                "lint-project-files-after-startup?": true,
-                "keep-require-at-start?": true,
-                "cljfmt": {
-                    "split-keypairs-over-multiple-lines?": true,
-                    "identation?":                         true,
-                    "remove-surrounding-whitespace?":      true,
-                    "remove-trailing-whitespace?":         true,
-                    "insert-missing-whitespace?":          true,
-                    "remove-consecutive-blank-lines?":     true,
-                    "align-associative?":                  true
-                }
-            }
+            "startup-message": true
         }
     },
 
