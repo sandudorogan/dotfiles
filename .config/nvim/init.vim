@@ -24,6 +24,8 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'tpope/vim-repeat'                                            " Advanced .
     Plug 'tpope/vim-fugitive'                                          " :Git commands
     Plug 'tpope/vim-rhubarb'                                           " :GBrowse
+    Plug 'tpope/vim-salve'                                           
+    Plug 'tpope/vim-classpath'                                           
     Plug 'jiangmiao/auto-pairs'                                        " Intuitive brackets management
     Plug 'luochen1990/rainbow'                                         " Rainbow parens 
     Plug 'yuttie/comfortable-motion.vim'                               " Inertial Ctrl+D/U
@@ -31,13 +33,13 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'ncm2/float-preview.nvim'
     " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
-    Plug 'lambdalisue/glyph-palette.vim'
     Plug 'mbbill/undotree'
     Plug 'preservim/nerdtree'
     Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'scrooloose/nerdtree-project-plugin'
     Plug 'PhilRunninger/nerdtree-visual-selection'
+
     Plug 'haya14busa/incsearch.vim'
     Plug 'machakann/vim-highlightedyank'
 
@@ -58,6 +60,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}                    " Language servers
     Plug 'andymass/vim-matchup'                                        " Smart %
 
+    Plug 'lambdalisue/glyph-palette.vim'
     Plug 'ryanoasis/vim-devicons'                                      " Load devicons the last
     " Plug 'adelarsq/vim-devicons-emoji'
 

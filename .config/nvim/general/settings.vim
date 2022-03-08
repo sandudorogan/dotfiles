@@ -75,9 +75,9 @@ autocmd BufRead,BufNewFile *.tex set filetype=tex
 let g:python3_host_prog = '/usr/bin/python3'
 
 set clipboard+=unnamedplus " sync system clipboard w/ unnamed register
+if has('win32')
 " WSL system clipboard integration. 
 " Uses this helper: https://github.com/equalsraf/win32yank/releases
-" Comment when on other systems.
 let g:clipboard = {
             \   'name': 'win32yank',
             \   'copy': {
@@ -90,6 +90,7 @@ let g:clipboard = {
             \   },
             \   'cache_enabled': 1,
             \ }
+endif
 
 " Automatically reload config on save
 if has ('autocmd') " Remain compatible with earlier versions

@@ -28,8 +28,9 @@ nnoremap S :%s//g<Left><Left>
 " Save file as sudo on files that require root permission
 cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
-" Convert slashes to backslashes for Windows.
+" Copy file path 
 if has('win32')
+  " Convert slashes to backslashes for Windows.
   nmap <leader>yfs :let @*=substitute(expand("%"), "/", "\\", "g")<CR>
   nmap <leader>yfl :let @*=substitute(expand("%:p"), "/", "\\", "g")<CR>
 
