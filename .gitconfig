@@ -3,7 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Sandu Dorogan
 	email = sandu.dorogan@gmail.com
-	signingKey = 5F120F8E9210CC38EC4C79A24EFAF9D5360997FD
+	signingkey = 3A4A92107404C372
 
 [core]
     pager = delta
@@ -36,3 +36,34 @@
 	gpgSign = true
 [tag]
 	forceSignAnnotated = true
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[core]
+  editor = nvim
+  excludesfile = ~/.gitignoreglobal
+[commit]
+  template = ~/.gitmessage
+  gpgsign = true
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+[filter "lfs"]
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
