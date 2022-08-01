@@ -8,21 +8,15 @@
 
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
-	cp="cp -iv" \
-	mv="mv -iv" \
-	rm="rm -vI" \
 	mkd="mkdir -pv" \
 	yt="youtube-dl --add-metadata -ic" \
 	yta="yt -x -f bestaudio/best" \
 	ffmpeg="ffmpeg -hide_banner" \
-	config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+	config="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 
 # Colorize commands when possible.
 alias \
-	ls="ls -hN --color=auto --group-directories-first" \
-	grep="grep --color=auto" \
 	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
 
 # These common commands are just too long! Abbreviate them.
 alias \
@@ -71,7 +65,7 @@ alias dts='date +%s'       # seconds since epoch: 1452795263
 alias dte=dts
 alias dt10=dts
 alias dtep='print "use this to parse: date -d @123..."'  # parse the epoch
-alias dtp='date -d '       # parse
+alias dtp='date -Id '       # parse
 alias dttm='date --utc +%Y%m%d%H%M%S'  # datetime: 20160114192940
 alias dt14=dttm
 alias dt13=dtb

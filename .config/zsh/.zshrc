@@ -17,7 +17,7 @@ HISTFILE=~/.cache/zsh/history
 # &   # Run the process in the background.
 # ( ) # Hide shell job control messages.
 # Not supported in the "fish" shell.
-(cat ~/.cache/wal/sequences &)
+[ -f ~/.cache/wal/sequences ] && (cat ~/.cache/wal/sequences &)
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -96,13 +96,15 @@ VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 plugins=(
     git
     tmux
+    colorize
+    colored-man-pages
+    copybuffer
+    common-aliases
     emoji
     emoji-clock
     web-search
-    colored-man-pages
     virtualenvwrapper
     # screen
-    copybuffer
     fancy-ctrl-z
     # transfer
     urltools
@@ -114,8 +116,9 @@ plugins=(
     fzf
     ag
     lein
-    ubuntu
- macos)
+    macos
+    # ubuntu
+ )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -156,4 +159,5 @@ export LANG=en_US.UTF-8
 [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 [ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
 
-[ -f $HOME/.local/bin/virtualenvwrapper.sh ] && source $HOME/.local/bin/virtualenvwrapper.sh
+# [ -f $HOME/.local/bin/virtualenvwrapper.sh ] && source $HOME/.local/bin/virtualenvwrapper.sh
+# source "$CROSSBEAM_CODE_DIR"/devops/bin/shell-utilities # RAZOR SHELL-UTILITIES
