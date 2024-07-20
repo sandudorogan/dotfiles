@@ -34,6 +34,8 @@ window:
   #  lines: 0
   opacity: 0.85
 
+  option_as_alt: Both
+
   # Window position (changes require restart)
   #
   # Specified in number of pixels.

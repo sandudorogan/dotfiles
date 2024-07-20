@@ -144,11 +144,11 @@ bindkey -v '^?' backward-delete-char
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-export LANG=en_US.UTF-8
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # Load aliases and shortcuts if existent.
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc"
@@ -160,4 +160,11 @@ export LANG=en_US.UTF-8
 [ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
 
 # [ -f $HOME/.local/bin/virtualenvwrapper.sh ] && source $HOME/.local/bin/virtualenvwrapper.sh
-# source "$CROSSBEAM_CODE_DIR"/devops/bin/shell-utilities # RAZOR SHELL-UTILITIES
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# workaround for docker-sync daemon
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+CROSSBEAM_CODE_DIR="${HOME}/workdir/crossbeam"
+source "$CROSSBEAM_CODE_DIR"/devops/bin/shell-utilities # RAZOR SHELL-UTILITIES
