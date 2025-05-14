@@ -103,37 +103,22 @@ plugins=(
     emoji
     emoji-clock
     web-search
-    virtualenvwrapper
-    # screen
     fancy-ctrl-z
-    # transfer
     urltools
     zsh-navigation-tools
     zsh-interactive-cd
-    # fast-syntax-highlighting
     universalarchive
     vi-mode
     fzf
-    ag
     lein
     macos
-    # ubuntu
+    zsh-autosuggestions
+    zsh-syntax-highlighting
  )
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-# Vi mode:
-# bindkey -v
-# export KEYTIMEOUT=1
-
-# Basic auto/tab complete:
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit
-_comp_options+=(globdots)		# Include hidden files.
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -141,6 +126,8 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
+
+bindkey '^ ' autosuggest-accept
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -161,10 +148,11 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # [ -f $HOME/.local/bin/virtualenvwrapper.sh ] && source $HOME/.local/bin/virtualenvwrapper.sh
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+which fzf 2>&1 >/dev/null && source <(fzf --zsh)
 
 # workaround for docker-sync daemon
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
-CROSSBEAM_CODE_DIR="${HOME}/workdir/crossbeam"
-source "$CROSSBEAM_CODE_DIR"/devops/bin/shell-utilities # RAZOR SHELL-UTILITIES
+eval $(thefuck --alias)
+
