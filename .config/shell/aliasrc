@@ -9,6 +9,7 @@
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
 	mkd='mkdir -pv' \
+  els='eza --long --header --inode --git' \
 	yt='youtube-dl --add-metadata -ic' \
 	yta='yt -x -f bestaudio/best' \
 	ffmpeg='ffmpeg -hide_banner' \
@@ -20,7 +21,6 @@ alias \
 
 # These common commands are just too long! Abbreviate them.
 alias \
-    vim='nvim' \
 	ka='killall' \
     ag='sudo apt-get' \
 	g='git' \
@@ -40,6 +40,7 @@ alias \
     cod='config diff' \
     cop='config push' \
     r='ranger' \
+  gcl="gcloud auth login --update-adc"\
 
 # Commands that need command line arguments
 alias \
