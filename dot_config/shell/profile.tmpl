@@ -51,7 +51,9 @@ export ZSH_CUSTOM="$HOME/.config/oh-my-zsh"
 export PATH="/usr/local/sbin:$PATH"
 
 # Python binaries (pip-installed CLI tools)
+{{ if eq .chezmoi.os "darwin" -}}
 export PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:$PATH"
+{{- end }}
 
 # Virtual env wrapper:
 export WORKON_HOME=$HOME/.virtualenvs
@@ -185,7 +187,9 @@ ex=🎯:\
 # Switch escape and caps if tty and no passwd required:
 # sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
 
+{{ if eq .chezmoi.os "darwin" -}}
 eval $(/opt/homebrew/bin/brew shellenv)
+{{- end }}
 
 # Load cargo environment if it exists
 [ -f "${XDG_DATA_HOME}/cargo/env" ] && . "${XDG_DATA_HOME}/cargo/env"

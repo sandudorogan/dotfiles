@@ -12,8 +12,7 @@ alias \
   els='eza --long --header --inode --git' \
 	yt='youtube-dl --add-metadata -ic' \
 	yta='yt -x -f bestaudio/best' \
-	ffmpeg='ffmpeg -hide_banner' \
-	config='/usr/bin/git --git-dir=${HOME}/.cfg/ --work-tree=$HOME'
+	ffmpeg='ffmpeg -hide_banner'
 
 # Colorize commands when possible.
 alias \
@@ -33,12 +32,6 @@ alias \
 	z='zathura' \
 	f='${FILE}' \
 	v='${EDITOR}' \
-    co='config' \
-    cos='config status' \
-    coa='config add' \
-    coc='config commit' \
-    cod='config diff' \
-    cop='config push' \
     r='ranger' \
   gcl="gcloud auth login --update-adc"\
 
@@ -80,3 +73,11 @@ alias dti='date -u +%Y%m%dT%H%M%S'        # 20160111T173110Z
 alias dti-='date -u +%Y-%m-%dT%H:%M:%SZ'  # 2016-01-11T17:31:10Z
 alias dti0='date -u -Iseconds'            # 2016-01-11T17:31:10+0000
 alias dto-='date +%Y-%j'                  # ordinal date: 2016-016
+
+# Chezmoi dotfile management
+alias cz='chezmoi'
+alias cza='chezmoi apply'
+alias czd='chezmoi diff'
+alias cze='chezmoi edit'
+alias czs='chezmoi status'
+alias czcd='cd ~/.local/share/chezmoi'

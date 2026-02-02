@@ -1,0 +1,35 @@
+# README and documentation
+README.md
+LICENSE
+
+# OS-specific ignores
+{{- if eq .chezmoi.os "darwin" }}
+# Linux-only configs (ignored on macOS)
+dot_config/i3/
+dot_config/dunst/
+dot_config/x11/
+dot_config/screenlayout/
+dot_config/sxiv/
+dot_config/evolution/
+dot_config/gtk-2.0/
+dot_config/gtk-3.0/
+dot_config/gtk-4.0/
+dot_config/nautilus/
+dot_config/kazam/
+dot_config/nordvpn/
+dot_config/wal/
+dot_config/transmission/
+dot_config/transmission-daemon/
+dot_config/yad.conf
+dot_config/user-dirs.dirs
+dot_config/user-dirs.locale
+dot_local/share/applications/
+dot_local/bin/statusbar/
+dot_local/bin/remaps
+symlink_dot_xinitrc
+symlink_dot_xprofile
+{{- end }}
+
+{{- if eq .chezmoi.os "linux" }}
+# macOS-only configs (ignored on Linux)
+{{- end }}

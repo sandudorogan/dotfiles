@@ -1,0 +1,23 @@
+{{- $osid := .chezmoi.os -}}
+{{- if eq .chezmoi.os "darwin" -}}
+{{-   $osid = "macos" -}}
+{{- end -}}
+
+[data]
+    osid = "{{ $osid }}"
+    hostname = "{{ .chezmoi.hostname }}"
+    email = "sandu.dorogan@gmail.com"
+    name = "Sandu Dorogan"
+{{- if eq .chezmoi.os "darwin" }}
+    is_macos = true
+    is_linux = false
+{{- else }}
+    is_macos = false
+    is_linux = true
+{{- end }}
+
+[diff]
+    pager = "delta"
+
+[edit]
+    command = "nvim"
