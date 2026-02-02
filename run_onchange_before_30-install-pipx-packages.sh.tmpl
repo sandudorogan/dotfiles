@@ -1,0 +1,23 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+# Hash: {{ include ".chezmoidata/packages.yaml" | sha256sum }}
+# This script re-runs when packages.yaml changes
+
+set -euo pipefail
+
+echo "==> Installing pipx packages..."
+
+# Ensure brew is available
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Ensure pipx path is set up
+pipx ensurepath --quiet || true
+
+# Install pipx packages
+{{ range .pipx.packages -}}
+echo "==> Installing {{ . }}..."
+pipx install {{ . }} --force || pipx upgrade {{ . }} || true
+{{ end }}
+echo "==> pipx packages installed"
+{{ end -}}

@@ -1,0 +1,30 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+# Hash: {{ include ".chezmoidata/packages.yaml" | sha256sum }}
+# This script re-runs when packages.yaml changes
+
+set -euo pipefail
+
+echo "==> Installing Homebrew packages..."
+
+# Ensure brew is available
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+brew bundle --no-lock --file=/dev/stdin <<EOF
+# Taps
+{{ range .homebrew.taps -}}
+tap "{{ . }}"
+{{ end }}
+# Formulae
+{{ range .homebrew.formulae -}}
+brew "{{ . }}"
+{{ end }}
+# Casks
+{{ range .homebrew.casks -}}
+cask "{{ . }}"
+{{ end -}}
+EOF
+
+echo "==> Homebrew packages installed"
+{{ end -}}

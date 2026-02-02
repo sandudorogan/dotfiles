@@ -1,0 +1,55 @@
+# Declarative package list for chezmoi
+# Modifying this file triggers reinstallation via run_onchange scripts
+
+homebrew:
+  taps:
+    - clojure/tools
+    - borkdude/brew
+
+  formulae:
+    # Core tools
+    - git
+    - neovim
+    - tmux
+    - fzf
+    - ripgrep
+    - eza
+    - bat
+    - tldr
+    - ranger
+    - ffmpeg
+    - pipx
+    - pass
+
+    # Clojure ecosystem
+    - clojure
+    - borkdude/brew/babashka
+    - clojure-lsp/brew/clojure-lsp-native
+
+    # From existing configs
+    - git-delta
+    - lazygit
+    - lazydocker
+    - htop
+    - neofetch
+    - newsboat
+    - calcurse
+    - lynx
+    - wget
+    - fish
+    - zsh
+    - highlight
+    - w3m
+    - yt-dlp
+
+  casks:
+    - alacritty
+    - font-jetbrains-mono-nerd-font
+    - docker
+    - zathura
+    - zathura-pdf-poppler
+
+pipx:
+  packages:
+    - fanficfare
+    - bpytop

@@ -1,0 +1,30 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+set -euo pipefail
+
+export NVM_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/nvm"
+
+echo "==> Installing NVM..."
+
+if [ -d "$NVM_DIR" ]; then
+    echo "==> NVM already installed at $NVM_DIR"
+else
+    echo "==> Downloading NVM..."
+    mkdir -p "$NVM_DIR"
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+fi
+
+# Load NVM for current session
+export NVM_DIR="$NVM_DIR"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Install LTS Node.js if not present
+if ! command -v node &> /dev/null; then
+    echo "==> Installing Node.js LTS..."
+    nvm install --lts
+    nvm alias default lts/*
+fi
+
+echo "==> NVM setup complete"
+{{ end -}}

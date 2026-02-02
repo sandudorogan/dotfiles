@@ -1,0 +1,35 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+set -euo pipefail
+
+# Ensure brew is available
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# fzf key bindings and completion
+echo "==> Setting up fzf..."
+if [ -f "$(brew --prefix)/opt/fzf/install" ]; then
+    "$(brew --prefix)/opt/fzf/install" --key-bindings --completion --no-update-rc --no-bash --no-fish
+fi
+
+# Alacritty themes
+echo "==> Setting up Alacritty themes..."
+ALACRITTY_THEMES_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/alacritty/themes"
+if [ ! -d "$ALACRITTY_THEMES_DIR" ]; then
+    mkdir -p "$(dirname "$ALACRITTY_THEMES_DIR")"
+    git clone https://github.com/alacritty/alacritty-theme "$ALACRITTY_THEMES_DIR"
+else
+    echo "==> Alacritty themes already installed"
+fi
+
+# Oh My Zsh
+echo "==> Setting up Oh My Zsh..."
+export ZSH="$HOME/.config/oh-my-zsh"
+if [ ! -d "$ZSH" ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
+else
+    echo "==> Oh My Zsh already installed"
+fi
+
+echo "==> Post-installation complete!"
+{{ end -}}
