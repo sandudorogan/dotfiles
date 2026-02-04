@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+echo "curl $*" >> "$MOCK_CALLS_FILE"
+
+if [[ "$*" == *"nvm"* ]]; then
+    echo "echo 'NVM mock install'"
+elif [[ "$*" == *"rustup"* ]]; then
+    echo "echo 'Rustup mock install'"
+elif [[ "$*" == *"ohmyzsh"* ]]; then
+    echo "echo 'Oh My Zsh mock install'"
+elif [[ "$*" == *"Homebrew"* ]]; then
+    echo "echo 'Homebrew mock install'"
+fi
+exit 0

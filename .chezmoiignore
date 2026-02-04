@@ -2,6 +2,9 @@
 README.md
 LICENSE
 
+# Test suite
+tests/
+
 # OS-specific ignores
 {{- if eq .chezmoi.os "darwin" }}
 # Linux-only configs (ignored on macOS)

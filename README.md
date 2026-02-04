@@ -119,7 +119,8 @@ Scripts run in this order during `chezmoi apply`:
 ├── dot_config/                # ~/.config/* files
 ├── dot_local/                 # ~/.local/* files
 ├── run_onchange_before_*      # Re-run on package changes
-└── run_once_*                 # One-time setup scripts
+├── run_once_*                 # One-time setup scripts
+└── tests/                     # BATS test suite (ignored by chezmoi)
 ```
 
 ## Troubleshooting
@@ -144,3 +145,24 @@ chezmoi apply
 ```bash
 chezmoi apply --force
 ```
+
+## Testing
+
+Install scripts are tested with [BATS](https://github.com/bats-core/bats-core) to verify template rendering and script correctness.
+
+### Install test dependencies
+
+```bash
+brew install bats-core
+brew tap kaos/shell
+brew install bats-assert bats-support
+```
+
+### Run tests
+
+```bash
+cd ~/.local/share/chezmoi
+./tests/run_tests.sh
+```
+
+Tests verify templates render correctly and contain expected content (URLs, flags, paths) without actually running installers.

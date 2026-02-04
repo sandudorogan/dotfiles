@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "pipx $*" >> "$MOCK_CALLS_FILE"
+exit 0
