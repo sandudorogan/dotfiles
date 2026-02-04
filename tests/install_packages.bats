@@ -23,9 +23,9 @@ teardown() {
     assert_success
 }
 
-@test "uses brew bundle with --no-lock" {
+@test "uses brew bundle with stdin file" {
     rendered=$(render_template "$TEMPLATE")
-    run grep -F 'brew bundle --no-lock' <<< "$rendered"
+    run grep -F 'brew bundle --file=/dev/stdin' <<< "$rendered"
     assert_success
 }
 

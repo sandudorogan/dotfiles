@@ -5,6 +5,7 @@ homebrew:
   taps:
     - clojure/tools
     - borkdude/brew
+    - clojure-lsp/brew
 
   formulae:
     # Core tools
@@ -45,9 +46,6 @@ homebrew:
   casks:
     - alacritty
     - font-jetbrains-mono-nerd-font
-    - docker
-    - zathura
-    - zathura-pdf-poppler
 
 pipx:
   packages:
