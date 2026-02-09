@@ -37,14 +37,14 @@ TEMP="${TEMP#+}"
 TEMP="${TEMP// /}"
 
 case "$CONDITION" in
-    *[Tt]hunder*)                                  ICON=$'\ue31d' ;;
-    *[Ss]now*|*[Bb]lizzard*|*[Ss]leet*|*[Ii]ce*)  ICON=$'\ue31a' ;;
-    *[Rr]ain*|*[Dd]rizzle*|*[Ss]hower*)            ICON=$'\ue318' ;;
-    *[Ff]og*|*[Mm]ist*|*[Hh]aze*)                  ICON=$'\ue313' ;;
-    *[Ss]unny*|*[Cc]lear*)                          ICON=$'\ue30d' ;;
-    *[Pp]artly*[Cc]loudy*)                          ICON=$'\ue302' ;;
-    *[Cc]loudy*|*[Oo]vercast*)                      ICON=$'\ue312' ;;
-    *)                                              ICON=$'\ue312' ;;
+    *[Tt]hunder*)                                  ICON=$'\U000F0593' ;;
+    *[Ss]now*|*[Bb]lizzard*|*[Ss]leet*|*[Ii]ce*)  ICON=$'\U000F0598' ;;
+    *[Rr]ain*|*[Dd]rizzle*|*[Ss]hower*)            ICON=$'\U000F0596' ;;
+    *[Ff]og*|*[Mm]ist*|*[Hh]aze*)                  ICON=$'\U000F0591' ;;
+    *[Ss]unny*|*[Cc]lear*)                          ICON=$'\U000F0599' ;;
+    *[Pp]artly*[Cc]loudy*)                          ICON=$'\U000F0595' ;;
+    *[Cc]loudy*|*[Oo]vercast*)                      ICON=$'\U000F0590' ;;
+    *)                                              ICON=$'\U000F0590' ;;
 esac
 
 echo -n "${ICON}|${TEMP}" > "$CACHE_FILE"
