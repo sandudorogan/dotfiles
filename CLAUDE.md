@@ -31,6 +31,8 @@ Dotfiles are managed by chezmoi. Source directory:
 
 ## Commit Messages
 
+Before writing any commit message, read the git commit message template at `~/.gitmessage` and follow its format and conventions (type prefixes, character limits, structure).
+
 NEVER include co-authored by Claude or any claude information in any commit messages or pr descriptions.
 
 Write commit messages and PR descriptions as a humble but experienced engineer would. Keep it casual, avoid listicles, briefly describe what we're doing and highlight non-obvious implementation choices but don't overthink it.
