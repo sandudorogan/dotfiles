@@ -31,5 +31,20 @@ else
     echo "==> Oh My Zsh already installed"
 fi
 
+# peon-ping
+echo "==> Setting up peon-ping..."
+if [ ! -d "$HOME/.claude/hooks/peon-ping" ]; then
+    curl -fsSL https://raw.githubusercontent.com/PeonPing/peon-ping/main/install.sh | bash
+else
+    echo "==> peon-ping already installed"
+fi
+
+# Cursor peon-ping symlinks (shares packs/engine from Claude install)
+echo "==> Setting up Cursor peon-ping symlinks..."
+CURSOR_PEON_DIR="$HOME/.cursor/hooks/peon-ping"
+mkdir -p "$CURSOR_PEON_DIR"
+ln -sf "$HOME/.claude/hooks/peon-ping/packs" "$CURSOR_PEON_DIR/packs"
+ln -sf "$HOME/.claude/hooks/peon-ping/peon.sh" "$CURSOR_PEON_DIR/peon.sh"
+
 echo "==> Post-installation complete!"
 {{ end -}}
