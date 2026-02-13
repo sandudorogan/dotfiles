@@ -1,12 +1,15 @@
 {
-  "hooks": [
-    {
-      "event": "stop",
-      "command": "CLAUDE_PEON_DIR=~/.cursor/hooks/peon-ping bash ~/.claude/hooks/peon-ping/adapters/cursor.sh stop"
-    },
-    {
-      "event": "beforeShellExecution",
-      "command": "CLAUDE_PEON_DIR=~/.cursor/hooks/peon-ping bash ~/.claude/hooks/peon-ping/adapters/cursor.sh beforeShellExecution"
-    }
-  ]
+  "version": 1,
+  "hooks": {
+    "stop": [
+      {
+        "command": "CLAUDE_PEON_DIR=~/.cursor/hooks/peon-ping bash ~/.claude/hooks/peon-ping/adapters/cursor.sh stop"
+      }
+    ],
+    "beforeShellExecution": [
+      {
+        "command": "CLAUDE_PEON_DIR=~/.cursor/hooks/peon-ping bash ~/.claude/hooks/peon-ping/adapters/cursor.sh beforeShellExecution"
+      }
+    ]
+  }
 }

@@ -82,13 +82,13 @@ teardown() {
     assert_success
 }
 
-@test "installs peon-ping from github" {
+@test "runs peon-ping-setup with packs" {
     rendered=$(render_template "$TEMPLATE")
-    run grep -F 'https://raw.githubusercontent.com/PeonPing/peon-ping/main/install.sh' <<< "$rendered"
+    run grep -F 'peon-ping-setup --packs=' <<< "$rendered"
     assert_success
 }
 
-@test "skips peon-ping when already installed" {
+@test "skips peon-ping-setup when already installed" {
     rendered=$(render_template "$TEMPLATE")
     run grep -F 'if [ ! -d "$HOME/.claude/hooks/peon-ping" ]' <<< "$rendered"
     assert_success

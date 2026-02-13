@@ -31,15 +31,15 @@ else
     echo "==> Oh My Zsh already installed"
 fi
 
-# peon-ping
+# peon-ping (installed via brew, setup registers hooks and downloads packs)
 echo "==> Setting up peon-ping..."
 if [ ! -d "$HOME/.claude/hooks/peon-ping" ]; then
-    curl -fsSL https://raw.githubusercontent.com/PeonPing/peon-ping/main/install.sh | bash
+    peon-ping-setup --packs=ccg_china_dozer,dota2_axe,duke_nukem,glados,hd2_helldiver,peasant,peon,sc_battlecruiser,sc_kerrigan,sc_terran,wc3_corrupted_arthas
 else
     echo "==> peon-ping already installed"
 fi
 
-# Cursor peon-ping symlinks (shares packs/engine from Claude install)
+# Cursor peon-ping symlinks (shares engine from Claude install, packs via ~/.openpeon)
 echo "==> Setting up Cursor peon-ping symlinks..."
 CURSOR_PEON_DIR="$HOME/.cursor/hooks/peon-ping"
 mkdir -p "$CURSOR_PEON_DIR"

@@ -70,3 +70,15 @@ teardown() {
     run grep -F 'brew "fzf"' <<< "$rendered"
     assert_success
 }
+
+@test "includes peon-ping tap" {
+    rendered=$(render_template "$TEMPLATE")
+    run grep -F 'tap "PeonPing/tap"' <<< "$rendered"
+    assert_success
+}
+
+@test "includes peon-ping formula" {
+    rendered=$(render_template "$TEMPLATE")
+    run grep -F 'brew "PeonPing/tap/peon-ping"' <<< "$rendered"
+    assert_success
+}
