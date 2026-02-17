@@ -1,0 +1,18 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+set -euo pipefail
+
+CLAUDE_DIR="$HOME/.local/share/claude"
+
+echo "==> Installing Claude Code..."
+
+if [ -d "$CLAUDE_DIR" ]; then
+    echo "==> Claude Code already installed at $CLAUDE_DIR"
+else
+    echo "==> Downloading Claude Code..."
+    curl -fsSL https://claude.ai/install.sh | sh
+fi
+
+echo "==> Claude Code setup complete"
+{{ end -}}
