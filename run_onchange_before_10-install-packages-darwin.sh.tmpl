@@ -11,7 +11,9 @@ echo "==> Installing Homebrew packages..."
 # Ensure brew is available
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-brew bundle --force --file=/dev/stdin <<EOF
+brew uninstall --cask --force font-jetbrains-mono-nerd-font 2>/dev/null || true
+
+brew bundle --file=/dev/stdin <<EOF
 # Taps
 {{ range .homebrew.taps -}}
 tap "{{ . }}"
