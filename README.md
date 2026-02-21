@@ -7,7 +7,7 @@ Personal dotfiles managed with [chezmoi](https://chezmoi.io/).
 ### 1. Install chezmoi and apply
 
 ```bash
-sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply sandudorogan
+sh -c "$(curl -fsLS get.chezmoi.io)" -- -b ~/.local/bin init --apply sandudorogan
 ```
 
 This single command:
