@@ -24,6 +24,13 @@ homebrew:
     - pass
     - atuin
     - direnv
+    - yazi
+    - difftastic
+    - glow
+    - hyperfine
+    - tokei
+    - zoxide
+    - dust
 
     # Clojure ecosystem
     - clojure
@@ -82,6 +89,12 @@ apt:
     - w3m
     - yt-dlp
     - direnv
+    - yazi
+    - glow
+    - hyperfine
+    - tokei
+    - zoxide
+    - dust
     - fd-find
     - curl
     - build-essential
@@ -125,6 +138,13 @@ pacman:
     - wl-clipboard
     - base-devel
     - direnv
+    - yazi
+    - difftastic
+    - glow
+    - hyperfine
+    - tokei
+    - zoxide
+    - dust
     - xdg-utils
   aur:
     - lazygit
@@ -138,6 +158,7 @@ cargo_packages:
   - eza
   - git-delta
   - atuin
+  - difftastic
 
 pipx:
   packages:

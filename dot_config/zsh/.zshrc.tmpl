@@ -68,6 +68,9 @@ source $ZSH/oh-my-zsh.sh
 # Initialize Atuin (after Oh My Zsh plugins)
 command -v atuin &>/dev/null && eval "$(atuin init zsh)"
 
+# Zoxide
+command -v zoxide &>/dev/null && eval "$(zoxide init zsh)"
+
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
