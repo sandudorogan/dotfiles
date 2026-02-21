@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+echo "sudo $*" >> "$MOCK_CALLS_FILE"
+# Pass through to the actual command (without privilege)
+"$@"

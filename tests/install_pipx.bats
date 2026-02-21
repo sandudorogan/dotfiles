@@ -54,3 +54,10 @@ teardown() {
     run grep -F 'bpytop' <<< "$rendered"
     assert_success
 }
+
+@test "includes brew shellenv on macOS" {
+    [[ "$(uname -s)" == "Darwin" ]] || skip "macOS-only"
+    rendered=$(render_template "$TEMPLATE")
+    run grep -F 'brew shellenv' <<< "$rendered"
+    assert_success
+}

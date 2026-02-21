@@ -1,12 +1,35 @@
 #!/usr/bin/env bash
 
+_find_bats_lib() {
+    local lib="$1"
+    local paths=()
+
+    if command -v brew &>/dev/null; then
+        paths+=("$(brew --prefix)/lib/$lib/load.bash")
+    fi
+    paths+=(
+        "/usr/lib/$lib/load.bash"
+        "/usr/local/lib/$lib/load.bash"
+    )
+
+    for p in "${paths[@]}"; do
+        if [[ -f "$p" ]]; then
+            echo "$p"
+            return 0
+        fi
+    done
+    echo "ERROR: Could not find $lib" >&2
+    return 1
+}
+
 _common_setup() {
-    load "$(brew --prefix)/lib/bats-support/load.bash"
-    load "$(brew --prefix)/lib/bats-assert/load.bash"
+    load "$(_find_bats_lib bats-support)"
+    load "$(_find_bats_lib bats-assert)"
 
     TEST_DIR="$(cd "$(dirname "$BATS_TEST_FILENAME")" && pwd)"
     PROJECT_ROOT="$(dirname "$TEST_DIR")"
     REAL_HOME="$HOME"
+    REAL_XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 
     TEST_TEMP_DIR="$(mktemp -d)"
     export HOME="$TEST_TEMP_DIR/home"
@@ -29,7 +52,7 @@ _common_teardown() {
 
 render_template() {
     local template_file="$1"
-    HOME="$REAL_HOME" chezmoi execute-template --source="$PROJECT_ROOT" < "$PROJECT_ROOT/$template_file"
+    HOME="$REAL_HOME" XDG_CONFIG_HOME="$REAL_XDG_CONFIG_HOME" chezmoi execute-template --source="$PROJECT_ROOT" < "$PROJECT_ROOT/$template_file"
 }
 
 get_mock_calls() {

@@ -23,18 +23,21 @@ teardown() {
 }
 
 @test "fzf install uses --key-bindings flag" {
+    [[ "$(uname -s)" == "Darwin" ]] || skip "macOS-only"
     rendered=$(render_template "$TEMPLATE")
     run grep -F -- '--key-bindings' <<< "$rendered"
     assert_success
 }
 
 @test "fzf install uses --completion flag" {
+    [[ "$(uname -s)" == "Darwin" ]] || skip "macOS-only"
     rendered=$(render_template "$TEMPLATE")
     run grep -F -- '--completion' <<< "$rendered"
     assert_success
 }
 
 @test "fzf install uses --no-update-rc flag" {
+    [[ "$(uname -s)" == "Darwin" ]] || skip "macOS-only"
     rendered=$(render_template "$TEMPLATE")
     run grep -F -- '--no-update-rc' <<< "$rendered"
     assert_success

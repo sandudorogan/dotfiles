@@ -3,6 +3,7 @@
 setup() {
     load 'test_helper/common'
     _common_setup
+    [[ "$(uname -s)" == "Darwin" ]] || skip "macOS-only tests"
     TEMPLATE="run_onchange_before_10-install-packages-darwin.sh.tmpl"
 }
 

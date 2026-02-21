@@ -35,4 +35,5 @@ symlink_dot_xprofile
 
 {{- if eq .chezmoi.os "linux" }}
 # macOS-only configs (ignored on Linux)
+dot_cursor/
 {{- end }}

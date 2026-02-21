@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "cargo $*" >> "$MOCK_CALLS_FILE"
+exit 0

@@ -133,13 +133,22 @@ set -g @theme_plugin_zoomed_window_icon ' '
 set -g @thumbs-key F
 set -g @thumbs-alphabet qwerty-homerow
 set -g @thumbs-unique enabled
+{{ if eq .chezmoi.os "darwin" -}}
 set -g @thumbs-command 'echo -n {} | pbcopy'
 set -g @thumbs-upcase-command 'echo -n {} | pbcopy && tmux paste-buffer'
+{{- else -}}
+set -g @thumbs-command 'echo -n {} | sh -c "if [ -n \"$WAYLAND_DISPLAY\" ]; then wl-copy; else xclip -selection clipboard; fi"'
+set -g @thumbs-upcase-command 'echo -n {} | sh -c "if [ -n \"$WAYLAND_DISPLAY\" ]; then wl-copy; else xclip -selection clipboard; fi" && tmux paste-buffer'
+{{- end }}
 
 # Extrakto (fuzzy text extraction)
 set -g @extrakto_key e
 set -g @extrakto_split_size 12
+{{ if eq .chezmoi.os "darwin" -}}
 set -g @extrakto_clip_tool 'pbcopy'
+{{- else -}}
+set -g @extrakto_clip_tool 'sh -c "if [ -n \"$WAYLAND_DISPLAY\" ]; then wl-copy; else xclip -selection clipboard; fi"'
+{{- end }}
 set -g @extrakto_copy_key 'tab'
 set -g @extrakto_insert_key 'enter'
 

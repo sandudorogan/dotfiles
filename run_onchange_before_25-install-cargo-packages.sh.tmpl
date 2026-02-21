@@ -1,0 +1,21 @@
+{{ if eq .osid "ubuntu" -}}
+#!/bin/bash
+
+# Hash: {{ include ".chezmoidata/packages.yaml" | sha256sum }}
+# This script re-runs when packages.yaml changes
+# Runs after rustup (step 21) to install tools not available in apt
+
+set -euo pipefail
+
+export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
+[ -f "$CARGO_HOME/env" ] && . "$CARGO_HOME/env"
+
+echo "==> Installing cargo packages..."
+
+{{ range .cargo_packages -}}
+echo "==> Installing {{ . }}..."
+cargo install {{ . }} || true
+{{ end }}
+
+echo "==> Cargo packages installed"
+{{ end -}}

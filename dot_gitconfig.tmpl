@@ -3,7 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Sandu Dorogan
 	email = sandu.dorogan@gmail.com
-	signingkey = /Users/sandu.dorogan/.ssh/id_ed25519.pub
+	signingkey = {{ .chezmoi.homeDir }}/.ssh/id_ed25519.pub
 
 [core]
     pager = delta
@@ -69,4 +69,4 @@
 [gpg]
 	format = ssh
 [gpg "ssh"]
-	allowedSignersFile = /Users/sandu.dorogan/.ssh/allowed_signers
+	allowedSignersFile = {{ .chezmoi.homeDir }}/.ssh/allowed_signers

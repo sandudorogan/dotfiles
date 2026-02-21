@@ -1,7 +1,7 @@
 export ZSH="$HOME/.config/oh-my-zsh"
 
 # Direnv
-eval "$(direnv hook zsh)"
+command -v direnv &>/dev/null && eval "$(direnv hook zsh)"
 
 # Shell options
 autoload -U colors && colors	# Load colors
@@ -54,7 +54,9 @@ plugins=(
     universalarchive
     vi-mode
     lein
+{{ if eq .chezmoi.os "darwin" -}}
     macos
+{{ end -}}
     zsh-autosuggestions
     zsh-syntax-highlighting
  )
@@ -64,7 +66,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # Initialize Atuin (after Oh My Zsh plugins)
-eval "$(atuin init zsh)"
+command -v atuin &>/dev/null && eval "$(atuin init zsh)"
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -88,17 +90,21 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc"
 [ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc"
 
+{{ if eq .chezmoi.os "darwin" -}}
 # Docker-sync workaround for macOS
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+{{ end -}}
 
 # Thefuck alias
 command -v thefuck &>/dev/null && eval $(thefuck --alias)
 
+{{ if eq .chezmoi.os "darwin" -}}
 # PATH additions
 export PATH="$(brew --prefix)/opt/openjdk/bin:$PATH"
+{{ end -}}
 
 # Completions
-[ -s "/Users/sandu.dorogan/.bun/_bun" ] && source "/Users/sandu.dorogan/.bun/_bun"
+[ -s "{{ .chezmoi.homeDir }}/.bun/_bun" ] && source "{{ .chezmoi.homeDir }}/.bun/_bun"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # Load custom environment if it exists

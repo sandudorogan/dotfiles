@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+echo "add-apt-repository $*" >> "$MOCK_CALLS_FILE"
+exit 0

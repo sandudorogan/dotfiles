@@ -23,11 +23,17 @@ family = "JetBrainsMono Nerd Font Mono"
 style = "Bold Italic"
 
 [window]
+{{ if eq .chezmoi.os "darwin" -}}
 decorations = "buttonless"
+{{- else -}}
+decorations = "full"
+{{- end }}
 dynamic_padding = true
 opacity = 0.85
+{{ if eq .chezmoi.os "darwin" -}}
 option_as_alt = "Both"
 startup_mode = "SimpleFullscreen"
+{{ end -}}
 padding = { x = 10, y = 10 }
 
 [cursor]
@@ -47,27 +53,47 @@ save_to_clipboard = true
 semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
 
 [[hints.enabled]]
+{{ if eq .chezmoi.os "darwin" -}}
 command = "open"
+{{- else -}}
+command = "xdg-open"
+{{- end }}
 hyperlinks = true
 post_processing = true
 persist = false
 mouse.enabled = true
+{{ if eq .chezmoi.os "darwin" -}}
 binding = { key = "U", mods = "Command|Shift" }
+{{- else -}}
+binding = { key = "U", mods = "Control|Shift" }
+{{- end }}
 regex = "(mailto:|https:|http:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
 
 [[keyboard.bindings]]
 key = "N"
+{{ if eq .chezmoi.os "darwin" -}}
 mods = "Command|Shift"
+{{- else -}}
+mods = "Control|Shift"
+{{- end }}
 action = "CreateNewWindow"
 
 [[keyboard.bindings]]
 key = "K"
+{{ if eq .chezmoi.os "darwin" -}}
 mods = "Command"
+{{- else -}}
+mods = "Control|Shift"
+{{- end }}
 action = "ClearHistory"
 
 [[keyboard.bindings]]
 key = "F"
+{{ if eq .chezmoi.os "darwin" -}}
 mods = "Control|Command"
+{{- else -}}
+mods = "Control|Shift"
+{{- end }}
 action = "ToggleFullscreen"
 
 [[keyboard.bindings]]

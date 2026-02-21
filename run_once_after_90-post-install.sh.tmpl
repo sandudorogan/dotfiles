@@ -1,8 +1,8 @@
-{{ if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
 set -euo pipefail
 
+{{ if eq .chezmoi.os "darwin" -}}
 # Ensure brew is available
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
@@ -11,6 +11,51 @@ echo "==> Setting up fzf..."
 if [ -f "$(brew --prefix)/opt/fzf/install" ]; then
     "$(brew --prefix)/opt/fzf/install" --key-bindings --completion --no-update-rc --no-bash --no-fish
 fi
+{{ end -}}
+
+{{ if eq .osid "ubuntu" -}}
+# JetBrains Mono Nerd Font
+echo "==> Installing JetBrains Mono Nerd Font..."
+FONT_DIR="$HOME/.local/share/fonts/JetBrainsMonoNerd"
+if [ ! -d "$FONT_DIR" ]; then
+    mkdir -p "$FONT_DIR"
+    TMPFILE=$(mktemp)
+    curl -fsSL -o "$TMPFILE" https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.tar.xz
+    tar -xf "$TMPFILE" -C "$FONT_DIR"
+    rm -f "$TMPFILE"
+    fc-cache -fv
+else
+    echo "==> JetBrains Mono Nerd Font already installed"
+fi
+
+# Clojure
+echo "==> Installing Clojure..."
+if ! command -v clojure &> /dev/null; then
+    curl -fsSL https://download.clojure.org/install/linux-install.sh | sudo bash
+else
+    echo "==> Clojure already installed"
+fi
+
+# Babashka
+echo "==> Installing Babashka..."
+if ! command -v bb &> /dev/null; then
+    sudo bash < <(curl -s https://raw.githubusercontent.com/babashka/babashka/master/install)
+else
+    echo "==> Babashka already installed"
+fi
+
+# clojure-lsp
+echo "==> Installing clojure-lsp..."
+if ! command -v clojure-lsp &> /dev/null; then
+    CLSP_TMP=$(mktemp -d)
+    curl -fsSL -o "$CLSP_TMP/clojure-lsp" https://github.com/clojure-lsp/clojure-lsp/releases/latest/download/clojure-lsp-native-static-linux-amd64
+    chmod +x "$CLSP_TMP/clojure-lsp"
+    sudo mv "$CLSP_TMP/clojure-lsp" /usr/local/bin/clojure-lsp
+    rm -rf "$CLSP_TMP"
+else
+    echo "==> clojure-lsp already installed"
+fi
+{{ end -}}
 
 # Alacritty themes
 echo "==> Setting up Alacritty themes..."
@@ -31,20 +76,21 @@ else
     echo "==> Oh My Zsh already installed"
 fi
 
-# peon-ping (installed via brew, setup registers hooks and downloads packs)
-echo "==> Setting up peon-ping..."
-if [ ! -d "$HOME/.claude/hooks/peon-ping" ]; then
-    peon-ping-setup --packs=ccg_china_dozer,dota2_axe,duke_nukem,glados,hd2_helldiver,peasant,peon,sc_battlecruiser,sc_kerrigan,sc_terran,wc3_corrupted_arthas
-else
-    echo "==> peon-ping already installed"
+# peon-ping
+if command -v peon-ping-setup &> /dev/null; then
+    echo "==> Setting up peon-ping..."
+    if [ ! -d "$HOME/.claude/hooks/peon-ping" ]; then
+        peon-ping-setup --packs=ccg_china_dozer,dota2_axe,duke_nukem,glados,hd2_helldiver,peasant,peon,sc_battlecruiser,sc_kerrigan,sc_terran,wc3_corrupted_arthas
+    else
+        echo "==> peon-ping already installed"
+    fi
+
+    # Cursor peon-ping symlinks
+    echo "==> Setting up Cursor peon-ping symlinks..."
+    CURSOR_PEON_DIR="$HOME/.cursor/hooks/peon-ping"
+    mkdir -p "$CURSOR_PEON_DIR"
+    ln -sf "$HOME/.claude/hooks/peon-ping/packs" "$CURSOR_PEON_DIR/packs"
+    ln -sf "$HOME/.claude/hooks/peon-ping/peon.sh" "$CURSOR_PEON_DIR/peon.sh"
 fi
 
-# Cursor peon-ping symlinks (shares engine from Claude install, packs via ~/.openpeon)
-echo "==> Setting up Cursor peon-ping symlinks..."
-CURSOR_PEON_DIR="$HOME/.cursor/hooks/peon-ping"
-mkdir -p "$CURSOR_PEON_DIR"
-ln -sf "$HOME/.claude/hooks/peon-ping/packs" "$CURSOR_PEON_DIR/packs"
-ln -sf "$HOME/.claude/hooks/peon-ping/peon.sh" "$CURSOR_PEON_DIR/peon.sh"
-
 echo "==> Post-installation complete!"
-{{ end -}}

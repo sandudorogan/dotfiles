@@ -1,0 +1,35 @@
+{{ if eq .osid "arch" -}}
+#!/bin/bash
+
+# Hash: {{ include ".chezmoidata/packages.yaml" | sha256sum }}
+# This script re-runs when packages.yaml changes
+
+set -euo pipefail
+
+echo "==> Installing Arch packages..."
+
+sudo pacman -Syu --noconfirm
+
+sudo pacman -S --needed --noconfirm \
+{{ range .pacman.packages -}}
+    {{ . }} \
+{{ end }}
+
+# Install yay if not present
+if ! command -v yay &> /dev/null; then
+    echo "==> Installing yay..."
+    TMPDIR=$(mktemp -d)
+    git clone https://aur.archlinux.org/yay.git "$TMPDIR/yay"
+    cd "$TMPDIR/yay" && makepkg -si --noconfirm
+    rm -rf "$TMPDIR"
+fi
+
+# Install AUR packages
+echo "==> Installing AUR packages..."
+yay -S --needed --noconfirm \
+{{ range .pacman.aur -}}
+    {{ . }} \
+{{ end }}
+
+echo "==> Arch packages installed"
+{{ end -}}

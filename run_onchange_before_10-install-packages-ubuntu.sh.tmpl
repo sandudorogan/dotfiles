@@ -1,0 +1,25 @@
+{{ if eq .osid "ubuntu" -}}
+#!/bin/bash
+
+# Hash: {{ include ".chezmoidata/packages.yaml" | sha256sum }}
+# This script re-runs when packages.yaml changes
+
+set -euo pipefail
+
+echo "==> Installing Ubuntu packages..."
+
+# Add PPAs
+{{ range .apt.ppas -}}
+sudo add-apt-repository -y {{ . }}
+{{ end }}
+
+sudo apt-get update
+
+# Install packages
+sudo apt-get install -y \
+{{ range .apt.packages -}}
+    {{ . }} \
+{{ end }}
+
+echo "==> Ubuntu packages installed"
+{{ end -}}

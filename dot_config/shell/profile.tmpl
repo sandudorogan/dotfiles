@@ -11,7 +11,11 @@ export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 export TERM="alacritty"
+{{ if eq .chezmoi.os "darwin" -}}
 export BROWSER="arc"
+{{- else -}}
+export BROWSER="xdg-open"
+{{- end }}
 export PAGER="bat"
 export SHELL="zsh"
 

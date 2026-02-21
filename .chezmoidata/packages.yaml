@@ -22,6 +22,8 @@ homebrew:
     - ffmpeg
     - pipx
     - pass
+    - atuin
+    - direnv
 
     # Clojure ecosystem
     - clojure
@@ -52,6 +54,90 @@ homebrew:
 
   font_casks:
     - font-jetbrains-mono-nerd-font
+
+apt:
+  ppas:
+    - ppa:lazygit-team/release
+  packages:
+    - git
+    - neovim
+    - tmux
+    - fzf
+    - ripgrep
+    - bat
+    - tldr
+    - ranger
+    - ffmpeg
+    - pipx
+    - pass
+    - htop
+    - neofetch
+    - newsboat
+    - calcurse
+    - lynx
+    - wget
+    - fish
+    - zsh
+    - highlight
+    - w3m
+    - yt-dlp
+    - direnv
+    - fd-find
+    - curl
+    - build-essential
+    - fontconfig
+    - unzip
+    - xclip
+    - wl-clipboard
+    - lazygit
+
+pacman:
+  packages:
+    - git
+    - neovim
+    - tmux
+    - fzf
+    - ripgrep
+    - eza
+    - bat
+    - tldr
+    - ranger
+    - ffmpeg
+    - python-pipx
+    - pass
+    - htop
+    - neofetch
+    - newsboat
+    - calcurse
+    - lynx
+    - wget
+    - fish
+    - zsh
+    - highlight
+    - w3m
+    - yt-dlp
+    - fd
+    - git-delta
+    - atuin
+    - alacritty
+    - ttf-jetbrains-mono-nerd
+    - xclip
+    - wl-clipboard
+    - base-devel
+    - direnv
+    - xdg-utils
+  aur:
+    - lazygit
+    - lazydocker
+    - clojure
+    - babashka-bin
+    - clojure-lsp-bin
+    - peon-ping
+
+cargo_packages:
+  - eza
+  - git-delta
+  - atuin
 
 pipx:
   packages:
