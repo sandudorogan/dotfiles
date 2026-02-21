@@ -27,9 +27,6 @@ cask "{{ . }}"
 EOF
 
 {{ range .homebrew.font_casks -}}
-brew uninstall --cask --force "{{ . }}" 2>/dev/null || true
-rm -f ~/Library/Fonts/JetBrainsMono*.ttf 2>/dev/null || true
-rm -rf "$(brew --prefix)/Caskroom/{{ . }}" 2>/dev/null || true
 brew install --cask --force "{{ . }}" || true
 {{ end }}
 
