@@ -1,0 +1,20 @@
+#!/bin/bash
+
+set -euo pipefail
+
+echo "==> Installing Gemini CLI..."
+
+if command -v gemini &> /dev/null; then
+    echo "==> Gemini CLI already installed"
+else
+    if command -v bun &> /dev/null; then
+        bun install -g @google/gemini-cli
+    elif command -v npm &> /dev/null; then
+        npm install -g @google/gemini-cli
+    else
+        echo "==> ERROR: Neither bun nor npm found, cannot install Gemini CLI"
+        exit 1
+    fi
+fi
+
+echo "==> Gemini CLI setup complete"

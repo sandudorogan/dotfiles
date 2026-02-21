@@ -5,6 +5,9 @@
 # Adds `~/.local/bin` to $PATH
 export PATH="$HOME/.local/bin:$PATH"
 
+# Bun global binaries
+export PATH="${XDG_CACHE_HOME:-$HOME/.cache}/.bun/bin:$PATH"
+
 # unsetopt PROMPT_SP
 
 # Default programs:
