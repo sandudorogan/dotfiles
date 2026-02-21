@@ -12,6 +12,7 @@ echo "==> Installing Homebrew packages..."
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew uninstall --cask --force font-jetbrains-mono-nerd-font 2>/dev/null || true
+rm -f ~/Library/Fonts/JetBrainsMonoNLNerdFont-*.ttf 2>/dev/null || true
 
 brew bundle --file=/dev/stdin <<EOF
 # Taps
