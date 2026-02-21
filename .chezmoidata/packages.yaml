@@ -49,6 +49,8 @@ homebrew:
 
   casks:
     - alacritty
+
+  font_casks:
     - font-jetbrains-mono-nerd-font
 
 pipx:

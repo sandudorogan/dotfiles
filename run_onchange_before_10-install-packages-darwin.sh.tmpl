@@ -11,10 +11,6 @@ echo "==> Installing Homebrew packages..."
 # Ensure brew is available
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-brew uninstall --cask --zap --force font-jetbrains-mono-nerd-font 2>/dev/null || true
-rm -f ~/Library/Fonts/JetBrainsMono*NerdFont*.ttf 2>/dev/null || true
-rm -rf "$(brew --prefix)/Caskroom/font-jetbrains-mono-nerd-font" 2>/dev/null || true
-
 brew bundle --file=/dev/stdin <<EOF
 # Taps
 {{ range .homebrew.taps -}}
@@ -29,6 +25,10 @@ brew "{{ . }}"
 cask "{{ . }}"
 {{ end -}}
 EOF
+
+{{ range .homebrew.font_casks -}}
+brew install --cask --force "{{ . }}" || true
+{{ end }}
 
 echo "==> Homebrew packages installed"
 {{ end -}}
