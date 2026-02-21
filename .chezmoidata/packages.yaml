@@ -25,6 +25,7 @@ homebrew:
     - atuin
     - direnv
     - yazi
+    - resvg
     - difftastic
     - glow
     - hyperfine
@@ -90,6 +91,7 @@ apt:
     - yt-dlp
     - direnv
     - yazi
+    - resvg
     - glow
     - hyperfine
     - tokei
@@ -139,6 +141,7 @@ pacman:
     - base-devel
     - direnv
     - yazi
+    - resvg
     - difftastic
     - glow
     - hyperfine
