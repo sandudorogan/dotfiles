@@ -24,15 +24,16 @@ exec zsh -l
 
 ## What Gets Installed
 
-The initialization scripts install (macOS only):
+The initialization scripts install (macOS, Ubuntu, and Arch):
 
 | Category | Packages |
 |----------|----------|
 | **Homebrew** | Auto-installed if missing |
-| **CLI Tools** | git, neovim, tmux, fzf, ripgrep, eza, bat, ranger, lazygit, lazydocker, htop, etc. |
+| **CLI Tools** | git, neovim, tmux, fzf, ripgrep, eza, bat, tldr, ranger, ffmpeg, pass, atuin, direnv, git-delta, lazygit, lazydocker, htop, neofetch, newsboat, calcurse, lynx, wget, fish, zsh, highlight, w3m, yt-dlp, peon-ping |
 | **Clojure** | clojure, babashka, clojure-lsp |
 | **Languages** | NVM + Node.js LTS, Rust (rustup) |
-| **GUI Apps** | Alacritty, Docker Desktop, Zathura |
+| **AI Tools** | Claude Code, Gemini CLI |
+| **GUI Apps** | Alacritty |
 | **Python** | pipx, fanficfare, bpytop |
 | **Shell** | oh-my-zsh, fzf keybindings |
 | **Themes** | Alacritty themes, JetBrains Mono Nerd Font |
@@ -99,12 +100,15 @@ Scripts run in this order during `chezmoi apply`:
 | Order | Script | Type | Purpose |
 |-------|--------|------|---------|
 | 00 | install-homebrew | onchange | Install/update Homebrew |
-| 10 | install-packages-darwin | onchange | Install brew packages |
+| 10 | install-packages | onchange | Install OS packages |
 | 20 | install-nvm | once | Install NVM + Node.js |
 | 21 | install-rustup | once | Install Rust |
+| 22 | install-claude-code | once | Install Claude Code |
+| 23 | install-gemini-cli | once | Install Gemini CLI |
+| 25 | install-cargo-packages | onchange | Install cargo packages (Ubuntu) |
 | 30 | install-pipx-packages | onchange | Install pipx packages |
 | *dotfiles applied* | | | |
-| 90 | post-install | once | fzf, themes, oh-my-zsh |
+| 90 | post-install | once | fzf, themes, oh-my-zsh, peon-ping |
 
 - **onchange**: Re-runs when `.chezmoidata/packages.yaml` changes
 - **once**: Runs only on first apply (tools have their own update mechanisms)
