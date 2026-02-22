@@ -54,7 +54,7 @@
 	TMUX_POWERLINE_SEG_AIR_LAT="44.426765"
 	TMUX_POWERLINE_SEG_AIR_LON="26.102537"
 	# Your Open Weather API Key:
-	TMUX_POWERLINE_SEG_AIR_OPEN_WEATHER_API_KEY=""
+	TMUX_POWERLINE_SEG_AIR_OPEN_WEATHER_API_KEY="${OPEN_WEATHER_API_KEY}"
 # }
 
 # battery.sh {
@@ -104,7 +104,7 @@
 
 # github_notifications.sh {
 	# Github token (https://github.com/settings/tokens) with at least "notifications" scope
-	export TMUX_POWERLINE_SEG_GITHUB_NOTIFICATIONS_TOKEN=""
+	export TMUX_POWERLINE_SEG_GITHUB_NOTIFICATIONS_TOKEN="${GITHUB_NOTIFICATIONS_TOKEN}"
 	# Include available notification reasons (https://docs.github.com/en/rest/activity/notifications?apiVersion=2022-11-28#about-notification-reasons),
 	# in the format "REASON:SEPARATOR"
 	# export TMUX_POWERLINE_SEG_GITHUB_NOTIFICATIONS_REASONS="approval_requested:-󰴄 |assign:-󰎔 |author:-󰔗 |comment:- |ci_activity:-󰙨 |invitation:- |manual:-󱥃 |mention:- |review_requested:- |security_alert:-󰒃 |state_change:-󱇯 |subscribed:- |team_mention:- "
@@ -192,7 +192,7 @@
 	# Account name : <username-below>@<server-below>
 	# Password : Your password ( Once again, try to use 2 step-verification and application-specific password)
 	# See http://support.google.com/accounts/bin/answer.py?hl=en&answer=185833 for more info.
-	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_PASSWORD=""
+	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_PASSWORD="${GMAIL_APP_PASSWORD}"
 	# Domain name that will complete your email. For normal GMail users it probably is "gmail.com but can be "foo.tld" for Google Apps users.
 	export TMUX_POWERLINE_SEG_MAILCOUNT_GMAIL_SERVER="gmail.com"
 	# How often in minutes to check for new mails.
@@ -278,7 +278,7 @@
 	# Username for Last.fm if that music player is used.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_LASTFM_USERNAME=""
 	# API Key for the API.
-	export TMUX_POWERLINE_SEG_NOW_PLAYING_LASTFM_API_KEY=""
+	export TMUX_POWERLINE_SEG_NOW_PLAYING_LASTFM_API_KEY="${LASTFM_API_KEY}"
 	# How often in seconds to update the data from last.fm.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_LASTFM_UPDATE_PERIOD="30"
 	# Fancy char to display before now playing track
@@ -293,7 +293,7 @@
 	# Hostname for Tautulli server in the format "[password@]host"
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_PLEXAMP_TAUTULLI_HOST=""
 	# API Key for Tautulli.
-	export TMUX_POWERLINE_SEG_NOW_PLAYING_PLEXAMP_TAUTULLI_API_KEY=""
+	export TMUX_POWERLINE_SEG_NOW_PLAYING_PLEXAMP_TAUTULLI_API_KEY="${PLEXAMP_TAUTULLI_API_KEY}"
 	# How often in seconds to update the data from Plexamp.
 	export TMUX_POWERLINE_SEG_NOW_PLAYING_PLEXAMP_UPDATE_PERIOD="30"
 # }

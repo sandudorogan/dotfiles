@@ -16,7 +16,11 @@ This single command:
 - Runs all initialization scripts (Homebrew, packages, NVM, Rust, etc.)
 - Applies dotfiles to your home directory
 
-### 2. Restart your shell
+### 2. Transfer age key (for secrets decryption)
+
+Copy `~/.config/chezmoi/key.txt` from an existing machine (USB, AirDrop, etc.) before running `chezmoi apply`. Without it, encrypted files (API keys, tokens) won't decrypt.
+
+### 3. Restart your shell
 
 ```bash
 exec zsh -l
@@ -29,7 +33,7 @@ The initialization scripts install (macOS, Ubuntu, and Arch):
 | Category | Packages |
 |----------|----------|
 | **Homebrew** | Auto-installed if missing |
-| **CLI Tools** | git, neovim, tmux, fzf, ripgrep, eza, bat, tldr, ranger, ffmpeg, pass, atuin, direnv, yazi, difftastic, glow, hyperfine, tokei, zoxide, dust, git-delta, lazygit, lazydocker, htop, neofetch, newsboat, calcurse, lynx, wget, fish, zsh, highlight, w3m, yt-dlp, peon-ping |
+| **CLI Tools** | git, neovim, tmux, fzf, ripgrep, eza, bat, tldr, ffmpeg, pass, age, atuin, direnv, yazi, difftastic, glow, hyperfine, tokei, zoxide, dust, chafa, poppler, p7zip, git-delta, lazygit, lazydocker, htop, neofetch, newsboat, calcurse, lynx, wget, fish, zsh, highlight, w3m, yt-dlp, peon-ping |
 | **Clojure** | clojure, babashka, clojure-lsp |
 | **Languages** | NVM + Node.js LTS, Rust (rustup) |
 | **AI Tools** | Claude Code, Gemini CLI |
@@ -39,6 +43,18 @@ The initialization scripts install (macOS, Ubuntu, and Arch):
 | **Themes** | Alacritty themes, JetBrains Mono Nerd Font |
 
 See `.chezmoidata/packages.yaml` for the complete list.
+
+## Secrets
+
+API keys and tokens are stored in `~/.local/bin/env`, encrypted with [age](https://github.com/FiloSottile/age) via chezmoi. The shell sources this file automatically on login.
+
+To edit secrets:
+
+```bash
+chezmoi edit ~/.local/bin/env
+```
+
+This decrypts the file into your editor, then re-encrypts on save.
 
 ## Making Changes
 

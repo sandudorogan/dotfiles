@@ -29,10 +29,10 @@ alias \
 	trem='transmission-remote' \
 	YT='youtube-viewer' \
 	sdn='sudo shutdown -h now' \
-	z='zathura' \
+	zat='zathura' \
 	f='${FILE}' \
 	v='${EDITOR}' \
-    r='ranger' \
+    r='yazi' \
   gcl="gcloud auth login --update-adc"\
 
 # Commands that need command line arguments

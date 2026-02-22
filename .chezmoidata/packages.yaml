@@ -18,10 +18,10 @@ homebrew:
     - eza
     - bat
     - tldr
-    - ranger
     - ffmpeg
     - pipx
     - pass
+    - age
     - atuin
     - direnv
     - yazi
@@ -32,6 +32,9 @@ homebrew:
     - tokei
     - zoxide
     - dust
+    - chafa
+    - poppler
+    - p7zip
 
     # Clojure ecosystem
     - clojure
@@ -74,10 +77,10 @@ apt:
     - ripgrep
     - bat
     - tldr
-    - ranger
     - ffmpeg
     - pipx
     - pass
+    - age
     - htop
     - neofetch
     - newsboat
@@ -97,6 +100,9 @@ apt:
     - tokei
     - zoxide
     - dust
+    - chafa
+    - poppler-utils
+    - p7zip-full
     - fd-find
     - curl
     - build-essential
@@ -116,10 +122,10 @@ pacman:
     - eza
     - bat
     - tldr
-    - ranger
     - ffmpeg
     - python-pipx
     - pass
+    - age
     - htop
     - neofetch
     - newsboat
@@ -148,6 +154,9 @@ pacman:
     - tokei
     - zoxide
     - dust
+    - chafa
+    - poppler
+    - p7zip
     - xdg-utils
   aur:
     - lazygit
