@@ -11,15 +11,10 @@ tests/
 dot_config/i3/
 dot_config/dunst/
 dot_config/x11/
-dot_config/screenlayout/
 dot_config/sxiv/
 dot_config/evolution/
-dot_config/gtk-2.0/
-dot_config/gtk-3.0/
-dot_config/gtk-4.0/
 dot_config/nautilus/
 dot_config/kazam/
-dot_config/nordvpn/
 dot_config/wal/
 dot_config/transmission/
 dot_config/transmission-daemon/
