@@ -23,6 +23,7 @@ alias \
 	ka='killall' \
     ag='sudo apt-get' \
 	g='git' \
+	k='kubectl' \
 	grepcljs='grep -rnT --include=\"*.cljs\"' \
 	greppy='grep -rnT --include=\"*.py\"' \
 	sshp='ssh -i .ssh/pi_id_ed25519 pi@192.168.100.23' \
@@ -45,6 +46,7 @@ alias \
 	weath='less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport' \
 	tmux='tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf' \
 
+alias lg='lazygit'
 alias zshconfig='${EDITOR} ${ZDOTDIR}/.zshrc'
 alias ohmyzsh='r ${ZSH}'
 
