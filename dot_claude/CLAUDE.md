@@ -1,4 +1,4 @@
-@AGENTS.md
+@~/AGENTS.md
 
 ## AI-Specific Behavior
 
