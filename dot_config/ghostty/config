@@ -1,0 +1,56 @@
+# Challenger Deep
+background = 1e1c31
+foreground = cbe1e7
+cursor-color = fbfcfc
+cursor-text = ff271d
+palette = 0=#141228
+palette = 1=#ff5458
+palette = 2=#62d196
+palette = 3=#ffb378
+palette = 4=#65b2ff
+palette = 5=#906cff
+palette = 6=#63f2f1
+palette = 7=#a6b3cc
+palette = 8=#565575
+palette = 9=#ff8080
+palette = 10=#95ffa4
+palette = 11=#ffe9aa
+palette = 12=#91ddff
+palette = 13=#c991e1
+palette = 14=#aaffe4
+palette = 15=#cbe3e7
+
+# Font
+font-family = JetBrainsMono Nerd Font Mono
+font-size = 18
+
+# Window
+macos-titlebar-style = hidden
+background-opacity = 0.85
+macos-option-as-alt = true
+fullscreen = non-native
+window-padding-x = 10
+window-padding-y = 10
+window-padding-balance = true
+window-save-state = always
+
+# Cursor
+cursor-style = block
+cursor-style-blink = true
+
+# Mouse
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 3
+
+# Selection & Clipboard
+copy-on-select = clipboard
+clipboard-read = allow
+clipboard-write = allow
+
+# Close without confirmation
+confirm-close-surface = false
+
+# Keybindings
+keybind = super+shift+n=new_window
+keybind = super+k=clear_screen
+keybind = ctrl+super+f=toggle_fullscreen
