@@ -57,16 +57,6 @@ else
 fi
 {{ end -}}
 
-# Alacritty themes
-echo "==> Setting up Alacritty themes..."
-ALACRITTY_THEMES_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/alacritty/themes"
-if [ ! -d "$ALACRITTY_THEMES_DIR" ]; then
-    mkdir -p "$(dirname "$ALACRITTY_THEMES_DIR")"
-    git clone https://github.com/alacritty/alacritty-theme "$ALACRITTY_THEMES_DIR"
-else
-    echo "==> Alacritty themes already installed"
-fi
-
 # Oh My Zsh
 echo "==> Setting up Oh My Zsh..."
 export ZSH="$HOME/.config/oh-my-zsh"

@@ -4,7 +4,7 @@
 
 - **OS**: macOS (Darwin)
 - **Shell**: zsh
-- **Terminal**: Alacritty
+- **Terminal**: Ghostty
 - **Multiplexer**: tmux
 - **Editor**: Neovim (nvim)
 - **Dotfiles Manager**: chezmoi

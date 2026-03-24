@@ -61,7 +61,7 @@ homebrew:
     - yt-dlp
 
   casks:
-    - alacritty
+    - ghostty
 
   font_casks:
     - font-jetbrains-mono-nerd-font
@@ -140,7 +140,7 @@ pacman:
     - fd
     - git-delta
     - atuin
-    - alacritty
+    - ghostty
     - ttf-jetbrains-mono-nerd
     - xclip
     - wl-clipboard

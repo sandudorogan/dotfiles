@@ -43,24 +43,6 @@ teardown() {
     assert_success
 }
 
-@test "alacritty themes clone to XDG path" {
-    rendered=$(render_template "$TEMPLATE")
-    run grep -F 'ALACRITTY_THEMES_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/alacritty/themes"' <<< "$rendered"
-    assert_success
-}
-
-@test "skips alacritty clone when themes dir exists" {
-    rendered=$(render_template "$TEMPLATE")
-    run grep -F 'if [ ! -d "$ALACRITTY_THEMES_DIR" ]' <<< "$rendered"
-    assert_success
-}
-
-@test "clones correct alacritty-theme repo" {
-    rendered=$(render_template "$TEMPLATE")
-    run grep -F 'https://github.com/alacritty/alacritty-theme' <<< "$rendered"
-    assert_success
-}
-
 @test "oh-my-zsh uses --unattended flag" {
     rendered=$(render_template "$TEMPLATE")
     run grep -F -- '--unattended' <<< "$rendered"

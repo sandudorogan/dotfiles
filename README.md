@@ -37,10 +37,10 @@ The initialization scripts install (macOS, Ubuntu, and Arch):
 | **Clojure** | clojure, babashka, clojure-lsp |
 | **Languages** | NVM + Node.js LTS, Rust (rustup) |
 | **AI Tools** | Claude Code, Gemini CLI |
-| **GUI Apps** | Alacritty |
+| **GUI Apps** | Ghostty |
 | **Python** | pipx, fanficfare, bpytop |
 | **Shell** | oh-my-zsh, fzf keybindings |
-| **Themes** | Alacritty themes, JetBrains Mono Nerd Font |
+| **Themes** | JetBrains Mono Nerd Font |
 
 See `.chezmoidata/packages.yaml` for the complete list.
 
@@ -124,7 +124,7 @@ Scripts run in this order during `chezmoi apply`:
 | 25 | install-cargo-packages | onchange | Install cargo packages (Ubuntu) |
 | 30 | install-pipx-packages | onchange | Install pipx packages |
 | *dotfiles applied* | | | |
-| 90 | post-install | once | fzf, themes, oh-my-zsh, peon-ping |
+| 90 | post-install | once | fzf, oh-my-zsh, peon-ping |
 
 - **onchange**: Re-runs when `.chezmoidata/packages.yaml` changes
 - **once**: Runs only on first apply (tools have their own update mechanisms)

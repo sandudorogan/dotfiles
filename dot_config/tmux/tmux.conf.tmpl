@@ -7,8 +7,10 @@
 # 1. TERMINAL & COMPATIBILITY
 # ----------------------------------------
 set -g default-terminal "tmux-256color"
-set -ag terminal-overrides ",alacritty:RGB,xterm-256color:RGB"
+set -ag terminal-overrides ",xterm-ghostty:RGB,xterm-256color:RGB"
+set -as terminal-features ",xterm-ghostty:sixel"
 set -g allow-passthrough on
+set -s extended-keys on
 
 # ----------------------------------------
 # 2. GENERAL SETTINGS
@@ -41,6 +43,7 @@ set -g display-time 1000
 bind r source-file ~/.config/tmux/tmux.conf \; display "Config reloaded!"
 bind C-f last-window
 bind x kill-pane
+bind -n C-Tab choose-tree -Zs
 
 # Splits preserve current path
 bind '"' split-window -v -c "#{pane_current_path}"
@@ -69,6 +72,18 @@ bind -T copy-mode-vi Escape send-keys -X cancel
 # 5. APPEARANCE
 # ----------------------------------------
 set -g status-position top
+
+# Pane borders
+set -g pane-border-style 'fg=#3b4261'
+set -g pane-active-border-style 'fg=#7aa2f7'
+set -g pane-border-lines heavy
+set -g pane-border-indicators colour
+set -g pane-border-status top
+set -g pane-border-format ' #{?pane_active,#[fg=#7aa2f7],#[fg=#565f89]}#{pane_title} #[fg=#3b4261]── #[default]#{?pane_active,#[fg=#c0caf5],#[fg=#565f89]}#{pane_current_path} '
+
+# Dim inactive panes
+set -g window-style 'bg=#1d202f'
+set -g window-active-style 'bg=#24283b'
 
 # ----------------------------------------
 # 6. VS CODE INTEGRATION

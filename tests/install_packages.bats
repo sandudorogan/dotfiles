@@ -60,9 +60,9 @@ teardown() {
     assert_success
 }
 
-@test "includes alacritty cask" {
+@test "includes ghostty cask" {
     rendered=$(render_template "$TEMPLATE")
-    run grep -F 'cask "alacritty"' <<< "$rendered"
+    run grep -F 'cask "ghostty"' <<< "$rendered"
     assert_success
 }
 
