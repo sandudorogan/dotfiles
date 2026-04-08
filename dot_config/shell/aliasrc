@@ -9,7 +9,11 @@
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
 	mkd='mkdir -pv' \
-  els='eza --long --header --inode --git' \
+	ls='eza --group-directories-first' \
+	l='eza -l --git --group-directories-first --no-user --no-permissions' \
+	la='eza -la --git' \
+	lt='eza --tree --level=2 --git-ignore' \
+	lr='eza -l --sort=modified' \
 	yt='youtube-dl --add-metadata -ic' \
 	yta='yt -x -f bestaudio/best' \
 	ffmpeg='ffmpeg -hide_banner'

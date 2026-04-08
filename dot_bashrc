@@ -75,7 +75,7 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    alias ls='eza'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -95,9 +95,10 @@ export BROWSER=brave-browser
 export EDITOR=vim
 
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias l='eza -l --git --group-directories-first --no-user --no-permissions'
+alias la='eza -la --git'
+alias lt='eza --tree --level=2 --git-ignore'
+alias lr='eza -l --sort=modified'
 alias ag='sudo apt-get'
 
 # Add an "alert" alias for long running commands.  Use like so:
