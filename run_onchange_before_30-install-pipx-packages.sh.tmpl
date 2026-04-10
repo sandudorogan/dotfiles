@@ -9,7 +9,11 @@ echo "==> Installing pipx packages..."
 
 {{ if eq .chezmoi.os "darwin" -}}
 # Ensure brew is available
+{{ if eq .chezmoi.arch "arm64" -}}
 eval "$(/opt/homebrew/bin/brew shellenv)"
+{{ else -}}
+eval "$(/usr/local/bin/brew shellenv)"
+{{ end -}}
 {{ end -}}
 
 # Ensure pipx path is set up

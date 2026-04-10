@@ -190,11 +190,22 @@ ex=🎯:\
 # sudo -n loadkeys ${XDG_DATA_HOME:-$HOME/.local/share}/larbs/ttymaps.kmap 2>/dev/null
 
 {{ if eq .chezmoi.os "darwin" -}}
+{{ if eq .chezmoi.arch "arm64" -}}
 eval $(/opt/homebrew/bin/brew shellenv)
+{{- else -}}
+eval $(/usr/local/bin/brew shellenv)
+{{- end }}
 {{- end }}
 
 # Load cargo environment if it exists
 [ -f "${XDG_DATA_HOME}/cargo/env" ] && . "${XDG_DATA_HOME}/cargo/env"
 
-# NVM is loaded in .zshrc instead (with proper conditional loading)
+# Make Node available to non-interactive children like Neovim.
+export NVM_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/nvm"
+if [ -s "$NVM_DIR/nvm.sh" ]; then
+  . "$NVM_DIR/nvm.sh" --no-use
+  nvm use --silent default >/dev/null 2>&1
+fi
+
+# NVM lazy-loading for interactive shell helpers still lives in .zshrc
 # Custom environment is loaded in .zshrc instead

@@ -4,7 +4,11 @@ set -euo pipefail
 
 {{ if eq .chezmoi.os "darwin" -}}
 # Ensure brew is available
+{{ if eq .chezmoi.arch "arm64" -}}
 eval "$(/opt/homebrew/bin/brew shellenv)"
+{{ else -}}
+eval "$(/usr/local/bin/brew shellenv)"
+{{ end -}}
 
 # fzf key bindings and completion
 echo "==> Setting up fzf..."
@@ -64,6 +68,22 @@ if [ ! -d "$ZSH" ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
 else
     echo "==> Oh My Zsh already installed"
+fi
+
+# Oh My Zsh custom plugins
+ZSH_CUSTOM="${ZSH_CUSTOM:-$ZSH}"
+echo "==> Installing zsh-autosuggestions..."
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]; then
+    git clone https://github.com/zsh-users/zsh-autosuggestions "$ZSH_CUSTOM/plugins/zsh-autosuggestions"
+else
+    echo "==> zsh-autosuggestions already installed"
+fi
+
+echo "==> Installing zsh-syntax-highlighting..."
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]; then
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting"
+else
+    echo "==> zsh-syntax-highlighting already installed"
 fi
 
 # peon-ping

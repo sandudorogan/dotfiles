@@ -9,7 +9,11 @@ set -euo pipefail
 echo "==> Installing Homebrew packages..."
 
 # Ensure brew is available
+{{ if eq .chezmoi.arch "arm64" -}}
 eval "$(/opt/homebrew/bin/brew shellenv)"
+{{ else -}}
+eval "$(/usr/local/bin/brew shellenv)"
+{{ end -}}
 
 brew bundle --file=/dev/stdin <<EOF
 # Taps

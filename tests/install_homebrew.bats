@@ -43,6 +43,6 @@ teardown() {
 
 @test "sets up Homebrew shellenv for current session" {
     rendered=$(render_template "$TEMPLATE")
-    run grep -F '/opt/homebrew/bin/brew shellenv' <<< "$rendered"
+    run grep -E '/(opt/homebrew|usr/local)/bin/brew shellenv' <<< "$rendered"
     assert_success
 }
