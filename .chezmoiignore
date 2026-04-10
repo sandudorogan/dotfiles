@@ -7,7 +7,7 @@ tests/
 
 {{- if not (stat (joinPath .chezmoi.homeDir ".config/chezmoi/key.txt")) }}
 # Skip encrypted files when age key is missing
-.local/bin/env
+.local/bin/env*
 {{- end }}
 
 # OS-specific ignores
