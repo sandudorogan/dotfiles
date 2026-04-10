@@ -36,7 +36,7 @@ The initialization scripts install (macOS, Ubuntu, and Arch):
 | **CLI Tools** | git, neovim, tmux, fzf, ripgrep, eza, bat, tldr, ffmpeg, pass, age, atuin, direnv, yazi, difftastic, glow, hyperfine, tokei, zoxide, dust, chafa, poppler, p7zip, git-delta, lazygit, lazydocker, htop, neofetch, newsboat, calcurse, lynx, wget, fish, zsh, highlight, w3m, yt-dlp, peon-ping |
 | **Clojure** | clojure, babashka, clojure-lsp |
 | **Languages** | NVM + Node.js LTS, Rust (rustup) |
-| **AI Tools** | Claude Code, Gemini CLI |
+| **AI Tools** | Gemini CLI |
 | **GUI Apps** | Ghostty |
 | **Python** | pipx, fanficfare, bpytop |
 | **Shell** | oh-my-zsh, fzf keybindings |
@@ -119,8 +119,7 @@ Scripts run in this order during `chezmoi apply`:
 | 10 | install-packages | onchange | Install OS packages |
 | 20 | install-nvm | once | Install NVM + Node.js |
 | 21 | install-rustup | once | Install Rust |
-| 22 | install-claude-code | once | Install Claude Code |
-| 23 | install-gemini-cli | once | Install Gemini CLI |
+| 22 | install-gemini-cli | once | Install Gemini CLI |
 | 25 | install-cargo-packages | onchange | Install cargo packages (Ubuntu) |
 | 30 | install-pipx-packages | onchange | Install pipx packages |
 | *dotfiles applied* | | | |
