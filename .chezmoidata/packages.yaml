@@ -61,7 +61,6 @@ homebrew:
     - yt-dlp
 
   casks:
-    - claude-code
     - ghostty
 
   font_casks:
