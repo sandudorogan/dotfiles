@@ -36,7 +36,7 @@ The initialization scripts install (macOS, Ubuntu, and Arch):
 | **CLI Tools** | git, neovim, tmux, fzf, ripgrep, eza, bat, tldr, ffmpeg, pass, age, atuin, direnv, yazi, difftastic, glow, hyperfine, tokei, zoxide, dust, chafa, poppler, p7zip, git-delta, lazygit, lazydocker, htop, neofetch, newsboat, calcurse, lynx, wget, fish, zsh, highlight, w3m, yt-dlp, peon-ping |
 | **Clojure** | clojure, babashka, clojure-lsp |
 | **Languages** | NVM + Node.js LTS, Rust (rustup) |
-| **AI Tools** | Gemini CLI |
+| **AI Tools** | Claude Code, Gemini CLI |
 | **GUI Apps** | Ghostty |
 | **Python** | pipx, fanficfare, bpytop |
 | **Shell** | oh-my-zsh, fzf keybindings |
