@@ -15,7 +15,9 @@
 {{-   end -}}
 {{- end -}}
 
+{{ if stat (joinPath .chezmoi.homeDir ".config/chezmoi/key.txt") -}}
 encryption = "age"
+{{- end }}
 
 [data]
     osid = "{{ $osid }}"
@@ -40,6 +42,8 @@ encryption = "age"
 [edit]
     command = "nvim"
 
+{{ if stat (joinPath .chezmoi.homeDir ".config/chezmoi/key.txt") -}}
 [age]
     identity = "{{ .chezmoi.homeDir }}/.config/chezmoi/key.txt"
     recipient = "age17yx7a3jzpqvul7mh20ccrwjw9ua327um3le88cjjs3ehqx7vva3sjmvndy"
+{{- end }}

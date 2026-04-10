@@ -5,6 +5,11 @@ LICENSE
 # Test suite
 tests/
 
+{{- if not (stat (joinPath .chezmoi.homeDir ".config/chezmoi/key.txt")) }}
+# Skip encrypted files when age key is missing
+dot_local/bin/encrypted_private_executable_env.age
+{{- end }}
+
 # OS-specific ignores
 {{- if eq .chezmoi.os "darwin" }}
 # Linux-only configs (ignored on macOS)
