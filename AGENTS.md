@@ -17,12 +17,12 @@ All projects live in `~/workdir/`. Neovim config is at `~/workdir/nvim-config/` 
 
 Managed by chezmoi. Source: `~/.local/share/chezmoi/`
 
-| Command | Description |
-|---------|-------------|
-| `chezmoi edit <file>` | Edit a dotfile's source |
-| `chezmoi apply` | Apply changes from source to home |
-| `chezmoi diff` | Preview pending changes |
-| `chezmoi cd` | Open shell in source directory |
+| Command               | Description                       |
+| --------------------- | --------------------------------- |
+| `chezmoi edit <file>` | Edit a dotfile's source           |
+| `chezmoi apply`       | Apply changes from source to home |
+| `chezmoi diff`        | Preview pending changes           |
+| `chezmoi cd`          | Open shell in source directory    |
 
 Always edit the chezmoi source files, never the target files directly.
 
