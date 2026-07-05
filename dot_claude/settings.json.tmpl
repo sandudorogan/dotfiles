@@ -1,7 +1,11 @@
 {
+  "env": {
+    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "true"
+  },
   "permissions": {
     "defaultMode": "acceptEdits"
   },
+  "model": "claude-fable-5[1m]",
   "hooks": {
     "SessionStart": [
       {
@@ -10,7 +14,14 @@
           {
             "type": "command",
             "command": "{{ .chezmoi.homeDir }}/.claude/hooks/peon-ping/peon-node-wrapper.sh",
-            "timeout": 10
+            "timeout": 10,
+            "async": true
+          },
+          {
+            "type": "command",
+            "command": "{{ .chezmoi.homeDir }}/.config/tmux/plugins/tmux-pane-tree/scripts/features/hooks/hook-claude.sh",
+            "timeout": 10,
+            "async": true
           }
         ]
       }
@@ -22,6 +33,12 @@
           {
             "type": "command",
             "command": "{{ .chezmoi.homeDir }}/.claude/hooks/peon-ping/peon-node-wrapper.sh",
+            "timeout": 10,
+            "async": true
+          },
+          {
+            "type": "command",
+            "command": "{{ .chezmoi.homeDir }}/.config/tmux/plugins/tmux-pane-tree/scripts/features/hooks/hook-claude.sh",
             "timeout": 10,
             "async": true
           }
@@ -37,6 +54,12 @@
             "command": "{{ .chezmoi.homeDir }}/.claude/hooks/peon-ping/peon-node-wrapper.sh",
             "timeout": 10,
             "async": true
+          },
+          {
+            "type": "command",
+            "command": "{{ .chezmoi.homeDir }}/.config/tmux/plugins/tmux-pane-tree/scripts/features/hooks/hook-claude.sh",
+            "timeout": 10,
+            "async": true
           }
         ]
       }
@@ -48,6 +71,12 @@
           {
             "type": "command",
             "command": "{{ .chezmoi.homeDir }}/.claude/hooks/peon-ping/peon-node-wrapper.sh",
+            "timeout": 10,
+            "async": true
+          },
+          {
+            "type": "command",
+            "command": "{{ .chezmoi.homeDir }}/.config/tmux/plugins/tmux-pane-tree/scripts/features/hooks/hook-claude.sh",
             "timeout": 10,
             "async": true
           }
@@ -63,6 +92,12 @@
             "command": "{{ .chezmoi.homeDir }}/.claude/hooks/peon-ping/peon-node-wrapper.sh",
             "timeout": 10,
             "async": true
+          },
+          {
+            "type": "command",
+            "command": "{{ .chezmoi.homeDir }}/.config/tmux/plugins/tmux-pane-tree/scripts/features/hooks/hook-claude.sh",
+            "timeout": 10,
+            "async": true
           }
         ]
       }
@@ -76,6 +111,12 @@
             "command": "{{ .chezmoi.homeDir }}/.claude/hooks/peon-ping/peon-node-wrapper.sh",
             "timeout": 10,
             "async": true
+          },
+          {
+            "type": "command",
+            "command": "{{ .chezmoi.homeDir }}/.config/tmux/plugins/tmux-pane-tree/scripts/features/hooks/hook-claude.sh",
+            "timeout": 10,
+            "async": true
           }
         ]
       }
@@ -87,6 +128,12 @@
           {
             "type": "command",
             "command": "{{ .chezmoi.homeDir }}/.claude/hooks/peon-ping/peon-node-wrapper.sh",
+            "timeout": 10,
+            "async": true
+          },
+          {
+            "type": "command",
+            "command": "{{ .chezmoi.homeDir }}/.config/tmux/plugins/tmux-pane-tree/scripts/features/hooks/hook-claude.sh",
             "timeout": 10,
             "async": true
           }
@@ -118,23 +165,35 @@
           }
         ]
       }
+    ],
+    "SubagentStop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "{{ .chezmoi.homeDir }}/.config/tmux/plugins/tmux-pane-tree/scripts/features/hooks/hook-claude.sh",
+            "timeout": 10,
+            "async": true
+          }
+        ]
+      }
     ]
   },
   "enabledPlugins": {
-    "pr-review-toolkit@claude-code-plugins": true,
-    "commit-commands@claude-code-plugins": true,
-    "code-review@claude-code-plugins": true,
-    "explanatory-output-style@claude-code-plugins": true,
-    "chrome-devtools-mcp@chrome-devtools-plugins": false,
     "safety-net@cc-marketplace": true,
     "murdho@iprally-plugins": false,
-    "querying-customer-db@iprally-plugins": true,
-    "context7@claude-plugins-official": true,
-    "linear@claude-plugins-official": true,
+    "context7@claude-plugins-official": false,
+    "linear@claude-plugins-official": false,
     "frontend-design@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": true,
     "slack@claude-plugins-official": false,
-    "caveman@caveman": true
+    "caveman@caveman": false,
+    "code-simplifier@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "figma@claude-plugins-official": false,
+    "playwright@claude-plugins-official": false
   },
   "extraKnownMarketplaces": {
     "caveman": {
@@ -144,11 +203,9 @@
       }
     }
   },
-  "env": {
-    "CLAUDE_CODE_DISABLE_1M_CONTEXT": "true"
-  },
   "alwaysThinkingEnabled": true,
-  "effortLevel": "xhigh",
+  "effortLevel": "high",
+  "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "voiceEnabled": true
 }
