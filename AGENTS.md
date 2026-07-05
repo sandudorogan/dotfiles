@@ -33,6 +33,7 @@ Always edit the chezmoi source files, never the target files directly.
 - **Fail fast**: Do not swallow exceptions with errors or warnings
 - **No fallback logic**: Do not add fallback logic unless explicitly told to and agreed with the user
 - **Minimize diffs**: Prefer the smallest change that satisfies the request. Avoid unrelated refactors or style rewrites unless necessary for correctness
+- **Scope by merge-base**: When reviewing or bounding a change on a branch, diff against the merge-base (`git diff main...HEAD`), not just the working tree. Touch only what the task requires
 
 ## Commit Messages
 
