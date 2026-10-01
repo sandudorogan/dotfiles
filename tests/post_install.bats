@@ -66,27 +66,3 @@ teardown() {
     run grep -F 'ZSH="$HOME/.config/oh-my-zsh"' <<< "$rendered"
     assert_success
 }
-
-@test "runs peon-ping-setup with packs" {
-    rendered=$(render_template "$TEMPLATE")
-    run grep -F 'peon-ping-setup --packs=' <<< "$rendered"
-    assert_success
-}
-
-@test "skips peon-ping-setup when already installed" {
-    rendered=$(render_template "$TEMPLATE")
-    run grep -F 'if [ ! -d "$HOME/.claude/hooks/peon-ping" ]' <<< "$rendered"
-    assert_success
-}
-
-@test "creates cursor peon-ping symlinks" {
-    rendered=$(render_template "$TEMPLATE")
-    run grep -F 'ln -sf "$HOME/.claude/hooks/peon-ping/packs"' <<< "$rendered"
-    assert_success
-}
-
-@test "symlinks peon.sh into cursor hooks dir" {
-    rendered=$(render_template "$TEMPLATE")
-    run grep -F 'ln -sf "$HOME/.claude/hooks/peon-ping/peon.sh"' <<< "$rendered"
-    assert_success
-}

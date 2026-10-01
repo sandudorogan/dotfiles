@@ -86,21 +86,4 @@ else
     echo "==> zsh-syntax-highlighting already installed"
 fi
 
-# peon-ping
-if command -v peon-ping-setup &> /dev/null; then
-    echo "==> Setting up peon-ping..."
-    if [ ! -d "$HOME/.claude/hooks/peon-ping" ]; then
-        peon-ping-setup --packs=ccg_china_dozer,dota2_axe,duke_nukem,glados,hd2_helldiver,peasant,peon,sc_battlecruiser,sc_kerrigan,sc_terran,wc3_corrupted_arthas
-    else
-        echo "==> peon-ping already installed"
-    fi
-
-    # Cursor peon-ping symlinks
-    echo "==> Setting up Cursor peon-ping symlinks..."
-    CURSOR_PEON_DIR="$HOME/.cursor/hooks/peon-ping"
-    mkdir -p "$CURSOR_PEON_DIR"
-    ln -sf "$HOME/.claude/hooks/peon-ping/packs" "$CURSOR_PEON_DIR/packs"
-    ln -sf "$HOME/.claude/hooks/peon-ping/peon.sh" "$CURSOR_PEON_DIR/peon.sh"
-fi
-
 echo "==> Post-installation complete!"

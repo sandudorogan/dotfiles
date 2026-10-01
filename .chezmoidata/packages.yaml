@@ -6,7 +6,6 @@ homebrew:
     - clojure/tools
     - borkdude/brew
     - clojure-lsp/brew
-    - PeonPing/tap
 
   formulae:
     # Core tools
@@ -40,9 +39,6 @@ homebrew:
     - clojure
     - borkdude/brew/babashka
     - clojure-lsp/brew/clojure-lsp-native
-
-    # Notifications
-    - PeonPing/tap/peon-ping
 
     # From existing configs
     - git-delta
@@ -164,7 +160,6 @@ pacman:
     - clojure
     - babashka-bin
     - clojure-lsp-bin
-    - peon-ping
 
 cargo_packages:
   - eza

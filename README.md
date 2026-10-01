@@ -33,7 +33,7 @@ The initialization scripts install (macOS, Ubuntu, and Arch):
 | Category | Packages |
 |----------|----------|
 | **Homebrew** | Auto-installed if missing |
-| **CLI Tools** | git, neovim, tmux, fzf, ripgrep, eza, bat, tldr, ffmpeg, pass, age, atuin, direnv, yazi, difftastic, glow, hyperfine, tokei, zoxide, dust, chafa, poppler, p7zip, git-delta, lazygit, lazydocker, htop, neofetch, newsboat, calcurse, lynx, wget, fish, zsh, highlight, w3m, yt-dlp, peon-ping |
+| **CLI Tools** | git, neovim, tmux, fzf, ripgrep, eza, bat, tldr, ffmpeg, pass, age, atuin, direnv, yazi, difftastic, glow, hyperfine, tokei, zoxide, dust, chafa, poppler, p7zip, git-delta, lazygit, lazydocker, htop, neofetch, newsboat, calcurse, lynx, wget, fish, zsh, highlight, w3m, yt-dlp |
 | **Clojure** | clojure, babashka, clojure-lsp |
 | **Languages** | NVM + Node.js LTS, Rust (rustup) |
 | **AI Tools** | Claude Code, Gemini CLI |
@@ -124,7 +124,7 @@ Scripts run in this order during `chezmoi apply`:
 | 25 | install-cargo-packages | onchange | Install cargo packages (Ubuntu) |
 | 30 | install-pipx-packages | onchange | Install pipx packages |
 | *dotfiles applied* | | | |
-| 90 | post-install | once | fzf, oh-my-zsh, peon-ping |
+| 90 | post-install | once | fzf, oh-my-zsh |
 
 - **onchange**: Re-runs when `.chezmoidata/packages.yaml` changes
 - **once**: Runs only on first apply (tools have their own update mechanisms)
