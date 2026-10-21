@@ -36,4 +36,7 @@ symlink_dot_xprofile
 {{- if eq .chezmoi.os "linux" }}
 # macOS-only configs (ignored on Linux)
 dot_cursor/
+.local/bin/claude-notify
+.local/share/claude-notify/
+.claude/skills/notify/
 {{- end }}

@@ -1,0 +1,18 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/bash
+
+# Hash: {{ include "dot_local/share/claude-notify/main.swift" | sha256sum }}
+# Hash: {{ include "dot_local/share/claude-notify/Info.plist" | sha256sum }}
+
+set -euo pipefail
+
+src="$HOME/.local/share/claude-notify"
+app="$src/Claude Notify.app"
+
+echo "==> Building Claude Notify.app..."
+mkdir -p "$app/Contents/MacOS"
+cp "$src/Info.plist" "$app/Contents/Info.plist"
+swiftc -O "$src/main.swift" -o "$app/Contents/MacOS/claude-notify"
+codesign --force --sign - "$app"
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f "$app"
+{{ end -}}
